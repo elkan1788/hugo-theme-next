@@ -18,7 +18,7 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 3. move `config.toml` to the root directory in your hugo site, and modify it to the actual information for your site.
 
-4. create some markdown files in directory(content/post), like https://github.com/elkan1788/hugo-theme-next/content
+4. create some markdown files in directory(content/post), like https://github.com/elkan1788/hugo-theme-next/tree/demo-site/content
 
 5. start hugo server in root directory: `hugo server --noHTTPCache`
 
