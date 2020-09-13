@@ -1,0 +1,179 @@
+<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+{{ if ne .Site.Params.Comment "Valine" }}
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
+<script type="text/javascript">
+function showTime(Counter) {
+  var query = new AV.Query(Counter);
+  var entries = [];
+  var $visitors = $(".leancloud_visitors");
+ 
+  $visitors.each(function () {
+    entries.push( $(this).attr("id").trim() );
+  });
+
+  query.containedIn('url', entries);
+  query.find()
+    .then((results) => {
+      var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+      if (results.length === 0) {
+        $visitors.find(COUNT_CONTAINER_REF).text(0);
+        return;
+      }
+
+      for (var i = 0; i < results.length; i++) {
+        var item = results[i];
+        var url = item.get('url');
+        var time = item.get('time');
+        var element = document.getElementById(url);
+
+        $(element).find(COUNT_CONTAINER_REF).text(time);
+      }
+      for(var i = 0; i < entries.length; i++) {
+        var url = entries[i];
+        var element = document.getElementById(url);
+        var countSpan = $(element).find(COUNT_CONTAINER_REF);
+        if( countSpan.text() == '') {
+          countSpan.text(0);
+        }
+      }
+    }, (error) => {
+      console.log('Query vistors failed: '+error);
+    });
+}
+
+function addCount(Counter) {
+  var $visitors = $(".leancloud_visitors");
+  var url = $visitors.attr('id').trim();
+  var title = $visitors.attr('data-flag-title').trim();
+  var query = new AV.Query('Counter');
+  query.equalTo("url", url);
+  query.find().then((results) => {
+    if (results.length > 0) {
+      var counter = results[0];
+      counter.increment('time', 1);
+      counter.save(null, {
+        query: new AV.Query('Counter').equalTo('url', url),
+        fetchWhenSave: true
+      }).then((counter) => {
+        var $element = $(document.getElementById(url));
+        $element.find('.leancloud-visitors-count').text(counter.get('time'));        
+      }, (error) => {
+        console.log('Update vistor failed: '+error);
+      });
+    } else {      
+      var acl = new AV.ACL();
+      acl.setPublicReadAccess(true);
+      acl.setPublicWriteAccess(true);
+     
+      var newCounter = new Counter();
+      newCounter.set("title", title);
+      newCounter.set("url", url);
+      newCounter.set("time", 1);
+
+      newCounter.setACL(acl);
+      newCounter.save().then((counter) => {
+        
+      var $element = $(document.getElementById(url));
+      $element.find('.leancloud-visitors-count').text(newCounter.get('time'));
+    }, (error) => {
+      console.log("Save new vistor failed: "+error);
+    });
+  }}); 
+}
+
+$(function() {
+
+  AV.init({
+    appId: "{{ .Site.Params.LCAppId }}",
+    appKey: "{{ .Site.Params.LCAppKey }}",
+    serverURL: "{{ .Site.Params.LCServer }}"
+  });  
+
+  const Counter = AV.Object.extend("Counter");
+
+  if ($('.leancloud_visitors').length == 1) {
+    addCount(Counter);
+  } else if ($('.post-title-link').length > 1) {
+    showTime(Counter);
+  }
+});
+</script>
+{{ else }}
+<div style="display: none;">{{ .Site.Params.Comment }} </div>
+{{ end }}
+<script type="text/javascript">  
+$(function() {
+
+  var sidebarTop = $('.header-inner').height() + 10;
+  $('#sidebar').css({ 'margin-top': sidebarTop }).show(); 
+
+  $('.content img, .post-body img').not('.group-picture img').each(function () {
+
+    var $image = $(this);
+    var imageTitle = $image.attr('title');
+    var $imageWrapLink = $image.parent('a');
+
+    if ($imageWrapLink.size() < 1) {
+      $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
+    }
+
+    $imageWrapLink.addClass('fancybox');
+    $imageWrapLink.attr('rel', 'group');
+
+    if (imageTitle) {
+      $imageWrapLink.append('<p class="image-caption">' + imageTitle + '</p>');
+      $imageWrapLink.attr('title', imageTitle); 
+    }
+  });
+
+  $('.fancybox').fancybox({
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
+
+  $('.sidebar-nav-toc').click(function(){
+    $(this).addClass('sidebar-nav-active');
+    $(this).next().removeClass('sidebar-nav-active');      
+    $('.'+$(this).next().attr('data-target')).toggle(500);
+    $('.'+$(this).attr('data-target')).toggle(500);
+  });
+
+  $('.sidebar-nav-overview').click(function(){
+    $(this).addClass('sidebar-nav-active');
+    $(this).prev().removeClass('sidebar-nav-active');      
+    $('.'+$(this).prev().attr('data-target')).toggle(500);
+    $('.'+$(this).attr('data-target')).toggle(500);
+  });
+});  
+</script>
+<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.min.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "Valine") }}
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script type="text/javascript">
+  new Valine({
+      el: '#vcomments',
+      appId: '{{ .Site.Params.LCAppId }}',
+      appKey: '{{ .Site.Params.LCAppKey }}',
+      visitor: true,
+      placeholder: '欢迎点评 ^_^',
+      requiredFields: ['nick', 'mail']
+  });
+</script>
+{{end }}
+{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "LiveRe") }}
+<script type="text/javascript">
+ (function(d, s) {
+     var j, e = d.getElementsByTagName(s)[0];
+     if (typeof LivereTower === 'function') { return; }
+     j = d.createElement(s);
+     j.src = '//cdn-city.livere.com/js/embed.dist.js';
+     j.async = true;
+     e.parentNode.insertBefore(j, e);
+ })(document, 'script');
+</script>
+{{ end }}

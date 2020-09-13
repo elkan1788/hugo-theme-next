@@ -1,0 +1,7 @@
+
+{{ if and (isset .Site.Params "comment") (eq .Site.Params.Comment "Valine") }}
+<div id="vcomments"></div>
+{{ end }}
+{{ if and (isset .Site.Params "comment") (eq .Site.Params.Comment "LiveRe") }}
+<div id="lv-container" data-id="city" data-uid="{{ .Site.Params.LiveReId }}">
+{{ end }}

@@ -1,0 +1,19 @@
+{{ if isset .Params "categories" }}
+{{ if not (eq (len .Params.categories) 0) }}
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  
+  <i class="fa fa-folder-o fa-fw"></i>
+  
+  <span class="post-meta-item-text">{{ i18n "Category" }}{{ i18n "Colon"}}</span>
+  {{ range .Params.categories }}
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="/categories/{{ . | urlize }}" itemprop="url" rel="index" style="text-decoration: underline">
+        <span itemprop="name">{{ . }}</span>
+      </a>
+      &nbsp; 
+    </span>
+  {{ end }}
+</span>
+{{ end }}
+{{ end }}

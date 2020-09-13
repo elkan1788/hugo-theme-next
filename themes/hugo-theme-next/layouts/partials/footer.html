@@ -1,0 +1,23 @@
+<div class="copyright" >
+  <span itemprop="copyrightYear">  
+    &copy; 2010 - {{ now.Year }}
+  </span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">{{ .Site.Title }}</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="//gohugo.io" target="_blank" title="hugo" >Hugo v{{ hugo.Version }}</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="//github.com/xtfly/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+<div class="vistor-info">
+{{ partial "widgets/analytics.html" .}}
+</div>
+<div style="margin-left: 28%">
+  Storage by 
+  <a href="https://www.qiniu.com" style="font-weight:700" target="_blank">七牛云存储</a> | 
+  <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备18047355号</a>
+</div>
+

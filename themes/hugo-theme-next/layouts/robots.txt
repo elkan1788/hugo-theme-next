@@ -1,0 +1,19 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+<!-- 此文件非标准的robots文件，是用于本地文章搜索的索引文件，请勿删除！ -->
+<search>
+  {{range where .Site.RegularPages "Section" "post"}}
+  <entry>
+    <title>{{ .Title }}</title>
+    <url>{{ .Permalink }}</url>
+    <categories>
+      {{ range .Params.categories }}<category>{{ . }}</category>{{ end }}
+    </categories>
+    <tags>
+      {{ range .Params.tags }}
+      <tag>{{ . }}</tag>
+      {{ end }}
+    </tags>
+    <content type="html"> {{ .Content | plainify }}</content>
+  </entry>
+  {{ end }}
+</search>

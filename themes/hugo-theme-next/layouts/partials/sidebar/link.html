@@ -1,0 +1,15 @@
+{{ if .Site.Params.Links }}
+    <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+        <i class="fa fa-fw fa-globe"></i>
+        {{ i18n "Link" }}
+    </div>
+    <ul class="links-of-blogroll-list">
+        {{ range .Site.Params.Links }}
+        <li class="links-of-blogroll-item">
+            <a href="{{ .Permalink }}" title="{{ .Name }}" target="_blank">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    </div>
+{{ end }}

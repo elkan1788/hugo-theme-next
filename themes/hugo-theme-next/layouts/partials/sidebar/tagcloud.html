@@ -1,0 +1,13 @@
+{{ if .Site.Params.TagCloud }}
+    <div class="tagcloud-of-blogroll motion-element tagcloud-of-blogroll-inline">
+    <div class="tagcloud-of-blogroll-title">
+        <i class="fa fa-fw fa-tags"></i>
+        {{ i18n "TagCloud" }}
+    </div>
+    <ul class="tagcloud-of-blogroll-list">
+      {{ range .Site.Taxonomies.tags }}
+        <li class="tagcloud-of-blogroll-item"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+    </div>
+{{ end }}
