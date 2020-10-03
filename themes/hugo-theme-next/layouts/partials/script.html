@@ -1,7 +1,169 @@
 <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-{{ if ne .Site.Params.Comment "Valine" }}
+<script src="//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/affix.js"></script>
+<script type="text/javascript" src="/js/scrollspy.js"></script>
+<script type="text/javascript">
+
+  function getCntViewHeight() {
+    var docHeight = $('#content').height(),
+        winHeight = $(window).height(),
+        cntViewHeight = (docHeight > winHeight) ? (docHeight - winHeight) : ($(document).height() - winHeight);
+    return cntViewHeight;
+  }
+
+  function getScrollbarWidth() {
+    var $div = $('<div />').addClass('scrollbar-measure').prependTo('body');
+    var div = $div[0];
+    var scrollbarWidth = div.offsetWidth - div.clientWidth;
+
+    $div.remove();
+
+    return scrollbarWidth;
+  }
+
+  function registerBackTop() {
+    var THRESHOLD = 50;
+    var $top = $('.back-to-top');
+
+    $(window).on('scroll', function () {
+      $top.toggleClass('back-to-top-on', window.pageYOffset > THRESHOLD);
+
+      var scrollTop = $(window).scrollTop();
+      var cntViewHeight = getCntViewHeight();
+      var scrollPercent = (scrollTop) / (cntViewHeight);
+      var scrollPercentRounded = Math.round(scrollPercent*100);
+      var scrollPercentMaxed = (scrollPercentRounded > 100) ? 100 : scrollPercentRounded;
+      $('#scrollpercent>span').html(scrollPercentMaxed);
+    });
+
+    $top.on('click', function () {
+      $("html,body").animate({
+                 scrollTop: 0,
+                 screenLeft: 0,
+                 }, 800);
+    });
+  }
+
+  function initScrollSpy () {
+    var tocSelector = '.post-toc';
+    var $tocElement = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocElement
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+      })
+      .on('clear.bs.scrollspy', removeCurrentActiveClass);
+
+    $('body').scrollspy({ target: tocSelector });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+  }
+
+  function initAffix () {
+    var headerHeight = $('.header-inner').height();
+    var footerOffset = parseInt($('.main').css('padding-bottom'), 10);
+    var sidebarTop = headerHeight + 10;
+
+    $('.sidebar-inner').affix({
+      offset: {
+        top: sidebarTop,
+        bottom: footerOffset
+      }
+    });
+
+    $(document)
+      .on('affixed.bs.affix', function () {
+        updateTOCHeight(document.body.clientHeight - 100);
+      });
+  }
+
+  function initTOCDimension () {
+    var updateTOCHeightTimer;
+
+    $(window).on('resize', function () {
+      updateTOCHeightTimer && clearTimeout(updateTOCHeightTimer);
+
+      updateTOCHeightTimer = setTimeout(function () {
+        var tocWrapperHeight = document.body.clientHeight - 100;
+
+        updateTOCHeight(tocWrapperHeight);
+      }, 0);
+    });
+
+    // Initialize TOC Height.
+    updateTOCHeight(document.body.clientHeight - 100);
+
+    // Initialize TOC Width.
+    var scrollbarWidth = getScrollbarWidth();
+    $('.post-toc').css('width', 'calc(100% + ' + scrollbarWidth + 'px)');
+  }
+
+  function updateTOCHeight (height) {
+    height = height || 'auto';
+    $('.post-toc').css('max-height', height);
+  }
+
+$(function() {
+
+  var sidebarTop = $('.header-inner').height() + 10;
+  $('#sidebar').css({ 'margin-top': sidebarTop }).show(); 
+
+  registerBackTop();
+  initScrollSpy();
+  initAffix();
+  initTOCDimension();
+
+  $('.post-body').viewer();  
+
+  $('.sidebar-nav-toc').click(function(){
+    $(this).addClass('sidebar-nav-active');
+    $(this).next().removeClass('sidebar-nav-active');      
+    $('.'+$(this).next().attr('data-target')).toggle(500);
+    $('.'+$(this).attr('data-target')).toggle(500);
+  });
+
+  $('.sidebar-nav-overview').click(function(){
+    $(this).addClass('sidebar-nav-active');
+    $(this).prev().removeClass('sidebar-nav-active');      
+    $('.'+$(this).prev().attr('data-target')).toggle(500);
+    $('.'+$(this).attr('data-target')).toggle(500);
+  });
+});  
+</script>
+
+{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "Valine") }}
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script type="text/javascript">
+  new Valine({
+      el: '#vcomments',
+      appId: '{{ .Site.Params.LCAppId }}',
+      appKey: '{{ .Site.Params.LCAppKey }}',
+      visitor: true,
+      placeholder: '欢迎点评 ^_^',
+      requiredFields: ['nick', 'mail']
+  });
+</script>
+{{end }}
+{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "LiveRe") }}
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
 <script type="text/javascript">
+(function(d, s) {
+     var j, e = d.getElementsByTagName(s)[0];
+     if (typeof LivereTower === 'function') { return; }
+     j = d.createElement(s);
+     j.src = '//cdn-city.livere.com/js/embed.dist.js';
+     j.async = true;
+     e.parentNode.insertBefore(j, e);
+ })(document, 'script');
+
 function showTime(Counter) {
   var query = new AV.Query(Counter);
   var entries = [];
@@ -98,82 +260,5 @@ $(function() {
     showTime(Counter);
   }
 });
-</script>
-{{ else }}
-<div style="display: none;">{{ .Site.Params.Comment }} </div>
-{{ end }}
-<script type="text/javascript">  
-$(function() {
-
-  var sidebarTop = $('.header-inner').height() + 10;
-  $('#sidebar').css({ 'margin-top': sidebarTop }).show(); 
-
-  $('.content img, .post-body img').not('.group-picture img').each(function () {
-
-    var $image = $(this);
-    var imageTitle = $image.attr('title');
-    var $imageWrapLink = $image.parent('a');
-
-    if ($imageWrapLink.size() < 1) {
-      $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
-    }
-
-    $imageWrapLink.addClass('fancybox');
-    $imageWrapLink.attr('rel', 'group');
-
-    if (imageTitle) {
-      $imageWrapLink.append('<p class="image-caption">' + imageTitle + '</p>');
-      $imageWrapLink.attr('title', imageTitle); 
-    }
-  });
-
-  $('.fancybox').fancybox({
-    helpers: {
-      overlay: {
-        locked: false
-      }
-    }
-  });
-
-  $('.sidebar-nav-toc').click(function(){
-    $(this).addClass('sidebar-nav-active');
-    $(this).next().removeClass('sidebar-nav-active');      
-    $('.'+$(this).next().attr('data-target')).toggle(500);
-    $('.'+$(this).attr('data-target')).toggle(500);
-  });
-
-  $('.sidebar-nav-overview').click(function(){
-    $(this).addClass('sidebar-nav-active');
-    $(this).prev().removeClass('sidebar-nav-active');      
-    $('.'+$(this).prev().attr('data-target')).toggle(500);
-    $('.'+$(this).attr('data-target')).toggle(500);
-  });
-});  
-</script>
-<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.min.js"></script>
-<script type="text/javascript" src="/js/search.js"></script>
-{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "Valine") }}
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script type="text/javascript">
-  new Valine({
-      el: '#vcomments',
-      appId: '{{ .Site.Params.LCAppId }}',
-      appKey: '{{ .Site.Params.LCAppKey }}',
-      visitor: true,
-      placeholder: '欢迎点评 ^_^',
-      requiredFields: ['nick', 'mail']
-  });
-</script>
-{{end }}
-{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "LiveRe") }}
-<script type="text/javascript">
- (function(d, s) {
-     var j, e = d.getElementsByTagName(s)[0];
-     if (typeof LivereTower === 'function') { return; }
-     j = d.createElement(s);
-     j.src = '//cdn-city.livere.com/js/embed.dist.js';
-     j.async = true;
-     e.parentNode.insertBefore(j, e);
- })(document, 'script');
 </script>
 {{ end }}

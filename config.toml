@@ -23,12 +23,11 @@ enableRobotsTXT = true
   DateFormat = "2006-01-02"
   YearFormat = "2006年"
   MonthFormat = "01-02"
-  Fancybox = true
 # 开启标签云
   TagCloud = true
 # 开启评论功能[Valine, LiveRe]
   Comment = "Valine"
-#  LiveReId = ""
+  LiveReId = ""
 # 开启BShare分享功能
   Share = "bshare"
   ShareId = ""

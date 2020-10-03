@@ -55,3 +55,9 @@ $ hugo -D
 ```
 
 More info: [Usage](https://gohugo.io/getting-started/usage/)
+
+### Image Demo
+
+![Logo](/img/logo.png)
+
+![QQ_QRcode](/img/qq_qrcode.png)
