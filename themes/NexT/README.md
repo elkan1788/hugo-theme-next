@@ -8,7 +8,11 @@ NexT is a simple and animated theme. I port it from Hexo to [Hugo](https://gohug
 
 Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and modify by my own custom style. 
 
-[Preview online](https://lisenhui.cn)
+## Online Preview: 
+
+[https://lisenhui.cn](https://lisenhui.cn)
+
+![my-hugo-blog](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
 
 ## Usage
 

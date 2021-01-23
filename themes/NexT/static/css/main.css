@@ -837,7 +837,7 @@ pre .javascript .function {
   box-sizing: border-box;
   position: fixed;
   bottom: -100px;
-  right: 50px;
+  right: 24px;
   z-index: 1050;
   padding: 0 6px;
   width: initial;
@@ -864,7 +864,7 @@ pre .javascript .function {
   }
 }
 .back-to-top.back-to-top-on {
-  bottom: 40px;
+  bottom: 30px;
 }
 .header {
   background: #fff;
@@ -1610,8 +1610,7 @@ pre .javascript .function {
 }
 .tagcloud-of-blogroll-item {
   padding: 2px 10px;
-  width: 30%;
-  display: initial;
+  display: inline-flex;
 }
 .tagcloud-of-blogroll-item a {
   border-bottom: 1px solid #999;
@@ -2318,7 +2317,7 @@ body {
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 240px;
+    width: 260px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2389,7 +2388,7 @@ body {
   position: static;
   float: left;
   margin-top: 300px;
-  width: 240px;
+  width: 260px;
   background: #fff;
   box-shadow: none;
 }

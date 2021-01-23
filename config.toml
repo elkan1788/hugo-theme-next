@@ -1,7 +1,7 @@
 Title =  "Loving life and dreams."
 LanguageCode = "zh-CN"
 BaseUrl = "https://lisenhui.cn/"
-Theme =  "hugo-theme-next"
+Theme =  "NexT"
 MetaDataFormat =  "yaml"
 PaginatePath =  "p"
 Paginate = 10
@@ -25,6 +25,7 @@ enableRobotsTXT = true
   MonthFormat = "01-02"
 # 开启标签云
   TagCloud = true
+  TagsLimit = 14
 # 开启评论功能[Valine, LiveRe]
   Comment = "Valine"
   LiveReId = ""
