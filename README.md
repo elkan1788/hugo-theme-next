@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/elkan1788/hugo-theme-next.svg?branch=demo-site)](https://travis-ci.com/elkan1788/hugo-theme-next)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
+<img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="Hugo" width="565">
+
 # NexT For Hugo
 
 A Hugo theme port from [NexT](https://github.com/iissnan/hexo-theme-next).
