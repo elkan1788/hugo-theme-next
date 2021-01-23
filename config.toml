@@ -26,6 +26,7 @@ enableRobotsTXT = true
   Fancybox = true
 # 开启标签云
   TagCloud = true
+  TagsLimit = 14
 # 开启评论功能[Valine, LiveRe]
   Comment = "Valine"
 #  LiveReId = ""

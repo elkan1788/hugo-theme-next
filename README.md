@@ -8,7 +8,11 @@ NexT is a simple and animated theme. I port it from Hexo to [Hugo](https://gohug
 
 Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and modify by my own custom style. 
 
-[Preview online](https://lisenhui.cn)
+## Online Preview: 
+
+[https://lisenhui.cn](https://lisenhui.cn)
+
+![my-hugo-blog](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
 
 ## Usage
 
@@ -18,7 +22,7 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 3. move `config.toml` to the root directory in your hugo site, and modify it to the actual information for your site.
 
-4. create some markdown files in directory(content/post), like https://github.com/elkan1788/hugo-theme-next/tree/demo-site/content
+4. create some markdown files in directory(content/post), like https://github.com/elkan1788/hugo-theme-next/content
 
 5. start hugo server in root directory: `hugo server --noHTTPCache`
 
