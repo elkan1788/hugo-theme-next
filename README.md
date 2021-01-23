@@ -38,3 +38,6 @@ qupload.sh
 Upload successful logs：
 
 ![my-hexo-blog2](http://myblog.lisenhui.cn/my-hexo-blog2.png-alias)
+
+## License
+The [MIT License](LICENSE).
