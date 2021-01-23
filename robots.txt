@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- 此文件非标准的robots文件，是用于本地文章搜索的索引文件，请勿删除！ -->
+<search>
+  
+  <entry>
+    <title>Hello World</title>
+    <url>https://lisenhui.cn/2020/09/11/hexo-hello-world/</url>
+    <categories>
+      <category>Hugo</category>
+    </categories>
+    <tags>
+      
+      <tag>测试</tag>
+      
+      <tag>学习</tag>
+      
+    </tags>
+    <content type="html"> Welcome to Hugo! It is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.This is your very first post. Check documentation for more info. If you get any problems when using Hugo, you can find the answer in discourse or you can ask me on GitHub.
+Quick Start Create a new site $ hugo new site quickstart More Info: New Site
+Import a theme $ cd quickstart $ git clone git@github.com:elkan1788/hugo-theme-next.git theme/hugo-theme-next $ cp theme/hugo-theme-next/config.toml ./  Note: you need install git commands before.
+ Create a new post $ hugo new posts/my-first-post.md More info: Writing
+Run server $ hugo server -D More info: Server
+Generate static files $ hugo -D More info: Usage
+Image Demo </content>
+  </entry>
+  
+</search>
