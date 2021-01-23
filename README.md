@@ -80,6 +80,8 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 - [x] Add site analytics include baidu, google, cnzz etc
 - [x] Create custom about page
 - [x] Minimize Javascript & Css & use remote CDN import
+- [ ] Special list page show professional article
+- [ ] Add photos and movies page
 
 ## License
 The [MIT License](LICENSE).
