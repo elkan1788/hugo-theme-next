@@ -39,7 +39,7 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 - This theme has been tested only in my blog site. Maybe it's not suitable for your requirements, you can customizate it by your preferences.
 
-- Test in Hugo verion: 0.74.2
+- Test in Hugo verion: 0.80.0
 
 - If you have any questions, please give feedback
 
