@@ -1,7 +1,12 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/elkan1788/elkan1788.github.io)
+![GitHub language count](https://img.shields.io/github/languages/count/elkan1788/elkan1788.github.io)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/elkan1788/elkan1788.github.io/main)
 [![Build Status](https://api.travis-ci.com/elkan1788/elkan1788.github.io.svg?branch=hugo)](https://travis-ci.com/elkan1788/elkan1788.github.io)
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/elkan1788.github.io/github-pages)
+![GitHub](https://img.shields.io/github/license/elkan1788/elkan1788.github.io)
 
-<img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="Hugo" width="565">
+
+![my-hugo-blog](http://myblog.lisenhui.cn/hugo-logo.png-noalias)
 
 
 # Use Hugo framework rebuild my blog site.
