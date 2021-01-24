@@ -14,7 +14,7 @@
   {{ with .Site.Author.Name }}
   <meta name="author" content="{{ . }}">
   {{ end }}
-  <meta property="og:title" content="{{ if ne .Permalink " / " }}{{ .Title }}{{else}}{{ .Site.Title }}{{end}}">
+  <meta property="og:title" content="{{ if ne .Permalink " / " }}{{ .Title }}{{else}}{{ .Site.Title }}{{end}}"/>
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:image" content="/img/author.jpg"> 
   <meta name="title" content="{{ if ne .Permalink " / " }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />
@@ -28,7 +28,7 @@
   <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon.png" />
   <link href="//cdn.bootcdn.net/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   {{ if .IsPage }}
-  <link href="//cdn.bootcdn.net/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+  <link href="//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.css" rel="stylesheet"/>
   {{ end }}
   <link href="/css/main.css" rel="stylesheet" type="text/css" />
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />    

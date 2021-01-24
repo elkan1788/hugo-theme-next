@@ -1,7 +1,12 @@
-[![Build Status](https://travis-ci.com/elkan1788/hugo-theme-next.svg?branch=demo-site)](https://travis-ci.com/elkan1788/hugo-theme-next)
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+![GitHub repo size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next)
+![GitHub language count](https://img.shields.io/github/languages/count/elkan1788/hugo-theme-next)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/elkan1788/elkan1788.github.io/main)
+[![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=demo-site)](https://travis-ci.com/elkan1788/hugo-theme-next)
+![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/gh-pg)
+![GitHub](https://img.shields.io/github/license/elkan1788/hugo-theme-next)
 
-<img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="Hugo" width="565">
+
+![my-hugo-blog](http://myblog.lisenhui.cn/hugo-logo.png-noalias)
 
 # NexT For Hugo
 
@@ -80,8 +85,6 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 - [x] Add site analytics include baidu, google, cnzz etc
 - [x] Create custom about page
 - [x] Minimize Javascript & Css & use remote CDN import
-- [ ] Special list page show professional article
-- [ ] Add photos and movies page
 
 ## License
 The [MIT License](LICENSE).
