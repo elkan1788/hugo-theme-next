@@ -2,7 +2,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/elkan1788/hugo-theme-next)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/elkan1788/elkan1788.github.io/main)
 [![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=demo-site)](https://travis-ci.com/elkan1788/hugo-theme-next)
-![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/gh-pg)
+![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
 ![GitHub](https://img.shields.io/github/license/elkan1788/hugo-theme-next)
 
 
