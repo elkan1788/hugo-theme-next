@@ -1,5 +1,5 @@
 Title =  "Loving life and dreams."
-LanguageCode = "zh-CN"
+LanguageCode = "en-US"
 BaseUrl = "https://lisenhui.cn/"
 Theme =  "hugo-theme-next"
 MetaDataFormat =  "yaml"
@@ -8,10 +8,10 @@ Paginate = 10
 DisablePathToLower =  false
 HasCJKLanguage = true
 PreserveTaxonomyNames = false
-PygmentsStyle = "emacs"
+PygmentsStyle = "monokai"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
-DefaultContentLanguage = "zh"
+DefaultContentLanguage = "en"
 enableRobotsTXT = true
 ignoreErrors = ["error-remote-getjson"]
 
@@ -46,6 +46,7 @@ ignoreErrors = ["error-remote-getjson"]
   BusuanziCounter = true
   BaiduSiteId = ""
   GoogleSiteId = ""
+  DaoVoiceId = ""
 
 [Author]
   Name = "凡梦星尘"
@@ -59,22 +60,22 @@ ignoreErrors = ["error-remote-getjson"]
   post = "/:year/:month/:day/:slug/"
 
 [[Menu.Main]]
-  Name = "首页"
+  Name = "Home"
   Pre = "home"
   URL = "/"
   Weight = 1
 [[Menu.Main]]
-  Name = "归档"
+  Name = "Archive"
   Pre = "archive"
   URL = "/post/"
   Weight = 2
 [[Menu.Main]]
-  Name = "关于"
+  Name = "About"
   Pre = "user"
   URL = "/about/"
   Weight = 3
 [[Menu.Main]]
-  Name = "公益404"
+  Name = "Page404"
   Pre = "heartbeat"
   URL = "/404.html"
   Weight = 4
@@ -86,7 +87,7 @@ ignoreErrors = ["error-remote-getjson"]
   URL = "https://github.com/elkan1788/"
 
 [[Params.Socials]]
-  Name = "知乎"
+  Name = "ZhiHu"
   Icon = "globe"
   URL = "https://www.zhihu.com/people/fan-meng-xing-chen-1"
 
@@ -104,7 +105,7 @@ ignoreErrors = ["error-remote-getjson"]
   Permalink = "http://wendal.net/"
 
 [[Params.Links]]
-  Name = "廖雪峰"
+  Name = "Liaoxuefeng"
   Permalink = "https://www.liaoxuefeng.com/"
 
 # 压缩开关(HTTPS流量挺贵的,哈)
