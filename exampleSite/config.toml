@@ -8,11 +8,12 @@ Paginate = 10
 DisablePathToLower =  false
 HasCJKLanguage = true
 PreserveTaxonomyNames = false
-PygmentsStyle = "monokai"
+PygmentsStyle = "emacs"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 DefaultContentLanguage = "zh"
 enableRobotsTXT = true
+ignoreErrors = ["error-remote-getjson"]
 
 [Params]
   Introduce = "再平凡的人也有属于他的梦想！"
