@@ -1,0 +1,17 @@
+name = "hugo-theme-next"
+license = "MIT"
+licenselink = "https://github.com/elkan1788/hugo-theme-next/blob/master/LICENSE"
+description = "A personal blog site theme."
+homepage = "https://lisenhui.cn"
+tags = ["Blog", "Simple", "Dark", "Personal", "Fast", "Theme"]
+features = ["some", "awesome", "features"]
+min_version = "0.59.1"
+
+[author]
+    name = "elkan"
+    homepage = "https://lisenhui.cn"
+
+[original]
+    author = "xtfly"
+    homepage = "http://lanlingzi.cn/"
+    repo = "https://github.com/xtfly/hugo-theme-next.git"
