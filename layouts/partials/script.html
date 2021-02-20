@@ -4,7 +4,7 @@
 {{ end }}
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/affix.js"></script>
-<script type="text/javascript" src="/js/scrollspy.js"></script>
+<script type="text/javascript" src="/js/scrollspy.js"></script> 
 <script type="text/javascript">
 
   function getCntViewHeight() {
@@ -118,6 +118,16 @@ $(function() {
   var sidebarTop = $('.header-inner').height() + 10;
   $('#sidebar').css({ 'margin-top': sidebarTop }).show(); 
 
+  // Seems no good for fixed the scroll bar issues
+  var headerHeight = $('.header-inner').height();
+  var sidebarHeight = $('.sidebar-inner').height();
+  var leftHeight = headerHeight + sidebarHeight + 50;
+  var contentHeight = $('.content-wrap').height();
+
+  if (contentHeight < leftHeight) {
+    $('.content-wrap').css('height', leftHeight + 50);
+  }
+
   registerBackTop();
   initScrollSpy();
   initAffix();
@@ -141,10 +151,13 @@ $(function() {
     $('.'+$(this).attr('data-target')).toggle(500);
   });
 {{ if and (isset .Site.Params "daovoiceid") }}
-  daovoice('init', {
-    app_id: "{{ .Site.Params.DaoVoiceId }}"
-  });
-  daovoice('update');
+  if (document.body.clientWidth > 800) {
+    daovoice('init', {
+      app_id: "{{ .Site.Params.DaoVoiceId }}"
+    });
+    daovoice('update');
+  }
+  
 {{ end }}
 });  
 </script>
@@ -157,8 +170,9 @@ $(function() {
       appId: '{{ .Site.Params.LCAppId }}',
       appKey: '{{ .Site.Params.LCAppKey }}',
       visitor: true,
-      placeholder: '欢迎点评 ^_^',
-      requiredFields: ['nick', 'mail']
+      placeholder: ' {{ i18n "ValineComment" }} ',
+      requiredFields: ['nick', 'mail'],
+      lang: "{{ .Page.Lang }}"
   });
 </script>
 {{end }}

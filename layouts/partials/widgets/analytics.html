@@ -1,5 +1,5 @@
 {{ if isset .Site.Params "cnnzsiteid" }}
-<span style="position: absolute;" id="cnzz_stat_icon_{{ .Site.Params.CNNZSiteId }}">
+<span class="cnzz_icon" id="cnzz_stat_icon_{{ .Site.Params.CNNZSiteId }}">
   <a href="//www.cnzz.com/stat/website.php?web_id={{ .Site.Params.CNNZSiteId }}" target="_blank" title="站长统计">
     <img border="0" hspace="0" vspace="0" src="//icon.cnzz.com/img/pic1.gif">
   </a>
@@ -16,17 +16,17 @@
   })();
 </script>
 {{ end }}
-
 {{ if .Site.Params.BusuanziCounter }}
-<div class="busuanzi-count">
+
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <span class="site-uv">
     <i class="fa fa-user"></i>
     <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-  </span>  
+  </span>
+  <span class="separator-line">/</span>
   <span class="site-pv">
     <i class="fa fa-eye"></i>
     <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
   </span>
-</div>
+
 {{ end }}

@@ -1,55 +1,27 @@
 Title =  "Loving life and dreams."
-LanguageCode = "en-US"
-BaseUrl = "https://lisenhui.cn/"
+
+DefaultContentLanguage = "zh-cn"
+LanguageCode = "zh-CN"
+
 Theme =  "hugo-theme-next"
-MetaDataFormat =  "yaml"
+
+MetaDataFormat =  "toml"
+
 PaginatePath =  "p"
-Paginate = 10
+Paginate = 5
+
 DisablePathToLower =  false
-HasCJKLanguage = true
 PreserveTaxonomyNames = false
-PygmentsStyle = "monokai"
+
+PygmentsStyle = "emacs"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
-DefaultContentLanguage = "en"
+
 enableRobotsTXT = true
+
+enableEmoji = true
+
 ignoreErrors = ["error-remote-getjson"]
-
-[Params]
-  Introduce = "再平凡的人也有属于他的梦想！"
-  Description = "凡梦星尘 | 博客 | 软件 | 架构 | Java | Kylin"
-  Keywords =  "凡梦星尘,独立,博客,程序员,架构师,个人,思考,分享,Kylin"
-  Subtitle = "Don't stop running forward!"
-  AuthorImg = "/img/avatar.png"
-  DateFormat = "2006-01-02"
-  YearFormat = "2006年"
-  MonthFormat = "01-02"
-  Fancybox = true
-# 开启标签云
-  TagCloud = true
-  TagsLimit = 14
-# 开启评论功能[Valine, LiveRe]
-  Comment = "Valine"
-#  LiveReId = ""
-# 开启BShare分享功能
-  Share = "bshare"
-  ShareId = ""
-# 开启3D访问地球
-  RevolverMapId = "5s83wolvn69"
-# Learn Cloud
-  LCAppId  = ""
-  LCAppKey = ""
-  LCServer = ""
-# 开启站点访问统计代码
-# CNZZ统计
-  CNNZSiteId = ""
-  BusuanziCounter = true
-  BaiduSiteId = ""
-  GoogleSiteId = ""
-  DaoVoiceId = ""
-
-[Author]
-  Name = "凡梦星尘"
 
 [sitemap]
   filename = "sitemap.xml"
@@ -57,58 +29,22 @@ ignoreErrors = ["error-remote-getjson"]
   priority = 0.5
 
 [Permalinks]
-  post = "/:year/:month/:day/:slug/"
+  post = "/:year/:month/:day/:slug"
 
-[[Menu.Main]]
-  Name = "Home"
-  Pre = "home"
-  URL = "/"
-  Weight = 1
-[[Menu.Main]]
-  Name = "Archive"
-  Pre = "archive"
-  URL = "/post/"
-  Weight = 2
-[[Menu.Main]]
-  Name = "About"
-  Pre = "user"
-  URL = "/about/"
-  Weight = 3
-[[Menu.Main]]
-  Name = "Page404"
-  Pre = "heartbeat"
-  URL = "/404.html"
-  Weight = 4
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/xml"
+    baseName = "searchindex"
+    isPlainText = true
+    notAlternative = true
 
-# 个人社交平台
-[[Params.Socials]]
-  Name = "GitHub"
-  Icon = "github"
-  URL = "https://github.com/elkan1788/"
-
-[[Params.Socials]]
-  Name = "ZhiHu"
-  Icon = "globe"
-  URL = "https://www.zhihu.com/people/fan-meng-xing-chen-1"
-
-# 友情链接
-[[Params.Links]]
-  Name = "Nutz"
-  Permalink = "https://nutzam.com/"
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
 
 [[Params.Links]]
-  Name = "JFinal"
-  Permalink = "https://jfinal.com/"
+  Name = "Qybit's Blog"
+  Permalink = "https://qybit.gitee.io/"
 
-[[Params.Links]]
-  Name = "Wendal"
-  Permalink = "http://wendal.net/"
-
-[[Params.Links]]
-  Name = "Liaoxuefeng"
-  Permalink = "https://www.liaoxuefeng.com/"
-
-# 压缩开关(HTTPS流量挺贵的,哈)
 [minify]
   disableCSS = false
   disableHTML = false

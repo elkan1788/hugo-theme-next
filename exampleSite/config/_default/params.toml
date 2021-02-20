@@ -1,0 +1,23 @@
+# 开启标签云
+TagCloud = true
+TagsLimit = 10
+# 开启评论功能[Valine, LiveRe]
+Comment = "Valine"
+LiveReId = ""
+# 开启BShare分享功能
+Share = "bshare"
+ShareId = ""
+# 开启3D访问地球
+RevolverMapId = "5s83wolvn69"
+# Learn Cloud
+LCAppId  = ""
+LCAppKey = ""
+LCServer = ""
+# 开启站点访问统计代码
+# CNZZ统计
+CNNZSiteId = ""
+BusuanziCounter = true
+BaiduSiteId = ""
+GoogleSiteId = ""
+# 开启在线交流
+DaoVoiceId = ""

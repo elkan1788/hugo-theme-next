@@ -1,4 +1,5 @@
 {{ if eq .Site.Params.Share "bshare" }}
+{{ if eq .Page.Lang "zh-CN" }}
 <div class="bshare-custom icon-medium-plus" style="margin-top: 50px;">
   <a href="#" id="bshare-shareto" >分享到: </a>
   <a title="分享到微信" class="bshare-weixin"></a>
@@ -11,7 +12,21 @@
   <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
   <span class="BSHARE_COUNT bshare-share-count">0</span>
 </div>
-{{ if eq .Site.Params.Share "bshare" }}
+{{ else }}
+<div class="bshare-custom icon-medium-plus" style="margin-top: 50px;">
+  <a href="#" id="bshare-shareto" >Share: </a>
+  <a title="Wechat" class="bshare-weixin"></a>
+  <a title="QQ Zone" class="bshare-qzone"></a>
+  <a title="Sina Min Blog" class="bshare-sinaminiblog"></a>
+  <a title="Youdao Note" class="bshare-youdaonote"></a>
+  <a title="QQ IM" class="bshare-qqim"></a>
+  <a title="Douban" class="bshare-douban"></a>
+  <a title="Clipboard" class="bshare-clipboard"></a>
+  <a title="More" class="bshare-more bshare-more-icon more-style-addthis"></a>
+  <span class="BSHARE_COUNT bshare-share-count">0</span>
+</div>
+{{ end }}
+
 <script type="text/javascript">
   (function(){
     var cnzz_s_tag = document.createElement('script');
@@ -32,5 +47,4 @@
     root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
   })();
 </script>
-{{ end }}
 {{ end }}

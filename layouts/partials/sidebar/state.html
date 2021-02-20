@@ -1,12 +1,12 @@
 <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
-      <a href="/post/">
+      <a href="{{ "/post/" | relLangURL }}">
         <span class="site-state-item-count">{{ len (where .Site.RegularPages "Section" "post") }}</span>
         <span class="site-state-item-name">{{ i18n "Blog" }}</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
-        <a href="/categories/">      
+        <a href="{{ "/categories/" | relLangURL }}">      
         {{if isset .Site.Taxonomies "categories"}} 
         <span class="site-state-item-count">{{len .Site.Taxonomies.categories}}</span>
         {{else}}
@@ -18,7 +18,7 @@
     </div>
 
     <div class="site-state-item site-state-tags">
-        <a href="/tags/">
+        <a href="{{ "/tags/" | relLangURL }}">
         {{if isset .Site.Taxonomies "tags"}} 
         <span class="site-state-item-count">{{len .Site.Taxonomies.tags}}</span>
         {{else}}

@@ -1,0 +1,39 @@
+Description = "Blog | Software | Architecture | Java | Kylin"
+Keywords =  "Blog | Software | Architecture | Java | Kylin"
+Subtitle = "Don't stop running forward!"
+AuthorImg = "/img/avatar.png"
+AuthorName = "Elkan.Li"
+Introduce = "Never forget your dreams！"
+DateFormat = "2006-01-02"
+YearFormat = "2006年"
+MonthFormat = "01-02"
+
+[[Socials]]
+  Name = "GitHub"
+  Icon = "github"
+  URL = "https://github.com/elkan1788/"
+
+[[Socials]]
+  Name = "ZhiHu"
+  Icon = "globe"
+  URL = "https://www.zhihu.com/people/fan-meng-xing-chen-1"
+
+[[Links]]
+  Name = "Nutz"
+  Permalink = "https://nutzam.com/"
+
+[[Links]]
+  Name = "JFinal"
+  Permalink = "https://jfinal.com/"
+
+[[Links]]
+  Name = "Wendal"
+  Permalink = "http://wendal.net/"
+
+[[Links]]
+  Name = "LiaoXueFeng"
+  Permalink = "https://www.liaoxuefeng.com/"
+  
+[[Links]]
+  Name = "Qybit's Blog"
+  Permalink = "https://qybit.gitee.io/"

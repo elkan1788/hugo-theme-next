@@ -1,22 +1,41 @@
 <div class="copyright" >
-  <span itemprop="copyrightYear">  
+  <span class="copyright-year">  
     &copy; 2010 - {{ now.Year }}
   </span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
-  <span class="author" itemprop="copyrightHolder">{{ .Site.Title }}</span>
+  <span class="copyright-author">{{ .Site.Title }}</span>
 </div>
-<div class="powered-by">
-  Powered by - <a class="theme-link" href="//gohugo.io" target="_blank" title="hugo" >Hugo v{{ hugo.Version }}</a>
-</div>
-<div class="theme-info">
-  Theme by - <a class="theme-link" href="//github.com/elkan1788/hugo-theme-next" target="_blank"> NexT
-  </a>
+<div class="powered-info">
+  <span class="powered-by">
+    Powered by - <a class="powered-link" href="//gohugo.io" target="_blank" title="hugo" >Hugo v{{ hugo.Version }}</a>
+  </span>
+  <span class="separator-line">/</span>
+  <span class="theme-info">
+    Theme by - <a class="powered-link" href="//github.com/elkan1788/hugo-theme-next" target="_blank"> NexT
+    </a>
+  </span>
 </div>
 <div class="vistor-info">
 {{ partial "widgets/analytics.html" .}}
 </div>
-<div style="margin-left: 28%">
-  Storage by 
-  <a href="https://www.qiniu.com" style="font-weight:700" target="_blank">七牛云存储</a> | 
-  <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备18047355号</a>
+<div class="license-info">
+  {{ if eq .Page.Lang "zh-cn" }}
+  <span class="storage-info">
+    Storage by 
+    <a href="https://www.qiniu.com" style="font-weight:700" target="_blank">七牛云存储</a>
+  </span>
+  <span class="separator-line">/</span>
+  <span class="license-num"> 
+    <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备18047355号</a>
+  </span>
+  {{ else }}
+  <span class="storage-info">
+    Storage by 
+    <a href="https://www.qiniu.com" style="font-weight:700" target="_blank">Qiniu Cloud</a>
+  </span>
+  <span class="separator-line">/</span>
+  <span class="license-num"> 
+    <a href="http://beian.miit.gov.cn" target="_blank">ICP.No 18047355</a>
+  </span>
+  {{ end }}
 </div>

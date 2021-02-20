@@ -1,7 +1,28 @@
 <div class="site-meta {{ if .Site.Params.Imglogo }} custom-logo {{ end }}">
 
+  <div class="multi-lang-switch"> 
+    <i class="fa fa-fw fa-language" style="margin-right: 5px;"></i>
+    {{ $siteLanguages := .Site.Languages }}
+    {{ $pageLang := .Page.Lang }}
+    {{ $langLen := len .Page.AllTranslations }}
+    {{ range .Page.AllTranslations }}
+        {{ $translation := .}}
+        {{ range $index, $lang := $siteLanguages }}
+            {{ if eq $translation.Lang $lang.Lang }}              
+              {{ if eq $pageLang $lang.Lang}}
+                 <a class="lang-link" id="{{ $translation.Language }}" href="#">{{ $lang.LanguageName }}</a>
+              {{ else }}
+                <a class="lang-link" id="{{ $translation.Language }}" href="{{ $translation.Permalink }}">{{ $lang.LanguageName }}</a>
+              {{ end }}
+              {{ if and (ne (add $index 1) $langLen) (ne $index $langLen)}} 
+              <span class="lang-line"> / </span> 
+              {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+  </div>
   <div class="custom-logo-site-title">
-    <a href="{{ .Site.BaseURL }}"  class="brand" rel="start">
+    <a href="{{ "/" | relLangURL }}"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">{{ .Site.Title }}</span>
       <span class="logo-line-after"><i></i></span>
@@ -20,10 +41,12 @@
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
-      {{ $currentPage := . }}
+      {{ $curPage := . }}
       {{ range .Site.Menus.main }}
-        <li class="menu-item {{ if $currentPage.IsMenuCurrent "main" . }}menu-item-active{{ end }} {{ if and (eq $currentPage.RelPermalink "/about/") (eq .URL "/about/") }}menu-item-active{{ end }}">
-          <a href="{{ .URL }}" rel="section" {{ if eq .URL "/404.html" }}target="_blank"{{ end }}>
+      {{ $active := or ($curPage.IsMenuCurrent "main" .) ($curPage.HasMenuCurrent "main" .) }}
+      {{ $active = or $active (eq .Name $curPage.Title) }}
+        <li class="menu-item {{ if $active }}menu-item-active{{ end }}">
+          <a href="{{ .URL | relLangURL }}" rel="section" {{ if eq .URL "/404.html" }}target="_blank"{{ end }}>
               <i class="menu-item-icon fa fa-fw fa-{{ .Pre }}"></i> <br />{{ .Name }}
           </a>
         </li>

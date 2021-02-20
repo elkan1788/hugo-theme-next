@@ -1,13 +1,3 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next)
-![GitHub language count](https://img.shields.io/github/languages/count/elkan1788/hugo-theme-next)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/elkan1788/elkan1788.github.io/main)
-[![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=demo-site)](https://travis-ci.com/elkan1788/hugo-theme-next)
-![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
-![GitHub](https://img.shields.io/github/license/elkan1788/hugo-theme-next)
-
-
-![my-hugo-blog](http://myblog.lisenhui.cn/hugo-logo.png-noalias)
-
 # NexT For Hugo
 
 A Hugo theme port from [NexT](https://github.com/iissnan/hexo-theme-next).
@@ -44,7 +34,7 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 - This theme has been tested only in my blog site. Maybe it's not suitable for your requirements, you can customizate it by your preferences.
 
-- Test in Hugo verion: 0.80.0
+- Test in Hugo verion: 0.74.2
 
 - If you have any questions, please give feedback
 

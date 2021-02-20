@@ -2,8 +2,8 @@ $(document).ready(function () {
     // Popup Window;
     var isfetched = false;
     // Search DB path;
-    var search_path = "robots.txt";
-    var path = "/" + search_path;
+    var search_path = "searchindex.xml";
+    var path = search_path;
     // monitor main search box;
     function proceedsearch() {
       $("body").append('<div class="popoverlay local-search-pop-overlay">').css('overflow', 'hide');

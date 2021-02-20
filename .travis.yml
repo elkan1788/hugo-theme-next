@@ -1,0 +1,51 @@
+language: go
+
+sudo: required
+
+branches:
+  only:
+    - master
+
+addons:
+  ssh_known_hosts:
+    - github.com
+
+env:
+  - HUGO_VERSION=0.80.0
+
+before_install:
+  - export TZ='Asia/Shanghai'
+  - export LANG="zh_CN.UTF-8"
+
+install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar -xzvf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - chmod +x hugo
+  - export PATH=$PATH:$PWD
+  - hugo version  
+  - echo 'Hugo engine env is ready.'
+
+script:
+  - rm -rf public
+  - hugo -d public
+
+before_deploy:
+  - wget -O ./public/README.md https://raw.githubusercontent.com/elkan1788/elkan1788.github.io/hugo/README.md
+  - cp -r LICENSE ./public
+  - cp -r .gitignore ./public
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: public
+  target-branch: gh-pg
+  github-token: $GITHUB_PAGES
+  keep-history: true
+  commit_message: "Update blog site by TravisCI with build $TRAVIS_BUILD_ID"
+  on:
+    branch: master
+
+after_deploy:    
+  - pwd
+  - ls -al 
+  - echo "Deploy blog article success."

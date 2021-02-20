@@ -1,0 +1,70 @@
+[StatsCats]
+  other = "Total <span class='span-stats-tip'>{{ len .Data.Terms }} </span> categories"
+[StatsTags]
+  other = "Total <span class='span-stats-tip'>{{ len .Data.Terms }} </spa> tags"
+[StatsBlogs]
+  other = "Well! Total <span class='span-stats-tip'>{{ .Count }} </span> blogs, let's press on."
+[Blog]
+  other = "Blogs"
+[Category]
+  other = "Categories"
+[Archive]
+  other = "Archive"
+[Tag]
+  other = "Tags"
+[ToC]
+  other = "Table of Content"
+[RSS]
+  other = "RSS"
+[SiteInfo]
+  other = "Site Information"
+[Link]
+  other = "Links"
+[TagCloud]
+  other = "TagCloud"
+[Time]
+  other = "Published at"
+[View]
+  other = "Reading"
+[ReadMore]
+  other = "Read More"
+[Word]
+  other = "Words"
+[WordCount]
+  other = "{{ .WordCount }} words"
+[ReadingTime]
+  other = "{{ .ReadingTime }} minutes"
+[Colon]
+  other = ":"
+[Visit]
+  other = "Visited"
+[Search]
+  other = "Search"
+[404PageTitle]
+  other = "Err404, Page not found!"
+[BackHomeTip]
+  other = "Back blog site's Home"
+[SearchPhr]
+  other = "Enter key words..."
+[ScanQQCode]
+  other = "QQ QrCode"
+[ArticleTitle]
+  other = "Title"
+[ArticleAuthor]
+  other = "Author"
+[ArticleLink]
+  other = "Link"
+[ArticleDeclaration]
+  other = "Declaration"
+[ArticleDecContent]
+  other = "This blog post article is under the <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/' target='_blank' style='text-decoration: underline;'>CC BY-NC-SA 3.0</a> license,Please indicate the source!"
+[RewardTips]
+  other = "If it can help you, you can give tips for blogger that how much you can. ^_^"
+[RewardBtnText]
+  other = "Reward"
+[RewardWxPay]
+  other = "Wechat Pay"
+[RewardAliPay]
+  other = "Ali Pay"
+[ValineComment]
+  other = "Just do what you want leave here. ^_^"

@@ -5,13 +5,13 @@
     {{ if eq .Data.Plural  "categories" }}
      <div class="category-all-page">
         <div class="category-all-title">
-            {{ i18n "StatsCats" . }}
+            {{ i18n "StatsCats" . | safeHTML }}
         </div>
         <div class="category-all">
           <ul class="category-list">
                {{ range $name, $items := .Site.Taxonomies.categories }}
               <li class="category-list-item">
-                  <a class="category-list-link" href="/categories/{{ $name | urlize | lower }}">{{ $name }}</a>
+                  <a class="category-list-link" href="{{ "/categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name }}</a>
               <span class="category-list-count"><sup>{{ len $items }}</sup></span>
               </li>
               {{ end }}
@@ -23,11 +23,11 @@
       {{ if eq .Data.Plural  "tags" }}
        <div class="tag-cloud">
         <div class="tag-cloud-title">
-            {{ i18n "StatsTags" . }}
+            {{ i18n "StatsTags" . | safeHTML }}
         </div>
         <div class="tag-cloud-tags">
             {{ range $name, $items := .Site.Taxonomies.tags }}
-             <a href="/tags/{{ $name | urlize | lower  }}" style="font-size: 24.5px; color: #212121">{{ $name }}</a>
+             <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize | lower  }}" style="font-size: 24.5px; color: #212121">{{ $name }}</a>
              <span class="tag-list-count"><sup>{{ len $items }}</sup></span>
              {{ end }}
         </div>

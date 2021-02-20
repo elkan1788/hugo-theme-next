@@ -1,0 +1,70 @@
+[StatsCats]
+  other = "目前共计 <span class='span-stats-tip'>{{ len .Data.Terms }}</span> 个分类"
+[StatsTags]
+  other = "目前共计 <span class='span-stats-tip'>{{ len .Data.Terms }}</span> 个标签"
+[StatsBlogs]
+  other = "目前共计 <span class='span-stats-tip'>{{ .Count }} </span>篇文章， 请继续努力，加油!"
+[Blog]
+  other = "日志"
+[Category]
+  other = "分类"
+[Archive]
+  other = "归档"
+[Tag]
+  other = "标签"
+[ToC]
+  other = "文章目录"
+[RSS]
+  other = "RSS 订阅"
+[SiteInfo]
+  other = "站点概览"
+[Link]
+  other = "友情链接"
+[TagCloud]
+  other = "标签云"
+[Time]
+  other = "时间"
+[View]
+  other = "阅读"
+[ReadMore]
+  other = "阅读全文"
+[Word]
+  other = "字数"
+[WordCount]
+  other = "{{ .WordCount }} 字"
+[ReadingTime]
+  other = "{{ .ReadingTime }}分钟"
+[Colon]
+  other = "："
+[Visit]
+  other = "阅读次数"
+[Search]
+  other = "搜索"
+[404PageTitle]
+  other = "404错误，页面不存在！"
+[BackHomeTip]
+  other = "返回我的主页"
+[SearchPhr]
+  other = "搜索关键字..."
+[ScanQQCode]
+  other = "QQ扫一扫交流"
+[ArticleTitle]
+  other = "标题"
+[ArticleAuthor]
+  other = "作者"
+[ArticleLink]
+  other = "链接"
+[ArticleDeclaration]
+  other = "声明"
+[ArticleDecContent]
+  other = "本博客文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/' target='_blank' style='text-decoration: underline;'>CC BY-NC-SA 3.0</a>许可协议，转载请注明出处！"
+[RewardTips]
+  other = "创作实属不易，如有帮助，那就打赏博主些许茶钱吧 ^_^"
+[RewardBtnText]
+  other = "赏"
+[RewardWxPay]
+  other = "微信打赏"
+[RewardAliPay]
+  other = "支付宝打赏"
+[ValineComment]
+  other = "欢迎留下您的宝贵建议. ^_^"
