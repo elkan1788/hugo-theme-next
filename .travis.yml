@@ -27,10 +27,11 @@ install:
 
 script:
   - cd ./exampleSite
-  - rm -rf ./public
-  - hugo -d public -t ../..
+  - rm -rf ../public
+  - hugo -d ../public -t ../..
 
 before_deploy:
+  - cd ..
   - wget -O ./public/README.md https://raw.githubusercontent.com/elkan1788/elkan1788.github.io/hugo/README.md
   - cp -r LICENSE ./public
   - cp -r .gitignore ./public
