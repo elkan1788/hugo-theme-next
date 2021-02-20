@@ -1,4 +1,5 @@
 Title =  "Loving life and dreams."
+BaseUrl = "https://lisenhui.cn/hugo-theme-next"
 
 DefaultContentLanguage = "zh-cn"
 LanguageCode = "zh-CN"
@@ -40,10 +41,6 @@ ignoreErrors = ["error-remote-getjson"]
 
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
-
-[[Params.Links]]
-  Name = "Qybit's Blog"
-  Permalink = "https://qybit.gitee.io/"
 
 [minify]
   disableCSS = false
