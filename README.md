@@ -1,3 +1,6 @@
+[![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
+![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
+
 # NexT For Hugo
 
 A Hugo theme port from [NexT](https://github.com/iissnan/hexo-theme-next).
