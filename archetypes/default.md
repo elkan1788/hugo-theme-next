@@ -1,6 +1,8 @@
 ---
-title: "xxxx"
-date: "2017-02-03"
+title: "{{ .TranslationBaseName | title }}"
+url: "{{ dateFormat "2006/01/01" .Date }}/{{ lower (substr .TranslationBaseName 6) }}.html"
+date: "{{ .Date }}
+draft: true
 categories:
  - "xx"
 tags:
