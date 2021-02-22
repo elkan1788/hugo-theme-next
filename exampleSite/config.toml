@@ -12,6 +12,7 @@ PaginatePath =  "p"
 Paginate = 5
 
 DisablePathToLower =  false
+
 PreserveTaxonomyNames = false
 
 PygmentsStyle = "emacs"
@@ -19,7 +20,6 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 
 enableRobotsTXT = true
-
 enableEmoji = true
 
 ignoreErrors = ["error-remote-getjson"]
@@ -28,9 +28,6 @@ ignoreErrors = ["error-remote-getjson"]
   filename = "sitemap.xml"
   changefreq = "weekly"
   priority = 0.5
-
-[Permalinks]
-  post = "/:year/:month/:day/:slug"
 
 [outputFormats]
   [outputFormats.SearchIndex]
