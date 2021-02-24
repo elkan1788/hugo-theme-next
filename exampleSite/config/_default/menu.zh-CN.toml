@@ -16,5 +16,5 @@
 [[Main]]
   Name = "公益404"
   Pre = "heartbeat"
-  URL = "/404.html"
+  URL = "404.html"
   Weight = 4
