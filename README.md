@@ -15,7 +15,7 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![my-hugo-blog](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
+![hugo-theme-next](images/screenshot.png)
 
 ## Usage
 
