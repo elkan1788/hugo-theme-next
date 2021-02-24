@@ -6,7 +6,7 @@ Comment = "Valine"
 LiveReId = "Your LiveReId"
 # 开启BShare分享功能
 Share = "bshare"
-ShareId = "Your ShareId"
+ShareId = "Your BShareId"
 # 开启3D访问地球
 RevolverMapId = "Your RevolverMapId"
 # Learn Cloud
