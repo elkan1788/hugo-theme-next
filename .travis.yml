@@ -28,6 +28,7 @@ install:
 script:
   - cd ./exampleSite
   - rm -rf ../public
+  - sh ../.travis/replace_params_value.sh
   - hugo -d ../public -t ../..
 
 before_deploy:
