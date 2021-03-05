@@ -1,3 +1,5 @@
+BaseUrl = "http://localhost:1313/"
+
 [minify]
   disableCSS = false
   disableHTML = false
