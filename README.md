@@ -11,11 +11,19 @@ NexT is a simple and animated theme. I port it from Hexo to [Hugo](https://gohug
 
 Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and modify by my own custom style. 
 
-## Online Preview: 
+## Preview: 
+
+1. Online Visit
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![hugo-theme-next](images/screenshot.png)
+![my-hugo-blog.png](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
+
+2. Local Visit
+
+First use your console then into exampleSite directory, Second start site running to use `hugo server --noHTTPCache --t ../..` command, Last look style with open browser: http://localhost:1313/
+
+>Note: Maybe there plugins couldn't running without the paramters change the value.
 
 ## Usage
 
@@ -23,9 +31,10 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 2. copy `next` directory to `themes` directory in your hugo site
 
-3. move `config.toml` to the root directory in your hugo site, and modify it to the actual information for your site.
+3. move `exampleSite\config` to the root directory in your hugo site, and modify it to the actual information for your site.
 
-4. create some markdown files in directory(content/post), like https://github.com/elkan1788/hugo-theme-next/content
+4. create some markdown files in directory(content/post), refere the struct and content in directory(exampleSite\content)
+> Maybe you can copy the `exampleSite\content` to your site
 
 5. start hugo server in root directory: `hugo server --noHTTPCache`
 
@@ -37,9 +46,9 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 - This theme has been tested only in my blog site. Maybe it's not suitable for your requirements, you can customizate it by your preferences.
 
-- Test in Hugo verion: 0.74.2
+- Test in Hugo verion: 0.74.2+
 
-- If you have any questions, please give feedback
+- If you have any questions, please give feedback or open issues
 
 ## Markdown notes
 
@@ -80,4 +89,4 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 - [x] Minimize Javascript & Css & use remote CDN import
 
 ## License
-The [MIT License](LICENSE).
+[MIT License](LICENSE).

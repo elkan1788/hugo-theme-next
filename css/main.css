@@ -2108,6 +2108,10 @@ a.search-result {
   }
 }
 
+.busuanzi-value {
+  margin: 0 0 0 8px;
+}
+
 @media (min-width: 400px) and (max-width: 767px) {
 .cnzz_icon {
     position: absolute;
