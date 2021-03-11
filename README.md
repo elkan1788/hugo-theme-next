@@ -11,11 +11,19 @@ NexT is a simple and animated theme. I port it from Hexo to [Hugo](https://gohug
 
 Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and modify by my own custom style. 
 
-## Online Preview: 
+## Preview: 
+
+1. Online Visit
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![hugo-theme-next](images/screenshot.png)
+![my-hugo-blog.png](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
+
+2. Local Visit
+
+First use your console then into exampleSite directory, Second start site running to use `hugo server --noHTTPCache --t ../..` command, Last look style with open browser: http://localhost:1313/
+
+>Note: Maybe there plugins couldn't running without the paramters change the value.
 
 ## Usage
 

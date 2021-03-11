@@ -11,11 +11,19 @@ NexT 是个简洁和动感十足的主题. 我把它从Hexo引擎移植到了[Hu
 
 > 感谢[xtfly](https://github.com/xtfly)的分享, 我在他的基础上面做了很多的个性化与以及加强. 
 
-## 在线预览: 
+## 预览: 
+
+1. 在线访问
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![hugo-theme-next](images/screenshot.png)
+![my-hugo-blog.png](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
+
+2. 本地访问
+
+首先在终端中切换到exampleSite目录，然后输入 `hugo server --noHTTPCache --t ../..` 命令启动站点，最后打开浏览器访问：http://localhost:1313/ 查看效果。
+
+>注意： 没有修改参数值，会有些插件没有办法运行起来
 
 ## 用法
 
