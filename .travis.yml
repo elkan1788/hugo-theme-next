@@ -25,7 +25,7 @@ install:
   - hugo version  
   - echo 'Hugo engine env is ready.'
 
-before_deploy:
+script:
   - cd ./exampleSite
   - rm -rf ../public
   - sh ../.travis/replace_params_value.sh
