@@ -31,6 +31,8 @@ script:
   - sh ../.travis/replace_params_value.sh
   - hugo -d ../public -t ../..
   - cp ../README.md ../public
+  - cp ../README.zh.md ../public
+  - cp ../LICENSE ../public
 
 deploy:
   provider: pages
