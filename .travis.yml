@@ -45,5 +45,6 @@ deploy:
 
 after_deploy:    
   - pwd
-  - ls -al
+  - ls -al ./public
+  - cat ./public/README.md
   - echo "Deploy blog article success."
