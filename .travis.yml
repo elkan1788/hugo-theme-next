@@ -46,6 +46,4 @@ deploy:
 after_deploy:    
   - pwd
   - ls -al
-  - cat LICENSE
-  - cat README.md
   - echo "Deploy blog article success."
