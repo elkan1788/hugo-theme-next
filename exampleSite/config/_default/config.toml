@@ -22,6 +22,7 @@ pygmentsCodefencesGuessSyntax = true
 enableRobotsTXT = true
 enableEmoji = true
 
+
 ignoreErrors = ["error-remote-getjson"]
 
 [sitemap]

@@ -1,6 +1,8 @@
 [![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
 ![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
 
+[中文](README.zh.md) | [English](README.md)
+
 # NexT For Hugo
 
 Hugo版本的NexT主题，移植于[NexT](https://github.com/iissnan/hexo-theme-next).
