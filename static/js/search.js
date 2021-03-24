@@ -2,12 +2,14 @@ $(document).ready(function () {
     // Popup Window;
     var isfetched = false;
     // Search DB path;
+    // TO-DO Seems not found best way 
+    var pre_sch_path = window.location.href.indexOf('en') > -1 ? '/en/' : "/"
     var search_path = "searchindex.xml";
-    var path = search_path;
+    var path = pre_sch_path + search_path;
     // monitor main search box;
     function proceedsearch() {
       $("body").append('<div class="popoverlay local-search-pop-overlay">').css('overflow', 'hide');
-      $('.popup').toggle();
+      $('.popup').fadeIn('slow');
     }
     // search function;
     var searchFunc = function(path, search_id, content_id) {
@@ -104,19 +106,19 @@ $(document).ready(function () {
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      //TODO why here need timeout, couldn't understand it.
-      setTimeout(() => $('#local-search-input').focus(), 500);
+        e.stopPropagation();
+        //TODO why here need timeout, couldn't understand it.
+        setTimeout(() => $('#local-search-input').focus(), 500);
       
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {     
-        proceedsearch();
-      };
+        if (isfetched == false) {
+            searchFunc(path, 'local-search-input', 'local-search-result');
+        } else {     
+            proceedsearch();
+        };
     });
 
     $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
+      $('.popup').fadeOut('slow');
       $(".popoverlay").remove();
       $('body').css('overflow', '');
     });
