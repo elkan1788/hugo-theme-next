@@ -2809,6 +2809,14 @@ body {
     width: 50%;
   }
 
+.local-search-popup .search-stats b {
+  color: #ff0000;
+}
+
+.local-search-popup .search-stats hr {
+  margin: 10px;
+}
+
 @media (max-width: 767px) {
   .local-search-popup {
     border-radius: 0;

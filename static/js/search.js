@@ -95,8 +95,20 @@ $(document).ready(function () {
                         }
                     })};
                     str += "</ul>";
-                    if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                    if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+
+                    var rs_cnt = "<div class='search-stats'><b>"+matchcounts
+                    if (pre_sch_path == '/') {
+                        rs_cnt += " </b>个结果被找到！"
+                    } else {
+                        rs_cnt += " </b>results found!"
+
+                    }
+                    rs_cnt += "</div><hr/>"
+                    str = rs_cnt + str
+
+                    if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }                    
+                    if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' } 
+
                     $resultContent.innerHTML = str;
                 });
                 proceedsearch();
