@@ -875,13 +875,16 @@ pre .javascript .function {
   height: 3px;
   background: #222;
 }
+
 .site-meta {
-  margin: 0;
+  flex-grow: 1;
   text-align: center;
+  color: #fff;
+  padding: 30px 0;
 }
 @media (max-width: 767px) {
   .site-meta {
-    text-align: center;
+    padding: 10px 0;
   }
 }
 .brand {
@@ -925,23 +928,13 @@ pre .javascript .function {
   position: relative;
   top: -10px;
 }
-.site-nav-toggle {
-  display: none;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
+
 @media (max-width: 767px) {
   .site-nav-toggle {
     display: block;
   }
 }
-.site-nav-toggle button {
-  margin-top: 2px;
-  padding: 9px 10px;
-  background: transparent;
-  border: none;
-}
+
 @media (max-width: 767px) {
   .site-nav {
     display: none;
@@ -974,6 +967,13 @@ pre .javascript .function {
   .menu .menu-item {
     margin-top: 10px;
   }
+
+  .menu .menu-item.menu-item-search {
+      display: none;
+  }
+  .menu .menu-item.menu-item-search {
+      display: none;
+  }
 }
 .menu .menu-item a {
   display: block;
@@ -996,6 +996,7 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+
 .post-body {
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -2323,6 +2324,19 @@ body {
   width: 260px;
   background: #fff;
 }
+.site-brand-container {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 10px;
+  background: #222;
+}
+
+@media (max-width: 991px) {
+  .site-nav-on .site-brand-container {
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  }
+}
+
 @media (min-width: 1600px) {
   .container .header-inner {
     width: 260px;
@@ -2442,21 +2456,7 @@ body {
 .sidebar-position-right:before {
   float: right;
 }
-.site-meta {
-  padding: 28px 0;
-  color: #fff;
-  background: #222;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .site-meta {
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
-  }
-}
-@media (max-width: 767px) {
-  .site-meta {
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
-  }
-}
+
 .brand {
   display: block;
   padding: 0;
@@ -2519,12 +2519,11 @@ body {
   border-radius: 50%;
   background-color: #bbb;
 }
+
 .btn-bar {
   background-color: #fff;
 }
-.site-nav-toggle {
-  top: 20px;
-  left: 20px;
+
 .site-nav-toggle,
 .site-nav-right {
   display: none;
