@@ -2800,17 +2800,22 @@ body {
 
 .local-search-popup {
     display: none;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    margin-left: -350px;
-    width: 700px;
-    height: 80%;
+    left: 25%;
+    margin:auto;
     padding: 0;
     background: #fff;
-    color: #333;
-    z-index: 9999;
     border-radius: 5px;
+    height: 80%;
+    width: 50%;
+  }
+
+@media (max-width: 767px) {
+  .local-search-popup {
+    border-radius: 0;
+    left: 0;
+    height: 99%;
+    width: 100%;
+  }
 }
 
 .local-search-popup .local-search-header {
@@ -3033,3 +3038,4 @@ body {
 .addthis_inline_share_toolbox {
   margin: 20px 0 0 0;
 }
+
