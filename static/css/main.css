@@ -2923,3 +2923,7 @@ body {
   color: #fff;
   text-decoration: underline;
 }
+
+.addthis_inline_share_toolbox {
+  margin: 20px 0 0 0;
+}

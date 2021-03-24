@@ -162,33 +162,38 @@ $(function() {
     $('.'+$(this).prev().attr('data-target')).toggle(500);
     $('.'+$(this).attr('data-target')).toggle(500);
   });
-{{ if and (isset .Site.Params "daovoiceid") }}
-  if (document.body.clientWidth > 800) {
-    daovoice('init', {
-      app_id: "{{ .Site.Params.DaoVoiceId }}"
-    });
-    daovoice('update');
-  }
-  
-{{ end }}
 });  
 </script>
+{{ if .IsPage }}
 
-{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "Valine") }}
+{{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Valine") }}
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script type="text/javascript">
   new Valine({
       el: '#vcomments',
-      appId: '{{ .Site.Params.LCAppId }}',
-      appKey: '{{ .Site.Params.LCAppKey }}',
+      appId: '{{ .Site.Params.LeanCloud.AppId }}',
+      appKey: '{{ .Site.Params.LeanCloud.AppKey }}',
       visitor: true,
-      placeholder: ' {{ i18n "ValineComment" }} ',
+      placeholder: ' {{ i18n "CommentPh" }} ',
       requiredFields: ['nick', 'mail'],
       lang: "{{ .Page.Lang }}"
   });
 </script>
 {{end }}
-{{ if and (.IsPage) (isset .Site.Params "comment") (eq .Site.Params.Comment "LiveRe") }}
+{{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Waline") }}
+<script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<script type="text/javascript">
+  new Waline({
+      el: '#wcomments',
+      visitor: true,
+      placeholder: ' {{ i18n "CommentPh" }} ',
+      requiredFields: ['nick', 'mail'],
+      serverURL: "{{ .Site.Params.Comment.WalineSerURL }}",
+      lang: "{{ .Page.Lang }}"
+  });
+</script>
+{{end }}
+{{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "LiveRe") }}
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
 <script type="text/javascript">
 (function(d, s) {
@@ -283,9 +288,9 @@ function addCount(Counter) {
 $(function() {
 
   AV.init({
-    appId: "{{ .Site.Params.LCAppId }}",
-    appKey: "{{ .Site.Params.LCAppKey }}",
-    serverURL: "{{ .Site.Params.LCServer }}"
+    appId: "{{ .Site.Params.LeanCloud.AppId }}",
+    appKey: "{{ .Site.Params.LeanCloud.AppKey }}",
+    serverURL: "{{ .Site.Params.LeanCloud.ServerURL }}"
   });  
 
   const Counter = AV.Object.extend("Counter");
@@ -306,12 +311,31 @@ $(function() {
    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
   }
   else{
-  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
   }
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-{{ if and (isset .Site.Params "daovoiceid") }}
-<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/{{ .Site.Params.DaoVoiceId }}.js","daovoice")</script>
+
+{{ if and (.Site.Params.Share.Enable) (isset .Site.Params.Share "addthisid") }}
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ .Site.Params.Share.AddthisId }}"></script>
+{{ end }}
+
+{{ end }}
+
+{{ if and (.Site.Params.OnlineIM.Enable) (isset .Site.Params.OnlineIM "daovoiceid") }}
+<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/{{ .Site.Params.OnlineIM.DaoVoiceId }}.js","daovoice")</script>
+
+<script type="text/javascript">
+  $(function(){
+    if (document.body.clientWidth > 800) {
+      daovoice('init', {
+        app_id: "{{ .Site.Params.OnlineIM.DaoVoiceId }}"
+      });
+      daovoice('update');
+    }
+  });
+</script>
+
 {{ end }}

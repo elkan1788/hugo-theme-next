@@ -59,12 +59,12 @@
 [ArticleDecContent]
   other = "This blog post article is under the <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/' target='_blank' style='text-decoration: underline;'>CC BY-NC-SA 3.0</a> license,Please indicate the source!"
 [RewardTips]
-  other = "If it can help you, you can give tips for blogger that how much you can. ^_^"
+  other = "If it can help you, you can give tips for blogger that how much you want. ^_^"
 [RewardBtnText]
   other = "Reward"
 [RewardWxPay]
   other = "Wechat Pay"
 [RewardAliPay]
   other = "Ali Pay"
-[ValineComment]
+[CommentPh]
   other = "Just do what you want leave here. ^_^"

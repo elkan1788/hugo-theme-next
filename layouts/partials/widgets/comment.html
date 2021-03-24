@@ -1,7 +1,15 @@
+{{ if .Site.Params.Comment.Enable }}
 
-{{ if and (isset .Site.Params "comment") (eq .Site.Params.Comment "Valine") }}
+{{ if eq .Site.Params.Comment.Module "Valine" }}
 <div id="vcomments"></div>
 {{ end }}
-{{ if and (isset .Site.Params "comment") (eq .Site.Params.Comment "LiveRe") }}
-<div id="lv-container" data-id="city" data-uid="{{ .Site.Params.LiveReId }}">
+
+{{ if eq .Site.Params.Comment.Module "Waline" }}
+<div id="wcomments"></div>
+{{ end }}
+
+{{ if eq .Site.Params.Comment.Module "LiveRe" }}
+<div id="lv-container" data-id="city" data-uid="{{ .Site.Params.Comment.LiveReId }}">
+{{ end }}
+
 {{ end }}
