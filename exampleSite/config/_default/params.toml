@@ -17,7 +17,7 @@
   AppKey = "Your LCAppKey"
   ServerURL = "Your LCServer"
 
-[Analystis]
+[Statis]
   BusuanziCounter = true
   CNNZSiteId = "Your CNNZSiteId"
   BaiduSiteId = "Your BaiduSiteId"

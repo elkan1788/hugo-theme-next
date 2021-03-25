@@ -32,25 +32,25 @@
   {{ end }}
   <link href="/css/main.css" rel="stylesheet" type="text/css" />
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />    
-{{ if isset .Site.Params "baidusiteid" }}
+{{ if isset .Site.Params.Statis "baidusiteid" }}
   <script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?{{ .Site.Params.BaiduSiteId }}";
+      hm.src = "https://hm.baidu.com/hm.js?{{ .Site.Params.Statis.BaiduSiteId }}";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
 {{ end }}
-{{ if isset .Site.Params "googlesiteid" }}
+{{ if isset .Site.Params.Statis "googlesiteid" }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.GoogleSiteId }}"></script>
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ .Site.Params.GoogleSiteId }} ');
+    gtag('config', '{{ .Site.Params.Statis.GoogleSiteId }} ');
   </script>
 {{ end }}
 </head>
