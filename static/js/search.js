@@ -3,7 +3,7 @@ $(document).ready(function () {
     var isfetched = false;
     // Search DB path;
     // TO-DO Seems not found best way 
-    var pre_sch_path = window.location.href.indexOf('en') > -1 ? '/en/' : "/"
+    var pre_sch_path = window.location.href.indexOf('/en/') > -1 ? '/en/' : "/"
     var search_path = "searchindex.xml";
     var path = pre_sch_path + search_path;
     // monitor main search box;
