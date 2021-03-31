@@ -44,7 +44,7 @@
   </script>
 {{ end }}
 {{ if isset .Site.Params.Statis "googlesiteid" }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.GoogleSiteId }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.Statis.GoogleSiteId }}"></script>
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
