@@ -1,5 +1,12 @@
+<div class="site-brand-container">
+<div class="site-nav-toggle">
+  <div class="toggle" role="button" style="opacity: 1; top: 0px;">
+      <span class="toggle-line"></span>
+      <span class="toggle-line"></span>
+      <span class="toggle-line"></span>
+  </div>
+</div>
 <div class="site-meta {{ if .Site.Params.Imglogo }} custom-logo {{ end }}">
-
   <div class="multi-lang-switch"> 
     <i class="fa fa-fw fa-language" style="margin-right: 5px;"></i>
     {{ $siteLanguages := .Site.Languages }}
@@ -31,13 +38,19 @@
   <p class="site-subtitle">{{ with .Site.Params.Subtitle }}{{ . }}{{ end }}</p>
 </div>
 
-<div class="site-nav-toggle">
+<div class="site-nav-right">
+    <div class="toggle popup-trigger" style="opacity: 1; top: 0px;">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+<!-- <div class="site-nav-toggle">
   <button>
     <span class="btn-bar"></span>
     <span class="btn-bar"></span>
     <span class="btn-bar"></span>
   </button>
-</div>
+</div> -->
 
 <nav class="site-nav">
     <ul id="menu" class="menu">

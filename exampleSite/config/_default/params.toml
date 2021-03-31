@@ -1,23 +1,31 @@
-# 开启标签云
-TagCloud = true
-TagsLimit = 10
-# 开启评论功能[Valine, LiveRe]
-Comment = "Valine"
-LiveReId = "Your LiveReId"
-# 开启BShare分享功能
-Share = "bshare"
-ShareId = "Your BShareId"
-# 开启3D访问地球
-RevolverMapId = "Your RevolverMapId"
-# Learn Cloud
-LCAppId  = "Your LCAppId"
-LCAppKey = "Your LCAppKey"
-LCServer = "Your LCServer"
-# 开启站点访问统计代码
-# CNZZ统计
-CNNZSiteId = "Your CNNZSiteId"
-BusuanziCounter = true
-BaiduSiteId = "Your BaiduSiteId"
-GoogleSiteId = "Your GoogleSiteId"
-# 开启在线交流
-DaoVoiceId = "Your DaoVoiceId"
+[TagsCloud]
+  Enable = true
+  Limit = 10
+
+[Share]
+  Enable = true
+  AddthisId = ""
+
+[Comment]
+  Enable = true
+  Module = ""
+  LiveReId = ""
+  WalineSerURL = ""
+
+[LeanCloud]
+  AppId = "Your LCAppId"
+  AppKey = "Your LCAppKey"
+  ServerURL = "Your LCServer"
+
+[Statis]
+  BusuanziCounter = true
+  CNNZSiteId = "Your CNNZSiteId"
+  BaiduSiteId = "Your BaiduSiteId"
+  GoogleSiteId = "Your GoogleSiteId"
+
+[OnlineIM]
+  Enable = true
+  DaoVoiceId = "Your DaoVoiceId"
+
+[Others]
+  RevolverMapId = "Your RevolverMapId"

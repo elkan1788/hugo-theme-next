@@ -22,7 +22,7 @@ pygmentsCodefencesGuessSyntax = true
 enableRobotsTXT = true
 enableEmoji = true
 
-
+timeout = 100000
 ignoreErrors = ["error-remote-getjson"]
 
 [sitemap]

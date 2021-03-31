@@ -1,6 +1,6 @@
-{{ if isset .Site.Params "cnnzsiteid" }}
-<span class="cnzz_icon" id="cnzz_stat_icon_{{ .Site.Params.CNNZSiteId }}">
-  <a href="//www.cnzz.com/stat/website.php?web_id={{ .Site.Params.CNNZSiteId }}" target="_blank" title="站长统计">
+{{ if isset .Site.Params.Statis "cnnzsiteid" }}
+<span class="cnzz_icon" id="cnzz_stat_icon_{{ .Site.Params.Statis.CNNZSiteId }}">
+  <a href="//www.cnzz.com/stat/website.php?web_id={{ .Site.Params.Statis.CNNZSiteId }}" target="_blank" title="站长统计">
     <img border="0" hspace="0" vspace="0" src="//icon.cnzz.com/img/pic1.gif">
   </a>
 </span>
@@ -10,13 +10,13 @@
     cnzz_s_tag.type = 'text/javascript';
     cnzz_s_tag.async = true;
     cnzz_s_tag.charset = 'utf-8';
-    cnzz_s_tag.src = 'https://s4.cnzz.com/z_stat.php?id={{ .Site.Params.CNNZSiteId }}&show=pic1';
+    cnzz_s_tag.src = 'https://s4.cnzz.com/z_stat.php?id={{ .Site.Params.Statis.CNNZSiteId }}&show=pic1';
     var root_s = document.getElementsByTagName('script')[0];
     root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
   })();
 </script>
 {{ end }}
-{{ if .Site.Params.BusuanziCounter }}
+{{ if .Site.Params.Statis.BusuanziCounter }}
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <span class="site-uv">
