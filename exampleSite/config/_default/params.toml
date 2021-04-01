@@ -4,13 +4,13 @@
 
 [Share]
   Enable = true
-  AddthisId = ""
+  AddthisId = "Your AddthisPubid"
 
 [Comment]
   Enable = true
-  Module = ""
-  LiveReId = ""
-  WalineSerURL = ""
+  Module = "Waline"
+  LiveReId = "Your LiveReId"
+  WalineSerURL = "Your WalineSerURL"
 
 [LeanCloud]
   AppId = "Your LCAppId"
