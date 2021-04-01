@@ -1,0 +1,20 @@
+[[Main]]
+  Name = "Home"
+  Pre = "home"
+  URL = "/"
+  Weight = 1
+[[Main]]
+  Name = "Archive"
+  Pre = "archive"
+  URL = "post"
+  Weight = 2
+[[Main]]
+  Name = "About"
+  Pre = "user"
+  URL = "about.html"
+  Weight = 3
+[[Main]]
+  Name = "Page404"
+  Pre = "heartbeat"
+  URL = "404.html"
+  Weight = 4

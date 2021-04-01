@@ -1,0 +1,20 @@
+[[Main]]
+  Name = "首页"
+  Pre = "home"
+  URL = "/"
+  Weight = 1
+[[Main]]
+  Name = "归档"
+  Pre = "archive"
+  URL = "post"
+  Weight = 2
+[[Main]]
+  Name = "关于我"
+  Pre = "user"
+  URL = "about.html"
+  Weight = 3
+[[Main]]
+  Name = "公益404"
+  Pre = "heartbeat"
+  URL = "404.html"
+  Weight = 4

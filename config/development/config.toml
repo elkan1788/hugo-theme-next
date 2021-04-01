@@ -1,0 +1,10 @@
+BaseUrl = "http://localhost:1313/"
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
