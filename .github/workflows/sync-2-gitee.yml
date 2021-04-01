@@ -2,7 +2,7 @@ name: sync-2-gitee
 
 on:
   push:
-    branches: [master, gh-pg]
+    branches: [main, gh-pg]
 
 jobs:
   sync-2-gitee:
