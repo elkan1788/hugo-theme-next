@@ -43,7 +43,7 @@ deploy:
   keep-history: true
   commit_message: "Update blog site by TravisCI with build $TRAVIS_BUILD_ID"
   on:
-    branch: master
+    branch: main
 
 after_deploy:    
   - pwd
