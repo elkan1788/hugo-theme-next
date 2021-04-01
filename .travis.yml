@@ -41,7 +41,7 @@ deploy:
   target-branch: gh-pg
   github-token: $GITHUB_PAGES
   keep-history: true
-  fqdn: hugo-theme-next.vercel.app
+  fqdn: next.lisenhui.cn
   commit_message: "Update blog site by TravisCI with build $TRAVIS_BUILD_ID"
   on:
     branch: main
