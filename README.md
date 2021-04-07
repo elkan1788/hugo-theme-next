@@ -7,6 +7,8 @@
 
 A Hugo theme port from [NexT](https://github.com/iissnan/hexo-theme-next).
 
+[Online Documents](https://next-docs.lisenhui.cn)
+
 ## Discription
 
 NexT is a simple and animated theme. I port it from Hexo to [Hugo](https://gohugo.io/) and used in my blog site.

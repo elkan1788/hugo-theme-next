@@ -7,6 +7,8 @@
 
 Hugo版本的NexT主题，移植于[NexT](https://github.com/iissnan/hexo-theme-next).
 
+[在线文档](https://next-docs.lisenhui.cn)
+
 ## 描述
 
 NexT 是个简洁和动感十足的主题. 我把它从Hexo引擎移植到了[Hugo](https://gohugo.io/) ，同时也使用此主题搭建个人博客站点。
