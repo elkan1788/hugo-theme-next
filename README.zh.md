@@ -21,7 +21,7 @@ NexT 是个简洁和动感十足的主题. 我把它从Hexo引擎移植到了[Hu
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![my-hugo-blog.png](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
+![my-hugo-blog.png](http://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
 
 2. 本地访问
 

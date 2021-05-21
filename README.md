@@ -21,7 +21,7 @@ Thanks for [xtfly](https://github.com/xtfly), I had cloned his NetxT theme and m
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![my-hugo-blog.png](http://myblog.lisenhui.cn/my-hugo-blog.png-alias)
+![my-hugo-blog.png](http://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
 
 2. Local Visit
 
