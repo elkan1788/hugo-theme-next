@@ -322,6 +322,10 @@ $(function() {
 })();
 </script>
 
+{{if and (or .Params.math (and .Site.Params.math (ne .Params.math false))) (or .IsPage .IsHome) }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+{{ end }}
+
 {{ if and (.Site.Params.Share.Enable) (isset .Site.Params.Share "addthisid") }}
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ .Site.Params.Share.AddthisId }}"></script>
 {{ end }}
