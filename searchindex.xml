@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Markdown语法手册</title><url>https://next.lisenhui.cn/post/markdown-syntax/</url><categories><category>themes</category><category>syntax</category></categories><tags><tag>markdown</tag><tag>css</tag><tag>html</tag></tags><content type="html"> 本文提供了一个可以在Hugo内容文件中使用的基本Markdown语法示例，还展示了基本HTML元素在Hugo主题中是否使用CSS装饰。
-Headings The following HTML &lt;h1>—&lt;h6> elements represent six levels of section headings. &lt;h1> is the highest section level while &lt;h6> is the lowest.
-H1 H2 H3 H4 H5 H6 Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-Blockquotes The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element, and optionally with in-line changes such as annotations and abbreviations.
-Blockquote without attribution Tiam, ad mint andaepu dandae nostion secatur sequo quae. Note that you can use Markdown syntax within a blockquote.
-Blockquote with attribution Don&rsquo;t communicate by sharing memory, share memory by communicating.— Rob Pike1 Tables Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-Name Age Bob 27 Alice 23 Inline Markdown within tables Italics Bold Code italics bold code Code Blocks Code block with backticks &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> Code block indented with four spaces &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> Code block with Hugo&rsquo;s internal highlight shortcode &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> List Types Ordered List First item Second item Third item Unordered List List item Another item And another item Nested list Fruit Apple Orange Banana Dairy Milk Cheese Other Elements — abbr, sub, sup, kbd, mark GIFis a bitmap image format.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Markdown语法手册</title><url>https://next.lisenhui.cn/post/markdown-syntax/</url><categories><category>themes</category><category>syntax</category></categories><tags><tag>markdown</tag><tag>css</tag><tag>html</tag></tags><content type="html"> 本文提供了一个可以在 Hugo 内容文件中使用的基本Markdown语法示例，还展示了基本 HTML 元素在 Hugo 主题中是否使用 CSS 装饰。
+标题 下面的 HTML 代码&lt;h1>—&lt;h6> 元素表示六个级别的节标题。 &lt;h1>是最高的节级别，&lt;h6>是最低的节级别。
+H1 H2 H3 H4 H5 H6 段落 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+伊塔图？厨房里有很多东西，我不知道他们喜欢吃什么，或者他们喜欢吃什么。
+引用 blockquote元素表示从另一个来源引用的内容，可选的引用必须在footer或cite元素内，也可选的内嵌更改，如注释和缩写。
+引用没有归属 Tiam, ad mint andaepu dandae nostion secatur sequo quae. 注意 可以在块引用中使用 Markdown 语法。
+带归属的引用 不要通过分享记忆来交流，通过交流来分享记忆。— 罗布·派克1 表格 表不是Markdown核心规范的一部分，但是Hugo支持开箱即用。
+Name Age Bob 27 Alice 23 表格内使用Markdown语法 Italics Bold Code italics bold code 代码块 带有引号的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 用四个空格缩进的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 代码块引用Hugo的内部高亮短代码 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 列表类型 有序列表 First item Second item Third item 无序列表 List item Another item And another item 嵌套列表 Fruit Apple Orange Banana Dairy Milk Cheese 其他元素 — abbr, sub, sup, kbd, mark GIF是位图图像格式。
 H2O
-Xn+ Yn= ZnPress CTRL+ALT+Deleteto end the session.
-Most salamandersare nocturnal, and hunt for insects, worms, and other small creatures.
-The above quote is excerpted from Rob Pike&rsquo;s talk during Gopherfest, November 18, 2015. &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>https://next.lisenhui.cn/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo 雨果附带几个[内置的短码](https://gohugo.io/content-management/shortcodes/ use-hugos-built-in-shortcodes)内容丰富,以及隐私配置和一组简单的短码,使静态和no-JS版本的各种社会媒体嵌入。
+Xn+ Yn= Zn按 CTRL+ALT+Delete组合键结束会话。
+大多数蝾螈在夜间活动，捕食昆虫、蠕虫和其他小动物。
+以上引文摘自Rob Pike在2015年11月18日Gopherfest上的演讲。 &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>https://next.lisenhui.cn/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo上有几个内置短代码，用于丰富内容，以及隐私配置还有一组简单的短代码，支持各种社交媒体嵌入的静态和非JS版本。
 YouTube Privacy Enhanced Shortcode Twitter Simple Shortcode .twitter-tweet { font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; border-left: 4px solid #2b7bb9; padding-left: 1.5em; color: #555; } .twitter-tweet a { color: #2b7bb9; text-decoration: none; } blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus { text-decoration: underline; } “In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”
 — Jan Tschichold pic.twitter.com/gcv7SrhvJb
 &mdash; Graphic Design History (@DesignReviewed) January 17, 2019 Vimeo Simple Shortcode .__h_video { position: relative; padding-bottom: 56.23%; height: 0; overflow: hidden; width: 100%; background: #000; } .__h_video img { width: 100%; height: auto; color: #000; } .__h_video .play { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; cursor: pointer; }</content></entry><entry><title>占位符文本显示</title><url>https://next.lisenhui.cn/post/placeholder-text/</url><categories/><tags><tag>markdown</tag><tag>text</tag></tags><content type="html"> 你对我的心有偏见。我向您保证，我们的生活将不会受到影响，我们的生活将会受到影响。你说你现在住在医院里，因为你的眼睛是透明的，你的眼睛是光明的，你的眼睛是光明的!
@@ -17,17 +17,60 @@ Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos
 Comas hunc haec pietate fetum procerum dixit Post torum vates letum Tiresia Flumen querellas Arcanaque montibus omnes Quidem et Vagus elidunt The Van de Graaf Canon
 Mane refeci capiebant unda mulcebat Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. Faces illo pepulere tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.
 Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.
-Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel mitis temploque vocatus, inque alis, oculos nomen non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides parte.</content></entry><entry><title>数据公式设置显示</title><url>https://next.lisenhui.cn/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo项目中的数学符号可以通过使用第三方JavaScript库来启用。
-In this example we will be using KaTeX
-Create a partial under /layouts/partials/math.html Within this partial reference the Auto-render Extension or host these scripts locally. Include the partial in your templates like so: {{ if or .Params.math .Site.Params.math }} {{ partial "math.html" . }} {{ end }} To enable KaTex globally set the parameter math to true in a project&rsquo;s configuration To enable KaTex on a per page basis include the parameter math: true in content files Note: Use the online reference of Supported TeX Functions
-Examples Block math: $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</content></entry><entry><title>支持Emoji表情符号</title><url>https://next.lisenhui.cn/post/emoji-support/</url><categories/><tags><tag>emoji</tag></tags><content type="html"> 在Hugo项目中可以通过多种方式启用Emoji。
+Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel mitis temploque vocatus, inque alis, oculos nomen non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides parte.</content></entry><entry><title>数据公式设置显示</title><url>https://next.lisenhui.cn/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo项目中的数学表示法可以通过使用第三方JavaScript库来实现。
+在这个例子中，我们将使用 MathJax
+Create a post under /content/en[zh-CN]/math.md
+可以全局启用MathJax，请在项目配置中将参数math设置为true
+或是在每页基础上启用MathJax，在内容文件中包括参数math: true
+注意： 使用支持的TeX功能的联机参考资料
+例子 重复的分数 $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$
+总和记号 $$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$
+几何级数之和 我把接下来的两个例子分成了几行，这样它在手机上表现得更好。这就是为什么它们包含 \displaystyle。
+$$ \displaystyle\sum_{i=1}^{k+1}i $$
+$$ \displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1) $$
+$$ \displaystyle= \frac{k(k+1)}{2}+k+1 $$
+$$ \displaystyle= \frac{k(k+1)+2(k+1)}{2} $$
+$$ \displaystyle= \frac{(k+1)(k+2)}{2} $$
+$$ \displaystyle= \frac{(k+1)((k+1)+1)}{2} $$
+乘记号 $$ \displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \displaystyle \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \displaystyle\text{ for }\lvert q\rvert &lt; 1. $$
+随文数式 这是一些线性数学: $$ k_{n+1} = n^2 + k_n^2 - k_{n-1} $$ ， 然后是更多的文本。
+希腊字母 $$ \Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega \alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi $$
+箭头 $$ \gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow $$
+$$ \Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow \leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow $$
+$$ \Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup $$
+$$ \rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow $$
+符号 $$ \surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\ \bigtriangleup $$
+$$ \bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\ \triangleright\ \angle\ \infty\ \prime\ \triangle $$
+微积分学 $$ \int u \frac{dv}{dx},dx=uv-\int \frac{du}{dx}v,dx $$
+$$ f(x) = \int_{-\infty}^\infty \hat f(\xi),e^{2 \pi i \xi x} $$
+$$ \oint \vec{F} \cdot d\vec{s}=0 $$
+洛伦茨方程 $$ \begin{aligned} \dot{x} &amp; = \sigma(y-x) \ \dot{y} &amp; = \rho x - y - xz \ \dot{z} &amp; = -\beta z + xy \end{aligned} $$
+交叉乘积 这在KaTeX中是可行的，但在这种环境中馏分的分离不是很好。
+$$ \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix} $$
+这里有一个解决方案:使用“mfrac”类(在MathJax情况下没有区别)的额外类使分数更小:
+$$ \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix} $$
+强调 $$ \hat{x}\ \vec{x}\ \ddot{x} $$
+有弹性的括号 $$ \left(\frac{x^2}{y^3}\right) $$
+评估范围 $$ \left.\frac{x^3}{3}\right|_0^1 $$
+诊断标准 $$ f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases} $$
+麦克斯韦方程组 $$ \begin{aligned} \nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \ \nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \ \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned} $$
+这些方程式很狭窄。我们可以使用(例如)添加垂直间距 [1em] 在每个换行符(\)之后。正如你在这里看到的：
+$$ \begin{aligned} \nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \[1em] \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \[0.5em] \nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \[1em] \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned} $$
+统计学 固定词组：
+$$ \frac{n!}{k!(n-k)!} = {^n}C_k {n \choose k} $$
+分数在分数 $$ \frac{\frac{1}{x}+\frac{1}{y}}{y-z} $$
+ｎ次方根 $$ \sqrt[n]{1+x+x^2+x^3+\ldots} $$
+矩阵 $$ \begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\ a_{21} &amp; a_{22} &amp; a_{23}\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix} \begin{bmatrix} 0 &amp; \cdots &amp; 0 \ \vdots &amp; \ddots &amp; \vdots \ 0 &amp; \cdots &amp; 0 \end{bmatrix} $$
+标点符号 $$ f(x) = \sqrt{1+x} \quad (x \ge -1) f(x) \sim x^2 \quad (x\to\infty) $$
+现在用标点符号:
+$$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$</content></entry><entry><title>支持Emoji表情符号</title><url>https://next.lisenhui.cn/post/emoji-support/</url><categories/><tags><tag>emoji</tag></tags><content type="html"> 在Hugo项目中可以通过多种方式启用Emoji。
 The emojify function can be called directly in templates or Inline Shortcodes.
 To enable emoji globally, set enableEmoji to true in your site&rsquo;s configuration and then you can type emoji shorthand codes directly in content files; e.g.
 The Emoji cheat sheet is a useful reference for emoji shorthand codes.
 N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.
-.emoji { font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols; }</content></entry><entry><title>关于我</title><url>https://next.lisenhui.cn/about.html</url><categories/><tags/><content type="html"> Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-Learn more and contribute on GitHub.</content></entry></search>
+.emoji { font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols; }</content></entry><entry><title>关于我</title><url>https://next.lisenhui.cn/about.html</url><categories/><tags/><content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
+Hugo使用了多种开源项目，包括:
+https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper Hugo是博客、企业网站、创意作品集、在线杂志、单页应用程序甚至是数千页的网站的理想选择。
+Hugo适合那些想要手工编写自己的网站代码，而不用担心设置复杂的运行时、依赖关系和数据库的人。
+使用Hugo建立的网站非常快速、安全，可以部署在任何地方，包括AWS、GitHub Pages、Heroku、Netlify和任何其他托管提供商。
+更多信息请访问GitHub.</content></entry></search>

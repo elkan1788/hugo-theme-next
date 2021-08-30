@@ -1,3 +1,4 @@
+[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.59.1&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.59.1)
 [![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
 ![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
 
@@ -21,7 +22,7 @@ NexT 是个简洁和动感十足的主题. 我把它从Hexo引擎移植到了[Hu
 
 [https://lisenhui.cn](https://lisenhui.cn)
 
-![my-hugo-blog.png](http://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
+![my-hugo-blog.png](https://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
 
 2. 本地访问
 
