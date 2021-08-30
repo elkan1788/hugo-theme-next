@@ -1,96 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<search>
-  
-  <entry>
-    <title>Markdown语法手册</title>
-    <url>http://localhost:1313/post/markdown-syntax/</url>
-    <categories>
-      <category>themes</category><category>syntax</category>
-    </categories>
-    <tags>
-      
-      <tag>markdown</tag>
-      
-      <tag>css</tag>
-      
-      <tag>html</tag>
-      
-    </tags>
-    <content type="html"> 本文提供了一个可以在 Hugo 内容文件中使用的基本Markdown语法示例，还展示了基本 HTML 元素在 Hugo 主题中是否使用 CSS 装饰。
-标题 下面的 HTML 代码&lt;h1&gt;—&lt;h6&gt; 元素表示六个级别的节标题。 &lt;h1&gt;是最高的节级别，&lt;h6&gt;是最低的节级别。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Markdown语法手册</title><url>https://next.lisenhui.cn/post/markdown-syntax/</url><categories><category>themes</category><category>syntax</category></categories><tags><tag>markdown</tag><tag>css</tag><tag>html</tag></tags><content type="html"> 本文提供了一个可以在 Hugo 内容文件中使用的基本Markdown语法示例，还展示了基本 HTML 元素在 Hugo 主题中是否使用 CSS 装饰。
+标题 下面的 HTML 代码&lt;h1>—&lt;h6> 元素表示六个级别的节标题。 &lt;h1>是最高的节级别，&lt;h6>是最低的节级别。
 H1 H2 H3 H4 H5 H6 段落 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 伊塔图？厨房里有很多东西，我不知道他们喜欢吃什么，或者他们喜欢吃什么。
 引用 blockquote元素表示从另一个来源引用的内容，可选的引用必须在footer或cite元素内，也可选的内嵌更改，如注释和缩写。
-引用没有归属  Tiam, ad mint andaepu dandae nostion secatur sequo quae. 注意 可以在块引用中使用 Markdown 语法。
- 带归属的引用  不要通过分享记忆来交流，通过交流来分享记忆。
+引用没有归属 Tiam, ad mint andaepu dandae nostion secatur sequo quae. 注意 可以在块引用中使用 Markdown 语法。
+带归属的引用 不要通过分享记忆来交流，通过交流来分享记忆。
 — 罗布·派克1
- 表格 表不是Markdown核心规范的一部分，但是Hugo支持开箱即用。
-   Name Age     Bob 27   Alice 23    表格内使用Markdown语法    Italics Bold Code     italics bold code    代码块 带有引号的代码块 &lt;!doctype html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; 用四个空格缩进的代码块 &lt;!doctype html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  代码块引用Hugo的内部高亮短代码 &lt;!doctype html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; 列表类型 有序列表  First item Second item Third item  无序列表  List item Another item And another item  嵌套列表  Fruit  Apple Orange Banana   Dairy  Milk Cheese    其他元素 — abbr, sub, sup, kbd, mark GIF 是位图图像格式。
+表格 表不是Markdown核心规范的一部分，但是Hugo支持开箱即用。
+Name Age Bob 27 Alice 23 表格内使用Markdown语法 Italics Bold Code italics bold code 代码块 带有引号的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 用四个空格缩进的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 代码块引用Hugo的内部高亮短代码 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 列表类型 有序列表 First item Second item Third item 无序列表 List item Another item And another item 嵌套列表 Fruit Apple Orange Banana Dairy Milk Cheese 其他元素 — abbr, sub, sup, kbd, mark GIF 是位图图像格式。
 H2O
 Xn + Yn = Zn
 按 CTRL+ALT+Delete 组合键结束会话。
 大多数蝾螈在夜间活动，捕食昆虫、蠕虫和其他小动物。
-  以上引文摘自Rob Pike在2015年11月18日Gopherfest上的演讲。 &#x21a9;&#xfe0e;
-  </content>
-  </entry>
-  
-  <entry>
-    <title>富文本内容测试</title>
-    <url>http://localhost:1313/post/rich-content/</url>
-    <categories>
-      
-    </categories>
-    <tags>
-      
-      <tag>shortcodes</tag>
-      
-      <tag>privacy</tag>
-      
-    </tags>
-    <content type="html"> Hugo上有几个内置短代码，用于丰富内容，以及隐私配置还有一组简单的短代码，支持各种社交媒体嵌入的静态和非JS版本。
- YouTube Privacy Enhanced Shortcode    Twitter Simple Shortcode .twitter-tweet { font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; border-left: 4px solid #2b7bb9; padding-left: 1.5em; color: #555; } .twitter-tweet a { color: #2b7bb9; text-decoration: none; } blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus { text-decoration: underline; }  “In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”
+以上引文摘自Rob Pike在2015年11月18日Gopherfest上的演讲。 &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>https://next.lisenhui.cn/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo上有几个内置短代码，用于丰富内容，以及隐私配置还有一组简单的短代码，支持各种社交媒体嵌入的静态和非JS版本。
+YouTube Privacy Enhanced Shortcode Twitter Simple Shortcode .twitter-tweet { font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; border-left: 4px solid #2b7bb9; padding-left: 1.5em; color: #555; } .twitter-tweet a { color: #2b7bb9; text-decoration: none; } blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus { text-decoration: underline; } “In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”
 — Jan Tschichold pic.twitter.com/gcv7SrhvJb
-&mdash; Graphic Design History (@DesignReviewed) January 17, 2019  Vimeo Simple Shortcode  .__h_video { position: relative; padding-bottom: 56.23%; height: 0; overflow: hidden; width: 100%; background: #000; } .__h_video img { width: 100%; height: auto; color: #000; } .__h_video .play { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; cursor: pointer; }  </content>
-  </entry>
-  
-  <entry>
-    <title>占位符文本显示</title>
-    <url>http://localhost:1313/post/placeholder-text/</url>
-    <categories>
-      
-    </categories>
-    <tags>
-      
-      <tag>markdown</tag>
-      
-      <tag>text</tag>
-      
-    </tags>
-    <content type="html"> 你对我的心有偏见。我向您保证，我们的生活将不会受到影响，我们的生活将会受到影响。你说你现在住在医院里，因为你的眼睛是透明的，你的眼睛是光明的，你的眼睛是光明的!
- Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude  Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.
- Comas hunc haec pietate fetum procerum dixit Post torum vates letum Tiresia Flumen querellas Arcanaque montibus omnes Quidem et  Vagus elidunt 
+&mdash; Graphic Design History (@DesignReviewed) January 17, 2019 Vimeo Simple Shortcode .__h_video { position: relative; padding-bottom: 56.23%; height: 0; overflow: hidden; width: 100%; background: #000; } .__h_video img { width: 100%; height: auto; color: #000; } .__h_video .play { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; cursor: pointer; }</content></entry><entry><title>占位符文本显示</title><url>https://next.lisenhui.cn/post/placeholder-text/</url><categories/><tags><tag>markdown</tag><tag>text</tag></tags><content type="html"> 你对我的心有偏见。我向您保证，我们的生活将不会受到影响，我们的生活将会受到影响。你说你现在住在医院里，因为你的眼睛是透明的，你的眼睛是光明的，你的眼睛是光明的!
+Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.
+Comas hunc haec pietate fetum procerum dixit Post torum vates letum Tiresia Flumen querellas Arcanaque montibus omnes Quidem et Vagus elidunt
 The Van de Graaf Canon
 Mane refeci capiebant unda mulcebat Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. Faces illo pepulere tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.
 Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.
-Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel mitis temploque vocatus, inque alis, oculos nomen non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides parte.
-</content>
-  </entry>
-  
-  <entry>
-    <title>数据公式设置显示</title>
-    <url>http://localhost:1313/post/math-typesetting/</url>
-    <categories>
-      
-    </categories>
-    <tags>
-      
-    </tags>
-    <content type="html"> Hugo项目中的数学表示法可以通过使用第三方JavaScript库来实现。
+Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel mitis temploque vocatus, inque alis, oculos nomen non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides parte.</content></entry><entry><title>数据公式设置显示</title><url>https://next.lisenhui.cn/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo项目中的数学表示法可以通过使用第三方JavaScript库来实现。
 在这个例子中，我们将使用 MathJax
-  Create a post under /content/en[zh-CN]/math.md
-  可以全局启用MathJax，请在项目配置中将参数math设置为true
-  或是在每页基础上启用MathJax，在内容文件中包括参数math: true
-  注意： 使用支持的TeX功能的联机参考资料
+Create a post under /content/en[zh-CN]/math.md
+可以全局启用MathJax，请在项目配置中将参数math设置为true
+或是在每页基础上启用MathJax，在内容文件中包括参数math: true
+注意： 使用支持的TeX功能的联机参考资料
 例子 重复的分数 $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$
 总和记号 $$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$
 几何级数之和 我把接下来的两个例子分成了几行，这样它在手机上表现得更好。这就是为什么它们包含 \displaystyle。
@@ -131,46 +67,15 @@ $$ \frac{n!}{k!(n-k)!} = {^n}C_k {n \choose k} $$
 矩阵 $$ \begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\ a_{21} &amp; a_{22} &amp; a_{23}\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix} \begin{bmatrix} 0 &amp; \cdots &amp; 0 \ \vdots &amp; \ddots &amp; \vdots \ 0 &amp; \cdots &amp; 0 \end{bmatrix} $$
 标点符号 $$ f(x) = \sqrt{1+x} \quad (x \ge -1) f(x) \sim x^2 \quad (x\to\infty) $$
 现在用标点符号:
-$$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$
-</content>
-  </entry>
-  
-  <entry>
-    <title>支持Emoji表情符号</title>
-    <url>http://localhost:1313/post/emoji-support/</url>
-    <categories>
-      
-    </categories>
-    <tags>
-      
-      <tag>emoji</tag>
-      
-    </tags>
-    <content type="html"> 在Hugo项目中可以通过多种方式启用Emoji。
+$$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$</content></entry><entry><title>支持Emoji表情符号</title><url>https://next.lisenhui.cn/post/emoji-support/</url><categories/><tags><tag>emoji</tag></tags><content type="html"> 在Hugo项目中可以通过多种方式启用Emoji。
 The emojify function can be called directly in templates or Inline Shortcodes.
 To enable emoji globally, set enableEmoji to true in your site&rsquo;s configuration and then you can type emoji shorthand codes directly in content files; e.g.
 馃檲 🙈 馃檳 🙉 馃檴 🙊
 The Emoji cheat sheet is a useful reference for emoji shorthand codes.
- N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.
-.emoji { font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols; }</content>
-  </entry>
-  
-  <entry>
-    <title>关于我</title>
-    <url>http://localhost:1313/about.html</url>
-    <categories>
-      
-    </categories>
-    <tags>
-      
-    </tags>
-    <content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
+N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.
+.emoji { font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols; }</content></entry><entry><title>关于我</title><url>https://next.lisenhui.cn/about.html</url><categories/><tags/><content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
 Hugo使用了多种开源项目，包括:
- https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Hugo是博客、企业网站、创意作品集、在线杂志、单页应用程序甚至是数千页的网站的理想选择。
+https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper Hugo是博客、企业网站、创意作品集、在线杂志、单页应用程序甚至是数千页的网站的理想选择。
 Hugo适合那些想要手工编写自己的网站代码，而不用担心设置复杂的运行时、依赖关系和数据库的人。
 使用Hugo建立的网站非常快速、安全，可以部署在任何地方，包括AWS、GitHub Pages、Heroku、Netlify和任何其他托管提供商。
-更多信息请访问GitHub.
-</content>
-  </entry>
-  
-</search>
+更多信息请访问GitHub.</content></entry></search>
