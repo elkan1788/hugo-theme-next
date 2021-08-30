@@ -6,6 +6,7 @@ homepage = "https://lisenhui.cn"
 tags = ["Blog", "Simple", "Dark", "Personal", "Fast", "Theme"]
 features = ["some", "awesome", "features"]
 min_version = "0.59.1"
+demosite = "https://lisenhui.cn"
 
 [author]
     name = "elkan"
