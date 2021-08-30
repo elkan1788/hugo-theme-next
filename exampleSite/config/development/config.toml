@@ -1,11 +1,5 @@
 BaseUrl = "http://localhost:1313/"
 
-## 让Markdown支持写HTML语法
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
 [minify]
   disableCSS = false
   disableHTML = false

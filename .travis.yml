@@ -29,7 +29,7 @@ script:
   - cd ./exampleSite
   - rm -rf ../public
   - sh ../.travis/replace_params_value.sh
-  - hugo -e development -d ../public -t ../..
+  - hugo -d ../public -t ../..
   - cp ../README.md ../public
   - cp ../README.zh.md ../public
   - cp ../LICENSE ../public

@@ -48,3 +48,9 @@ ignoreErrors = ["error-remote-getjson"]
   disableSVG = false
   disableXML = false
   minifyOutput = true
+
+## 让Markdown支持写HTML语法
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
