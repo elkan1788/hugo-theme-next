@@ -11,7 +11,7 @@ addons:
     - github.com
 
 env:
-  - HUGO_VERSION=0.80.0
+  - HUGO_VERSION=0.82.1
 
 before_install:
   - export TZ='Asia/Shanghai'
@@ -29,7 +29,7 @@ script:
   - cd ./exampleSite
   - rm -rf ../public
   - sh ../.travis/replace_params_value.sh
-  - hugo -d ../public -t ../..
+  - hugo -e development -d ../public -t ../..
   - cp ../README.md ../public
   - cp ../README.zh.md ../public
   - cp ../LICENSE ../public
