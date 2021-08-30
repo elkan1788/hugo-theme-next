@@ -16,12 +16,13 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-本文提供了一个可以在Hugo内容文件中使用的基本Markdown语法示例，还展示了基本HTML元素在Hugo主题中是否使用CSS装饰。
+本文提供了一个可以在 Hugo 内容文件中使用的基本Markdown语法示例，还展示了基本 HTML 元素在 Hugo 主题中是否使用 CSS 装饰。
 <!--more-->
 
-## Headings
+## 标题
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+下面的 HTML 代码`<h1>`—`<h6>` 元素表示六个级别的节标题。 
+`<h1>`是最高的节级别，`<h6>`是最低的节级别。
 
 # H1
 ## H2
@@ -30,46 +31,46 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 ##### H5
 ###### H6
 
-## Paragraph
+## 段落
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+伊塔图？厨房里有很多东西，我不知道他们喜欢吃什么，或者他们喜欢吃什么。
 
-## Blockquotes
+## 引用
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+blockquote元素表示从另一个来源引用的内容，可选的引用必须在`footer`或`cite`元素内，也可选的内嵌更改，如注释和缩写。
 
-#### Blockquote without attribution
+#### 引用没有归属
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+> **注意** 可以在块引用中使用 *Markdown* 语法。
 
-#### Blockquote with attribution
+#### 带归属的引用
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+> 不要通过分享记忆来交流，通过交流来分享记忆。<br>
+> — <cite>罗布·派克[^1]</cite>
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: 以上引文摘自Rob Pike在2015年11月18日Gopherfest上的[演讲](https://www.youtube.com/watch?v=PAAkCSZUG1c)。
 
-## Tables
+## 表格
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+表不是Markdown核心规范的一部分，但是Hugo支持开箱即用。
 
    Name | Age
 --------|------
     Bob | 27
   Alice | 23
 
-#### Inline Markdown within tables
+#### 表格内使用Markdown语法
 
 | Italics   | Bold     | Code   |
 | --------  | -------- | ------ |
 | *italics* | **bold** | `code` |
 
-## Code Blocks
+## 代码块
 
-#### Code block with backticks
+#### 带有引号的代码块
 
 ```html
 <!doctype html>
@@ -84,7 +85,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 ```
 
-#### Code block indented with four spaces
+#### 用四个空格缩进的代码块
 
     <!doctype html>
     <html lang="en">
@@ -97,7 +98,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
+#### 代码块引用Hugo的内部高亮短代码
 {{< highlight html >}}
 <!doctype html>
 <html lang="en">
@@ -111,21 +112,21 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
-## List Types
+## 列表类型
 
-#### Ordered List
+#### 有序列表
 
 1. First item
 2. Second item
 3. Third item
 
-#### Unordered List
+#### 无序列表
 
 * List item
 * Another item
 * And another item
 
-#### Nested list
+#### 嵌套列表
 
 * Fruit
   * Apple
@@ -135,14 +136,14 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
   * Milk
   * Cheese
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## 其他元素 — abbr, sub, sup, kbd, mark
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="Graphics Interchange Format">GIF</abbr> 是位图图像格式。
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+按 <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> 组合键结束会话。
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+大多数<mark>蝾螈</mark>在夜间活动，捕食昆虫、蠕虫和其他小动物。
