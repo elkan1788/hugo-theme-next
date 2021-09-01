@@ -1,4 +1,5 @@
 [![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.59.1&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.59.1)
+[![Build Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.82.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.82.0)
 [![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
 ![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
 
