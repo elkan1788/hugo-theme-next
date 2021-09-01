@@ -1783,7 +1783,7 @@ pre .javascript .function {
   }
 }
 
-.powered-info, .license-info, .vistor-info, .copyright {
+.powered-info, .license-info, .vistor-info {
   display: flex;
 } 
 .powered-by, .storage-info, .site-uv, .copyright-year {
