@@ -8,7 +8,7 @@
 
 [Comment]
   Enable = true
-  Module = "Waline"
+  Module = "Valine"
   LiveReId = "Your LiveReId"
   WalineSerURL = "Your WalineSerURL"
 
