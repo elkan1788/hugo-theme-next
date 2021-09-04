@@ -33,6 +33,7 @@
   <link href="/css/main.css" rel="stylesheet" type="text/css" />
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />    
   {{ if isset .Site.Params.Statis "baidusiteid" }}
+  <!-- Baidu tongji -->
   <script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
@@ -42,8 +43,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+  <!-- Baidu tongji -->
   {{ end }}
   {{ if isset .Site.Params.Statis "googlesiteid" }}
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.Statis.GoogleSiteId }}"></script>
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
@@ -52,5 +55,6 @@
 
     gtag('config', '{{ .Site.Params.Statis.GoogleSiteId }} ');
   </script>
+  <!-- Google Analytics -->
   {{ end }}
 </head>
