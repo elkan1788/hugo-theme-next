@@ -2,7 +2,7 @@
 [![Build Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=0.87.0&color=%23FF4088&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
 [![Build Status](https://img.shields.io/travis/com/elkan1788/hugo-theme-next/main?label=Building&logo=Travis%20CI)](https://travis-ci.com/elkan1788/hugo-theme-next)
 [![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages?label=gh-pg&logo=GitHub)](https://github.com/elkan1788/hugo-theme-next/tree/gh-pg)
-[![Repos Size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next?color=%2353A318)](https://github.com/elkan1788/hugo-theme-next/releases)
+[![Repos Size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next?color=%23FFBF3B&logo=Files)](https://github.com/elkan1788/hugo-theme-next/releases)
 [![Release Version](https://img.shields.io/github/v/release/elkan1788/hugo-theme-next?color=%230082C9&label=Release&logo=Next.js)](https://github.com/elkan1788/hugo-theme-next/releases/latest)
 
 
@@ -58,7 +58,7 @@
 
 7. 执行`hugo server`生成站点服务；
 
-8. 打开浏览器，在地址栏输入`http://127.0.0.1:1313/`访问查看效果。
+8. 打开浏览器，在地址栏输入`http://localhost:1313/`访问查看效果。
 
 > 后续可参考`config`目录下文件里的配置参数，按需调整生成您自己个性化的站点。
 
@@ -95,7 +95,7 @@ type: about
 - `math`： 是否开启数学公式解析
 - `type`： 页面显示类型
 
-2. 可使用 `<!--more-->` 标签手动干预文章总结部分显示内容，更多说明可详见官方文档：[manual summary splitting](https://gohugo.io/content-management/summaries/#user-defined-manual-summary-splitting)。
+2. 关于首页显示的文章摘要内容可使用 `<!--more-->` 标签来手动干预，更多说明可详见官方文档：[Manual Summary Splitting](https://gohugo.io/content-management/summaries/#user-defined-manual-summary-splitting)。
 
 # 许可证
 [MIT License](LICENSE).

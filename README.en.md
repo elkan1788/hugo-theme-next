@@ -1,101 +1,101 @@
-[![Go Enviroment](https://img.shields.io/static/v1?label=GoLang&message=1.12.1&color=informational&logo=Go)](https://studygolang.com/dl#go1.12.1)
-[![Build Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=0.87.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
-[![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
-[![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)](https://github.com/elkan1788/hugo-theme-next/tree/gh-pg)
-[![Repos Size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next?color=%2353A318)](https://github.com/elkan1788/hugo-theme-next/releases)
+[![Go Enviroment](https://img.shields.io/static/v1?label=GoLang&message=1.12.1&color=%2300ADD8&logo=Go)](https://studygolang.com/dl#go1.12.1)
+[![Build Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=0.87.0&color=%23FF4088&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
+[![Build Status](https://img.shields.io/travis/com/elkan1788/hugo-theme-next/main?label=Building&logo=Travis%20CI)](https://travis-ci.com/elkan1788/hugo-theme-next)
+[![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages?label=gh-pg&logo=GitHub)](https://github.com/elkan1788/hugo-theme-next/tree/gh-pg)
+[![Repos Size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next?color=%23FFBF3B&logo=Files)](https://github.com/elkan1788/hugo-theme-next/releases)
 [![Release Version](https://img.shields.io/github/v/release/elkan1788/hugo-theme-next?color=%230082C9&label=Release&logo=Next.js)](https://github.com/elkan1788/hugo-theme-next/releases/latest)
 
 
 [中文](README.md) | [English](README.en.md)
 
-# NexT For Hugo
+# NexT for Hugo
 
-Hugo版本的NexT主题，移植于[NexT](https://github.com/iissnan/hexo-theme-next).
+This theme is base on [xtfly](https://github.com/xtfly/hugo-theme-next) who port it from `Hexo` engine, then I had do more depth optimization and renovation. With the origin `NexT` theme's is simple and animated, I had add many blogs ecological related servcie components, make it more perfect and easy to use. The main features as folows:
 
-[在线文档](https://next-docs.lisenhui.cn)
+- Multiple devices display adaptive
+- Support Chinese and English
+- Support a variety of site statistics tools, such as Baidu, Google, CNZZ, Busuanzi etc
+- Automatically generate site map, with Baidu link push SEO optimization
+- Integrate multiple comment plug-ins
+- Add plug-ins for articles to share quickly
+- Support article access statistics
+- Integrated Picture viewer
+- Custom profile page
+- Online chat IM
+- ......
 
-## 描述
+With all the maintenance and upgrades, we want to see the 'NexT' theme continue to shine on the 'Hugo' engine.For the latest information about this theme, you can check the build status and new release above. Welcome to use and feedback.
 
-NexT 是个简洁和动感十足的主题. 我把它从Hexo引擎移植到了[Hugo](https://gohugo.io/) ，同时也使用此主题搭建个人博客站点。
+# Previw
 
-> 感谢[xtfly](https://github.com/xtfly)的分享, 我在他的基础上面做了很多的个性化与以及加强. 
-
-## 预览: 
-
-1. 在线访问
-
-[https://lisenhui.cn](https://lisenhui.cn)
+The adaptability compatible with PC and different mobile devices is as follows:
 
 ![my-hugo-blog.png](https://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
 
-2. 本地访问
+Some browsers compatible with PC tests are as follows:
 
-首先在终端中切换到exampleSite目录，然后输入 `hugo server --noHTTPCache --t ../..` 命令启动站点，最后打开浏览器访问：http://localhost:1313/ 查看效果。
+[![Coogle Chrome](https://img.shields.io/static/v1?label=Chrome&message=92.0.45%2B&color=%234285F4&logo=GoogleChrome)](#)
+[![Firefox](https://img.shields.io/static/v1?label=Firefox&message=91.0.2%2B&color=%23FF7139&logo=Firefox)](#)
+[![Safari](https://img.shields.io/static/v1?label=Safari&message=14.7.1%2B&color=%23212E50&logo=Safari)](#)
+[![Microsoft Edge](https://img.shields.io/static/v1?label=Microsoft%20Edge&message=44.18362%2B&color=%230078D7&logo=Microsoft%20Edge)](#)
+[![Internet Exporler](https://img.shields.io/static/v1?label=IE&message=11.356%2B&color=%230076D6&logo=Internet%20Explorer)](#)
 
->注意： 没有修改参数值，会有些插件没有办法运行起来
+> You can also visit my blog space to preview the actual effect, please click on [https://lisenhui.cn](https://lisenhui.cn) to visit.
 
-## 用法
+# QuickStart
 
-1. 下载主题: `git clone git@github.com:elkan1788/hugo-theme-next.git next`
+1. Refere to `Hugo` official deployment document [Installing] (https://gohugo.io/getting-started/installing/), and installed `Hugo` command on your computer;
 
-2. 拷贝 `next` 目录到您博客站点的 `themes` 目录下
+2. Refer to the official Git deployment documentation [Install Git](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git) to install the `Git` command on your computer;
 
-3. 拷贝主题目录中的 `exampleSite\config` 到您的博客站点根目录下, 同时修改对应的实际参数值
+3. Execute the 'Hugo new site' command to create your own site;
 
-4. 在content目录下创建Markdown文件，用来发表您的博文。可以参考主题目录中的 `exampleSite\content` 目录结构和内容
-> 可直接拷贝此目录到您的站点目录下
+4. Run the 'git init' command to initialize all the files on the site;
 
-5. 在终端中输入 `hugo server --noHTTPCache` 命令启动站点
+5. Switch to the site of `themes` directory, execute `git clone - recurse - submodules https://github.com/elkan1788/hugo-theme-next.git` command to clone this theme;
 
-6. 打开浏览器，访问：http://localhost:1313/
+6. Copy the two directories `config` and `content` from `hugo-theme-next` to the root directory of the site;
 
-## 注意事项
+7. Execute `hugo server` to generate site services;
 
-- 由于Hugo引擎与Hexo引擎存在差异，所以**部分Hexo引擎的样式还不支持**，后续会不断的优化和完善
+8. Open your browser and enter `http://localhost:1313/`` in the address bar to view the effect.
 
-- 这个主题只在我的博客上测试过,也许它不适合您的需求，可以根据您的偏好对它进行定制
+> Later, you can refer to the configuration parameters in the file in the `config` directory to adjust as needed to generate your own personalized site.
 
-- Hugo测试版本: 0.74.2+
+# Markdown syntax
 
-- 如果有任何问题，可以在仓库中创建issues
+The default for this theme is to place Chinese articles in the `post` folder under `zh-CN` and English articles in the `post` folder under `en`. In addition, there is only one `index.md` file under the `about` folder for editing personal information.
 
-## 写文章注意事项
+1. The template reference for the beginning of the article:
 
-1. 文章的开头模板:
+```
+---
+title: "Hello World"
+url: 2020/09/11/hexo-hello-world.html
+date: "2020-09-11"
+tags: 
+  - testing
+  - learn
+categories:
+  - Hugo
+toc: true
+math: true
+type: about
+---
+```
 
-    ```
-    ---
-    title: "Hello World"
-    url: 2020/09/11/hexo-hello-world.html
-    date: "2020-09-11"
-    tags: 
-      - 测试
-      - 学习
-    categories:
-      - Hugo
-    toc: true
-    ---
-    ```
+Parameter description:
 
-1. 在文章中使用 `<!--more-->` 标签手动干预文章总结部分显示内容。 [manual summary splitting](https://gohugo.io/content-management/summaries/#user-defined-manual-summary-splitting) .
+- `title`: title of artilce
+- `url`： visit link of article
+- `date`： push date of article
+- `tags`： tag of article
+- `categories`： category of article
+- `toc`： to enable directory navigation
+- `math`： to enable mathematical formula parsing
+- `type`： Page display type
 
+2. For the Summary content displayed on the home page, Manual intervention can be done by using the `<!--more-->` label. For more information, please refer to the official document: [Manual Summary Splitting](https://gohugo.io/content-management/summaries/#user-defined-manual-summary-splitting)。
 
-## 代办事项
-
-- [x] 侧边栏的菜单
-- [x] 侧边栏的友情链接
-- [x] 文章导航目录显示
-- [x] 支持多语言
-- [x] 本地搜索
-- [x] 语法高亮 (感谢[xulz](https://github.com/xtfly/hugo-theme-next/pull/6))
-- [x] 支持 Latex 
-- [x] 美化本地搜索样式
-- [x] 新增 Valine 和 LiveRe 评论组件
-- [x] 新增文章阅读次数
-- [x] 新增公益404页面
-- [x] 新增像百度, 谷歌, CNZZ等不同的站点统计
-- [x] 创新个性化的自我介绍页面
-- [x] 修改JS脚本和CSS样式，使用在线引入
-
-## 许可
+# License
 [MIT License](LICENSE).
