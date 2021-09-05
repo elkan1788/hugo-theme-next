@@ -58,7 +58,7 @@ Some browsers compatible with PC tests are as follows:
 
 7. Execute `hugo server` to generate site services;
 
-8. Open your browser and enter `http://localhost:1313/`` in the address bar to view the effect.
+8. Open your browser and enter `http://localhost:1313/` in the address bar to view the effect.
 
 > Later, you can refer to the configuration parameters in the file in the `config` directory to adjust as needed to generate your own personalized site.
 
