@@ -1,7 +1,7 @@
-[![Go Enviroment](https://img.shields.io/static/v1?label=GoLang&message=1.12.1&color=informational&logo=Go)](https://studygolang.com/dl#go1.12.1)
-[![Build Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=0.87.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
-[![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
-[![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)](https://github.com/elkan1788/hugo-theme-next/tree/gh-pg)
+[![Go Enviroment](https://img.shields.io/static/v1?label=GoLang&message=1.12.1&color=%2300ADD8&logo=Go)](https://studygolang.com/dl#go1.12.1)
+[![Build Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=0.87.0&color=%23FF4088&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
+[![Build Status](https://img.shields.io/travis/com/elkan1788/hugo-theme-next/main?label=Building&logo=Travis%20CI)](https://travis-ci.com/elkan1788/hugo-theme-next)
+[![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages?label=gh-pg&logo=GitHub)](https://github.com/elkan1788/hugo-theme-next/tree/gh-pg)
 [![Repos Size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next?color=%2353A318)](https://github.com/elkan1788/hugo-theme-next/releases)
 [![Release Version](https://img.shields.io/github/v/release/elkan1788/hugo-theme-next?color=%230082C9&label=Release&logo=Next.js)](https://github.com/elkan1788/hugo-theme-next/releases/latest)
 
@@ -30,7 +30,7 @@
 
 同时兼容PC端和不同移动设备访问的自适应，效果如下：
 
-![my-hugo-blog.png](images/screenshot.png)
+![my-hugo-blog.png](https://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
 
 其中PC端测试兼容的部分浏览器有：
 
@@ -56,13 +56,46 @@
 
 6. 拷贝`hugo-theme-next`目录下的两个目录`config`和`content`到站点根目录下面；
 
-> 参考`content`目录下的布局，开始编写您自己的博客文章。需要注意的是，`about`目录下的结构和文件名称不要变动，只修改里面的Markdown内容。
-
 7. 执行`hugo server`生成站点服务；
 
 8. 打开浏览器，在地址栏输入`http://127.0.0.1:1313/`访问查看效果。
 
-> 后续可参考`config`目录下的配置参数，按需调整生成您自己个性化的站点。
+> 后续可参考`config`目录下文件里的配置参数，按需调整生成您自己个性化的站点。
 
-## 许可证
+# 文章标记
+
+本主题默认是把中文文章放在`zh-CN`目录下的`post`文件夹，而英文文章放在`en`目录下的`post`文件夹，另外在`about`文件夹下只有一个`index.md`文件用于编辑个人信息。
+
+1. 文章的开头模板参考:
+
+```
+---
+title: "Hello World"
+url: 2020/09/11/hexo-hello-world.html
+date: "2020-09-11"
+tags: 
+  - 测试
+  - 学习
+categories:
+  - Hugo
+toc: true
+math: true
+type: about
+---
+```
+
+参数作用说明：
+
+- `title`: 文章标题
+- `url`： 访问路径
+- `date`： 发表日期
+- `tags`： 文章标签
+- `categories`： 文章分类
+- `toc`： 是否开启目录导航
+- `math`： 是否开启数学公式解析
+- `type`： 页面显示类型
+
+2. 可使用 `<!--more-->` 标签手动干预文章总结部分显示内容，更多说明可详见官方文档：[manual summary splitting](https://gohugo.io/content-management/summaries/#user-defined-manual-summary-splitting)。
+
+# 许可证
 [MIT License](LICENSE).
