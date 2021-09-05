@@ -19,23 +19,12 @@
 {{ partial "widgets/statis.html" .}}
 </div>
 <div class="license-info">
-  {{ if eq .Page.Lang "zh-cn" }}
   <span class="storage-info">
     Storage by 
-    <a href="https://www.ucloud.cn/" style="font-weight:700" target="_blank">UCloud云存储</a>
+    <a href="{{ .Site.Params.Footer.StorageLink }}" style="font-weight:700" target="_blank">{{ .Site.Params.Footer.StorageName }}</a>
   </span>
   <span class="separator-line">/</span>
   <span class="license-num"> 
-    <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备18047355号</a>
+    <a href="{{ .Site.Params.Footer.ICPLink }}" target="_blank">{{ .Site.Params.Footer.ICPNo }}</a>
   </span>
-  {{ else }}
-  <span class="storage-info">
-    Storage by 
-    <a href="https://www.ucloud.cn/" style="font-weight:700" target="_blank">UCloud Storage</a>
-  </span>
-  <span class="separator-line">/</span>
-  <span class="license-num"> 
-    <a href="http://beian.miit.gov.cn" target="_blank">ICP.No 18047355</a>
-  </span>
-  {{ end }}
 </div>
