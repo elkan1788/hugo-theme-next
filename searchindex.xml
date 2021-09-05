@@ -7,7 +7,9 @@ H1 H2 H3 H4 H5 H6 段落 Xerum, quo qui aut unt expliquam qui dolut labo. Aque v
 带归属的引用 不要通过分享记忆来交流，通过交流来分享记忆。
 — 罗布·派克1
 表格 表不是Markdown核心规范的一部分，但是Hugo支持开箱即用。
-Name Age Bob 27 Alice 23 表格内使用Markdown语法 Italics Bold Code italics bold code 代码块 带有引号的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 用四个空格缩进的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 代码块引用Hugo的内部高亮短代码 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 列表类型 有序列表 First item Second item Third item 无序列表 List item Another item And another item 嵌套列表 Fruit Apple Orange Banana Dairy Milk Cheese 其他元素 — abbr, sub, sup, kbd, mark GIF 是位图图像格式。
+Name Age Bob 27 Alice 23 表格内使用Markdown语法 Italics Bold Code italics bold code 图像 ![图像描述](图像地址) 示例 Google Chrome Firefox Browser
+点击图像可以打开图像浏览器，快试试吧。
+代码块 带有引号的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 用四个空格缩进的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 代码块引用Hugo的内部高亮短代码 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 列表类型 有序列表 First item Second item Third item 无序列表 List item Another item And another item 嵌套列表 Fruit Apple Orange Banana Dairy Milk Cheese 其他元素 — abbr, sub, sup, kbd, mark GIF 是位图图像格式。
 H2O
 Xn + Yn = Zn
 按 CTRL+ALT+Delete 组合键结束会话。

@@ -1,9 +1,12 @@
-[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.59.1&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.59.1)
-[![Build Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.82.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.82.0)
+[![Go Enviroment](https://img.shields.io/static/v1?label=GoLang&message=1.12.1&color=informational&logo=Go)](https://studygolang.com/dl#go1.12.1)
+[![Build Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=0.87.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
 [![Build Status](https://api.travis-ci.com/elkan1788/hugo-theme-next.svg?branch=master)](https://travis-ci.com/elkan1788/hugo-theme-next)
-![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)
+[![GitHub deployments](https://img.shields.io/github/deployments/elkan1788/hugo-theme-next/github-pages)](https://github.com/elkan1788/hugo-theme-next/tree/gh-pg)
+[![Repos Size](https://img.shields.io/github/repo-size/elkan1788/hugo-theme-next?color=%2353A318)](https://github.com/elkan1788/hugo-theme-next/releases)
+[![Release Version](https://img.shields.io/github/v/release/elkan1788/hugo-theme-next?color=%230082C9&label=Release&logo=Next.js)](https://github.com/elkan1788/hugo-theme-next/releases/latest)
 
-[中文](README.zh.md) | [English](README.md)
+
+[中文](README.md) | [English](README.en.md)
 
 # NexT For Hugo
 
