@@ -1,2 +1,5 @@
 public/
 exampleSite/config/development/params.toml
+
+*.exe
+.DS_Store

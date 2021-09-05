@@ -1,6 +1,6 @@
 name = "NexT"
 license = "MIT"
-licenselink = "https://github.com/elkan1788/hugo-theme-next/blob/master/LICENSE"
+licenselink = "https://github.com/elkan1788/hugo-theme-next/blob/main/LICENSE"
 description = "A personal blog site theme."
 homepage = "https://lisenhui.cn"
 tags = ["Blog", "Simple", "Dark", "Personal", "Fast", "Theme"]
