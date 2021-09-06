@@ -53,12 +53,15 @@
 4. 执行`git init`命令初步化站点的所有文件；
 
 5. 切换到站点的`themes`目录下，执行`git clone --recurse-submodules https://github.com/elkan1788/hugo-theme-next.git`命令克隆本主题
+> 在国内可使用`Gitee`仓库地址： `git clone --recurse-submodules https://gitee.com/lisenhui/hugo-theme-next.git`
 
 6. 拷贝`hugo-theme-next`目录下的两个目录`config`和`content`到站点根目录下面；
 
 7. 执行`hugo server`生成站点服务；
 
 8. 打开浏览器，在地址栏输入`http://localhost:1313/`访问查看效果。
+
+[![Live Demo](https://asciinema.org/a/434226.svg)](https://asciinema.org/a/434226)
 
 > 后续可参考`config`目录下文件里的配置参数，按需调整生成您自己个性化的站点。
 

@@ -54,11 +54,15 @@ Some browsers compatible with PC tests are as follows:
 
 5. Switch to the site of `themes` directory, execute `git clone - recurse - submodules https://github.com/elkan1788/hugo-theme-next.git` command to clone this theme;
 
+Recommended use `Gitee` repository in China: `git clone --recurse-submodules https://gitee.com/lisenhui/hugo-theme-next.git`
+
 6. Copy the two directories `config` and `content` from `hugo-theme-next` to the root directory of the site;
 
 7. Execute `hugo server` to generate site services;
 
 8. Open your browser and enter `http://localhost:1313/` in the address bar to view the effect.
+
+[![Live Demo](https://asciinema.org/a/434226.svg)](https://asciinema.org/a/434226)
 
 > Later, you can refer to the configuration parameters in the file in the `config` directory to adjust as needed to generate your own personalized site.
 
