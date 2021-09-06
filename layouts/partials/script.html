@@ -227,7 +227,7 @@ function showTime(Counter) {
     .then((results) => {
       var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
-      if (results.length === 0) {
+      if (results.length == 0) {
         $visitors.find(COUNT_CONTAINER_REF).text(0);
         return;
       }
