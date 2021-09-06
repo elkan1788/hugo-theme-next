@@ -30,7 +30,7 @@ With all the maintenance and upgrades, we want to see the 'NexT' theme continue 
 
 The adaptability compatible with PC and different mobile devices is as follows:
 
-![my-hugo-blog.png](https://siteimgs.cn-sh2.ufileos.com/my-hugo-blog.png)
+![my-hugo-blog.png](https://lisenhui.gitee.io/imgs/blog/my-hugo-blog.png)
 
 Some browsers compatible with PC tests are as follows:
 
