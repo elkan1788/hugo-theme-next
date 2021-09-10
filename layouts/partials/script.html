@@ -194,6 +194,8 @@ $(function() {
   new Waline({
       el: '#wcomments',
       visitor: true,
+      avatar: 'mp',
+      wordLimit: '200',
       placeholder: ' {{ i18n "CommentPh" }} ',
       requiredFields: ['nick', 'mail'],
       serverURL: "{{ .Site.Params.Comment.WalineSerURL }}",
