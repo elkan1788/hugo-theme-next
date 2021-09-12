@@ -175,6 +175,7 @@ $(function() {
 <!-- Image Viewer -->
 
 {{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Valine") }}
+<!-- Valine -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script type="text/javascript">
   new Valine({
@@ -187,14 +188,20 @@ $(function() {
       lang: "{{ .Page.Lang }}"
   });
 </script>
+<!-- Addthis Share -->
 {{end }}
+
 {{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Waline") }}
+<!-- Waline -->
 <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
 <script type="text/javascript">
   new Waline({
       el: '#wcomments',
+      // visit times for the article
       visitor: true,
-      avatar: 'mp',
+      avatar:'wavatar',
+      avatarCDN:'https://sdn.geekzu.org/avatar/',
+      avatarForce:!1,
       wordLimit: '200',
       placeholder: ' {{ i18n "CommentPh" }} ',
       requiredFields: ['nick', 'mail'],
@@ -202,8 +209,11 @@ $(function() {
       lang: "{{ .Page.Lang }}"
   });
 </script>
+<!-- Waline -->
 {{end }}
+
 {{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "LiveRe") }}
+<!-- LiveRe -->
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
 <script type="text/javascript">
 (function(d, s) {
@@ -312,6 +322,7 @@ $(function() {
   }
 });
 </script>
+<!-- LiveRe -->
 {{ end }}
 
 {{if and .Params.math (ne .Params.math false) }}
@@ -321,7 +332,9 @@ $(function() {
 {{ end }}
 
 {{ if and (.Site.Params.Share.Enable) (isset .Site.Params.Share "addthisid") }}
+<!-- Addthis Share -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ .Site.Params.Share.AddthisId }}"></script>
+<!-- Addthis Share -->
 {{ end }}
 
 <!-- Is Page -->
