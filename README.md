@@ -8,7 +8,7 @@
 ![GitHub](https://img.shields.io/github/license/elkan1788/hugo-theme-next?label=License&logo=WebAuthn)
 
 
-[中文](README.md) | [English](README.en.md)
+[中文](#) | [English](https://github.com/elkan1788/hugo-theme-next/blob/main/README.en.md)
 
 # Hugo版本的NexT主题
 
