@@ -68,3 +68,5 @@
   other = "支付宝打赏"
 [CommentPh]
   other = "欢迎留下您的宝贵建议，请填写您的昵称和邮箱便于后续交流. ^_^"
+[UnComment]
+  other ="抱歉，Waline插件不支持IE或Edge，建议使用Chrome浏览器。"

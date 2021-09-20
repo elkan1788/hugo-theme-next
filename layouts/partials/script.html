@@ -2,7 +2,23 @@
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/affix.js"></script>
 <script type="text/javascript" src="/js/scrollspy.js"></script> 
+
 <script type="text/javascript">
+
+  function detectIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    var trident = ua.indexOf('Trident/');
+    var edge = ua.indexOf('Edge/');
+
+    if (msie>0 || trident>0 || edge>0) {
+      return -1;
+    }
+
+    return 1;
+  }
+
 
   function getCntViewHeight() {
     var docHeight = $('#content').height(),
@@ -160,6 +176,7 @@ $(function() {
     $('.'+$(this).attr('data-target')).toggle(500);
   });
 });  
+
 </script>
 
 {{ if .IsPage }}
@@ -193,20 +210,26 @@ $(function() {
 
 {{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Waline") }}
 <!-- Waline -->
-<script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
 <script type="text/javascript">
-  new Waline({
-      el: '#wcomments',
-      // visit times for the article
-      visitor: true,
-      avatar:'wavatar',
-      avatarCDN:'https://sdn.geekzu.org/avatar/',
-      avatarForce:!1,
-      wordLimit: '200',
-      placeholder: ' {{ i18n "CommentPh" }} ',
-      requiredFields: ['nick', 'mail'],
-      serverURL: "{{ .Site.Params.Comment.WalineSerURL }}",
-      lang: "{{ .Page.Lang }}"
+  $(function(){
+    if (detectIE()>0) {
+      $.getScript(document.location.protocol+'//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', function(){
+         new Waline({
+          el: '#wcomments', 
+          visitor: true, 
+          avatar:'wavatar', 
+          avatarCDN:'https://sdn.geekzu.org/avatar/', 
+          avatarForce:!1, 
+          wordLimit: '200', 
+          placeholder: ' {{ i18n "CommentPh" }} ', 
+          requiredFields: ['nick', 'mail'], 
+          serverURL: "{{ .Site.Params.Comment.WalineSerURL }}", 
+          lang: "{{ .Page.Lang }}"
+        });
+      });      
+    } else {
+      $('#wcomments').html('{{ i18n "UnComment" }}');
+    }
   });
 </script>
 <!-- Waline -->

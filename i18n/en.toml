@@ -68,3 +68,5 @@
   other = "Ali Pay"
 [CommentPh]
   other = "Just do what you want leave here, and don't forget give your email to make exchange. ^_^"
+[UnComment]
+  other ="Sorry, Waline plugin doesn't support IE or Edge, Please swithc to Chrome browser."
