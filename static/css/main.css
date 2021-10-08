@@ -201,11 +201,7 @@ body {
     padding-right: 0 !important;
   }
 }
-@media (min-width: 1600px) {
-  body {
-    font-size: 16px;
-  }
-}
+
 h1,
 h2,
 h3,
@@ -440,23 +436,13 @@ body {
   padding: 100px 0 70px;
   width: 860px;
 }
-@media (min-width: 1600px) {
-  .container .header-inner {
-    width: 900px;
-  }
-}
 .main {
   padding-bottom: 150px;
 }
 .main-inner {
   margin: 0 auto;
   width: 860px;
-}
-@media (min-width: 1600px) {
-  .container .main-inner {
-    width: 900px;
-  }
-}
+} 
 .footer {
   margin: -100px 0 0 15%;
   font-size: 14px;
@@ -468,11 +454,6 @@ body {
   box-sizing: border-box;
   margin: 20px auto;
   width: 700px;
-}
-@media (min-width: 1600px) {
-  .container {
-    width: 900px;
-  }
 }
 pre,
 .highlight {
@@ -2399,11 +2380,6 @@ body {
   }
 }
 
-@media (min-width: 1600px) {
-  .container .header-inner {
-    width: 260px;
-  }
-}
 @media (min-width: 768px) and (max-width: 991px) {
   .header-inner {
     position: relative;
