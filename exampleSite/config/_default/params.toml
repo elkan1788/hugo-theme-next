@@ -19,13 +19,13 @@
 
 [Statis]
   BusuanziCounter = true
-  CNNZSiteId = "Your CNNZSiteId"
-  BaiduSiteId = "Your BaiduSiteId"
-  GoogleSiteId = "Your GoogleSiteId"
+#  CNNZSiteId = "Your CNNZSiteId"
+#  BaiduSiteId = "Your BaiduSiteId"
+#  GoogleSiteId = "Your GoogleSiteId"
 
 [OnlineIM]
-  Enable = true
-  DaoVoiceId = "Your DaoVoiceId"
+  Enable = false
+#  DaoVoiceId = "Your DaoVoiceId"
 
 [Others]
-  RevolverMapId = "Your RevolverMapId"
+#  RevolverMapId = "Your RevolverMapId"
