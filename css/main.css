@@ -429,7 +429,7 @@ body {
 }
 .container {
   position: relative;
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 .header-inner {
   margin: 0 auto;
@@ -444,16 +444,13 @@ body {
   width: 860px;
 } 
 .footer {
-  margin: -100px 0 0 15%;
   font-size: 14px;
   color: #999;
-  left: 0;
-  bottom: 0;
 }
 .footer-inner {
   box-sizing: border-box;
-  margin: 20px auto;
-  width: 700px;
+  margin: auto;
+  width: auto;
 }
 pre,
 .highlight {
@@ -2430,7 +2427,6 @@ body {
   width: 800px;
   background: #fff;
   height: auto;
-  min-height: 700px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
