@@ -132,15 +132,15 @@ $(function() {
   $('#sidebar').css({ 'margin-top': sidebarTop }).show(); 
 
   // Seems no good for fixed the scroll bar issues
-  /**
-  var sidebarHeight = $('.sidebar-inner').height();
-  var leftHeight = headerHeight + sidebarHeight + 50;
+  var sidebarMt = parseInt($('#sidebar').css('margin-top'));
+  var sidebarInHeight = parseInt($('.sidebar-inner').css('height'));
+  var sideHeight = sidebarMt + sidebarInHeight;
   var contentHeight = $('.content-wrap').height();
 
-  if (contentHeight < leftHeight) {
-    $('.content-wrap').css('height', leftHeight + 50);
+  if (contentHeight < sideHeight) {
+    $('.content-wrap').css('min-height', sideHeight);
   }
-  **/
+  
   
   $('.site-nav-toggle').on('click', function () {
     var $siteNav = $('.site-nav');
