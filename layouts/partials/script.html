@@ -349,6 +349,24 @@ $(function() {
 <!-- LiveRe -->
 {{ end }}
 
+{{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Utterances") }}
+<!-- utterances -->
+<script type="text/javascript">
+  (function() {
+      var utterances = document.createElement('script');
+      utterances.type = 'text/javascript';
+      utterances.async = true;
+      utterances.setAttribute('issue-term',"{{ .Site.Params.Comment.UtterancesTitle }}")
+      utterances.setAttribute('theme',"{{ .Site.Params.Comment.UtterancesTheme }}")
+      utterances.setAttribute('repo',"{{ .Site.Params.Comment.UtterancesRepo }}")
+      utterances.crossorigin = 'anonymous';
+      utterances.src = 'https://utteranc.es/client.js';
+      document.getElementById('ucomments').appendChild(utterances);
+  })();
+</script>
+<!-- utterances -->
+{{ end }}
+
 {{if and .Params.math (ne .Params.math false) }}
 <!-- MathJax support Math -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>

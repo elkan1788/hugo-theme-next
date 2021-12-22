@@ -12,6 +12,11 @@
   LiveReId = "Your LiveReId"
   WalineSerURL = "Your WalineSerURL"
 
+  # If Module is "Utterances",see https://utteranc.es/
+  UtterancesRepo = "owner/repo"
+  UtterancesTheme = "github-light"
+  UtterancesTitle = "pathname"
+
 [LeanCloud]
   AppId = "Your LCAppId"
   AppKey = "Your LCAppKey"

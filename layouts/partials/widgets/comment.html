@@ -12,4 +12,8 @@
 <div id="lv-container" data-id="city" data-uid="{{ .Site.Params.Comment.LiveReId }}">
 {{ end }}
 
+{{ if eq .Site.Params.Comment.Module "Utterances" }}
+<div id="ucomments"></div>
+{{ end }}
+
 {{ end }}
