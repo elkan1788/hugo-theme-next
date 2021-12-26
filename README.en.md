@@ -105,3 +105,13 @@ Parameter description:
 
 # License
 [MIT License](LICENSE).
+
+# Thanks
+
+That was my personal hobby to improve and perfect the theme of Hugo's `NexT`,  but I didn't expect people to be so enthusiastic. Thanks all for your support, let's witness its growth together.
+
+The list of donors (in date order):
+
+| Donation time | Donors | Donation mode | Donation content |
+| ------- | ------ | ------ | ---- |
+| 2021.12.21 | z*y | wechat pay | RMB18.88 |
