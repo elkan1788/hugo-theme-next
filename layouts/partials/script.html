@@ -349,6 +349,124 @@ $(function() {
 <!-- LiveRe -->
 {{ end }}
 
+{{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Utterances") }}
+<!-- utterances -->
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
+<script type="text/javascript">
+  (function() {
+      var utterances = document.createElement('script');
+      utterances.type = 'text/javascript';
+      utterances.async = true;
+      utterances.setAttribute('issue-term',"{{ .Site.Params.Comment.UtterancesTitle }}")
+      utterances.setAttribute('theme',"{{ .Site.Params.Comment.UtterancesTheme }}")
+      utterances.setAttribute('repo',"{{ .Site.Params.Comment.UtterancesRepo }}")
+      utterances.crossorigin = 'anonymous';
+      utterances.src = 'https://utteranc.es/client.js';
+      document.getElementById('ucomments').appendChild(utterances);
+  })();
+</script>
+<script>
+  function addCount(Counter) {
+  var $visitors = $(".leancloud_visitors");
+  var url = $visitors.attr('id').trim();
+  var title = $visitors.attr('data-flag-title').trim();
+  var query = new AV.Query('Counter');
+  query.equalTo("url", url);
+  query.find().then((results) => {
+    if (results.length > 0) {
+      var counter = results[0];
+      counter.increment('time', 1);
+      counter.save(null, {
+        query: new AV.Query('Counter').equalTo('url', url),
+        fetchWhenSave: true
+      }).then((counter) => {
+        var $element = $(document.getElementById(url));
+        $element.find('.leancloud-visitors-count').text(counter.get('time'));        
+      }, (error) => {
+        console.log('Update vistor failed: '+error);
+      });
+    } else {      
+      var acl = new AV.ACL();
+      acl.setPublicReadAccess(true);
+      acl.setPublicWriteAccess(true);
+     
+      var newCounter = new Counter();
+      newCounter.set("title", title);
+      newCounter.set("url", url);
+      newCounter.set("time", 1);
+
+      newCounter.setACL(acl);
+      newCounter.save().then((counter) => {
+        
+      var $element = $(document.getElementById(url));
+      $element.find('.leancloud-visitors-count').text(newCounter.get('time'));
+    }, (error) => {
+      console.log("Save new vistor failed: "+error);
+    });
+  }}); 
+}
+  
+function showTime(Counter) {
+  var query = new AV.Query(Counter);
+  var entries = [];
+  var $visitors = $(".leancloud_visitors");
+ 
+  $visitors.each(function () {
+    entries.push( $(this).attr("id").trim() );
+  });
+
+  query.containedIn('url', entries);
+  query.find()
+    .then((results) => {
+      var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+      if (results.length == 0) {
+        $visitors.find(COUNT_CONTAINER_REF).text(0);
+        return;
+      }
+
+      for (var i = 0; i < results.length; i++) {
+        var item = results[i];
+        var url = item.get('url');
+        var time = item.get('time');
+        var element = document.getElementById(url);
+
+        $(element).find(COUNT_CONTAINER_REF).text(time);
+      }
+      for(var i = 0; i < entries.length; i++) {
+        var url = entries[i];
+        var element = document.getElementById(url);
+        var countSpan = $(element).find(COUNT_CONTAINER_REF);
+        if( countSpan.text() == '') {
+          countSpan.text(0);
+        }
+      }
+    }, (error) => {
+      console.log('Query vistors failed: '+error);
+    });
+}
+
+
+  $(function() {
+
+  AV.init({
+    appId: "{{ .Site.Params.LeanCloud.AppId }}",
+    appKey: "{{ .Site.Params.LeanCloud.AppKey }}",
+    serverURL: "{{ .Site.Params.LeanCloud.ServerURL }}"
+  });  
+
+  const Counter = AV.Object.extend("Counter");
+
+  if ($('.leancloud_visitors').length == 1) {
+    addCount(Counter);
+  } else if ($('.post-title-link').length > 1) {
+    showTime(Counter);
+}
+});
+</script>
+<!-- utterances -->
+{{ end }}
+
 {{if and .Params.math (ne .Params.math false) }}
 <!-- MathJax support Math -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
