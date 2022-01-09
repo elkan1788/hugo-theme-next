@@ -2068,6 +2068,12 @@ a.search-result {
   border-bottom: 1px dashed #4088b8;
   font-weight: bold;
 }
+
+.search-title-keyword {
+  border-bottom: 1px dashed #4088b8;
+  font-weight: bold;
+}
+
 #local-search-result {
   height: 90%;
   overflow: auto;
@@ -2930,6 +2936,12 @@ body {
 }
 
 .local-search-popup .search-keyword {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff0000;
+}
+
+.local-search-popup .search-title-keyword {
   font-weight: bold;
   font-size: 16px;
   color: #ff0000;
