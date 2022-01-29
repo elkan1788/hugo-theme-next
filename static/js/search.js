@@ -67,6 +67,10 @@ $(document).ready(function () {
                         // show search results
                         if (isMatch) {
                             matchcounts += 1;
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                data_title = data_title.replace(regS, "<span class=\"search-title-keyword\">" + keyword + "</span>");
+                            });
                             str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
                             var content = data.content.trim().replace(/<[^>]+>/g,"");
                             if (first_occur >= 0) {
