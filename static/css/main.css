@@ -277,6 +277,11 @@ a {
   text-decoration: none;
   word-wrap: break-word;
 }
+.post-body a {
+  color: #5c8ec6;
+  text-decoration: none;
+  word-wrap: break-word;
+}
 a:hover {
   color: #222;
   border-bottom-color: #222;
