@@ -15,7 +15,7 @@
             <span>{{ i18n "ArticleAuthor" }}：</span>{{ .Site.Params.AuthorName }}
         </p>
         <p> 
-            <span>{{ i18n "ArticleDeclaration" }}： </span>{{ i18n "ArticleDecContent" | safeHTML }}
+            <span>{{ i18n "ArticleDeclaration" }}： </span>{{ .Site.Params.ArticleDecContent | safeHTML }}
         </p>
     </div>
 </div>
