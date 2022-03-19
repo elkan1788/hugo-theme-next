@@ -58,7 +58,7 @@ Some browsers compatible with PC tests are as follows:
 
 Recommended use `Gitee` repository in China: `git clone --recurse-submodules https://gitee.com/lisenhui/hugo-theme-next.git`
 
-6. Copy the two directories `config` and `content` from `hugo-theme-next` to the root directory of the site;
+6. Copy the two directories `config` and `content` from `hugo-theme-next/exampleSite` to the root directory of the site;
 
 7. Execute `hugo server` to generate site services;
 
