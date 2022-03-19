@@ -57,7 +57,7 @@
 5. 切换到站点的`themes`目录下，执行`git clone --recurse-submodules https://github.com/elkan1788/hugo-theme-next.git`命令克隆本主题
 > 在国内可使用`Gitee`仓库地址： `git clone --recurse-submodules https://gitee.com/lisenhui/hugo-theme-next.git`
 
-6. 拷贝`hugo-theme-next`目录下的两个目录`config`和`content`到站点根目录下面；
+6. 拷贝`hugo-theme-next/exampleSite`目录下的两个文件夹内容`config`和`content`到站点根目录下面；
 
 7. 执行`hugo server`生成站点服务；
 
