@@ -8,6 +8,8 @@ DateFormat = "2006/01/02"
 YearFormat = "2006Y"
 MonthFormat = "01/02"
 
+ArticleDecContent = "This blog post article is under the <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/' target='_blank' style='text-decoration: underline;'>CC BY-NC-SA 3.0</a> license,Please indicate the source!"
+
 [Footer]
   StorageLink = "https://www.ucloud.cn/"
   StorageName = "UCloud Storage"
