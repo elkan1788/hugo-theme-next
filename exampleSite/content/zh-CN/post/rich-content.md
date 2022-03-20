@@ -13,11 +13,9 @@ Hugo上有几个[**内置短代码**](https://gohugo.io/content-management/short
 
 <!--more-->
 
----
-
 ## YouTube Privacy Enhanced Shortcode
 
-{{< youtube ZJthWmvUzzc >}}
+{{/*< youtube ZJthWmvUzzc >*/}}
 
 <br>
 
@@ -25,7 +23,7 @@ Hugo上有几个[**内置短代码**](https://gohugo.io/content-management/short
 
 ## Twitter Simple Shortcode
 
-{{< twitter_simple 1085870671291310081 >}}
+{{/*< twitter_simple 1085870671291310081 >*/}}
 
 <br>
 
@@ -33,5 +31,4 @@ Hugo上有几个[**内置短代码**](https://gohugo.io/content-management/short
 
 ## Vimeo Simple Shortcode
 
-{{< vimeo_simple 48912912 >}}
-
+{{/*< vimeo_simple 48912912 >*/}}
