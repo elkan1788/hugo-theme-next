@@ -14,10 +14,62 @@ The [`emojify`](https://gohugo.io/functions/emojify/) function can be called dir
 
 To enable emoji globally, set `enableEmoji` to `true` in your site's [configuration](https://gohugo.io/getting-started/configuration/) and then you can type emoji shorthand codes directly in content files; e.g.
 
-<p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
-<br>
+### Monkey
 
-The [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/) is a useful reference for emoji shorthand codes.
+<p>
+    <span class="nowrap">
+        <span class="emojify"> 🙈 </span> 
+        <code>:see_no_evil:</code>
+    </span>  
+    <span class="nowrap">
+        <span class="emojify"> 🙉 </span> 
+        <code>:hear_no_evil:</code>
+    </span> 
+    <span class="nowrap">
+        <span class="emojify"> 🙊 </span> 
+        <code>:speak_no_evil:</code>
+    </span>
+</p>
+
+---
+
+### Number
+
+<p>
+    <span class="nowrap">
+        <span class="emojify"> 1️⃣ </span> 
+        <code>:one:</code>
+    </span>
+    <span class="nowrap">
+        <span class="emojify"> 2️⃣  </span> 
+        <code>:two:</code>
+    </span>
+    <span class="nowrap">
+        <span class="emojify"> 3️⃣ </span> 
+        <code>:three:</code>
+    </span>
+</p>
+
+---
+
+### Building
+
+<p>
+    <span class="nowrap">
+        <span class="emojify"> 🏡 </span> 
+        <code>:house_with_garden:</code>
+    </span>
+    <span class="nowrap">
+        <span class="emojify"> 🏣 </span> 
+        <code>:post_office:</code>
+    </span>
+    <span class="nowrap">
+        <span class="emojify"> 🏥 </span> 
+        <code>:hospital:</code>
+    </span>
+</p>
+
+The [Emoji cheat sheet](ttps://www.webfx.com/tools/emoji-cheat-sheet/) is a useful reference for emoji shorthand codes.
 
 ***
 

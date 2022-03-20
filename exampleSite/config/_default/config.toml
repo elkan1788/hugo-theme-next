@@ -20,7 +20,7 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 
 enableRobotsTXT = true
-enableEmoji = true
+enableEmoji = false
 hasCJKLanguage = true
 
 timeout = 100000
