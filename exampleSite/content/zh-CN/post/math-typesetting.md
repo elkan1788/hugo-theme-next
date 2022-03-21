@@ -6,15 +6,15 @@ description: 设置MathJax的简要指南
 math: true
 ---
 
-Hugo项目中的数学表示法可以通过使用第三方JavaScript库来实现。
+Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。
 <!--more-->
 
 在这个例子中，我们将使用 [MathJax](https://www.mathjax.org/)
 
-- Create a post under `/content/en[zh-CN]/math.md`
+- 创建一个文件 `/content/en[zh-CN]/math.md` 
 
 - 可以全局启用MathJax，请在项目配置中将参数`math`设置为`true`
-- 或是在每页基础上启用MathJax，在内容文件中包括参数`math: true`
+- 或是在每页基础上启用`MathJax`，在内容文件中包括参数`math: true`
 
 **注意：** 使用[支持的TeX功能](https://docs.mathjax.org/en/latest/input/tex/index.html)的联机参考资料
 
