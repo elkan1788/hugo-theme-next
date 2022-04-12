@@ -23,7 +23,7 @@ jobs:
       - name: Build Gitee Pages by GitAction
         uses: yanglbme/gitee-pages-action@main
         with:
-          gitee-username: elkan1788@gmail.com
+          gitee-username: elkan1788@139.com
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           gitee-repo: lisenhui/hugo-theme-next
           branch: gh-pg
