@@ -27,6 +27,7 @@ script:
   - cd ./exampleSite
   - rm -rf ../public
   - sh ../.travis/replace_params_value.sh
+  - cat config/_default/params.toml
   - hugo -d ../public -t ../..
   - cp ../README.md ../public
   - cp ../README.en.md ../public
