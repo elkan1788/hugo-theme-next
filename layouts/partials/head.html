@@ -16,22 +16,22 @@
   {{ end }}
   <meta property="og:title" content="{{ if ne .Permalink " / " }}{{ .Title }}{{else}}{{ .Site.Title }}{{end}}"/>
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:image" content="/img/author.jpg"> 
+  <meta property="og:image" content="{{ .Site.BaseURL }}img/author.jpg"> 
   <meta name="title" content="{{ if ne .Permalink " / " }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />
   {{ with .Description }}
   <meta name="description" content="{{ . }}" />
   {{ else }}
   <meta name="description" content="{{ .Site.Params.Description }}">
   {{ end }} 
-  <link rel="shortcut icon" href="/img/favicon.ico" />
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" />
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon.png" />
+  <link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}img/apple-touch-icon.png" />
   <link href="//cdn.bootcdn.net/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   {{ if .IsPage }}
   <link href="//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.css" rel="stylesheet"/>
   {{ end }}
-  <link href="/css/main.css" rel="stylesheet" type="text/css" />
-  <link href="/css/syntax.css" rel="stylesheet" type="text/css" />    
+  <link href="{{ .Site.BaseURL }}css/main.css" rel="stylesheet" type="text/css" />
+  <link href="{{ .Site.BaseURL }}css/syntax.css" rel="stylesheet" type="text/css" />    
   {{ if isset .Site.Params.Statis "baidusiteid" }}
   <!-- Baidu tongji -->
   <script type="text/javascript">
