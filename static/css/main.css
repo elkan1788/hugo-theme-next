@@ -277,11 +277,6 @@ a {
   text-decoration: none;
   word-wrap: break-word;
 }
-.post-body a {
-  color: #5c8ec6;
-  text-decoration: none;
-  word-wrap: break-word;
-}
 a:hover {
   color: #222;
   border-bottom-color: #222;
@@ -434,7 +429,6 @@ body {
 }
 .container {
   position: relative;
-  /* min-height: 100%; */
 }
 .header-inner {
   margin: 0 auto;
@@ -983,6 +977,14 @@ pre .javascript .function {
 .post-body {
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
+.post-body a {
+  color: #0c0c0c;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+.post-body a:hover {
+  font-weight: bold;
+} 
 .post-body h1 {
   border-left: solid 5px #428bca;
   padding: 5px;
@@ -1263,6 +1265,12 @@ pre .javascript .function {
 .posts-expand .post-meta .post-category-list-link {
   color: #999;
 }
+.posts-expand .post-meta .post-category a {
+  text-decoration: underline
+}
+.posts-expand .post-meta .post-category a:hover {
+  font-weight: bold;
+}
 .post-meta-item-icon {
   display: none;
   margin-right: 3px;
@@ -1411,11 +1419,11 @@ pre .javascript .function {
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
-  color: #999;
+  color: #555;
   border-bottom-color: #555;
 }
 .sidebar a:hover {
-  color: #eee;
+  color: #0c0c0c;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
@@ -1597,6 +1605,9 @@ pre .javascript .function {
 }
 .tagcloud-of-blogroll-item a {
   border-bottom: 1px solid #999;
+}
+.tagcloud-of-blogroll-item a:hover {
+  font-weight: bold;
 }
 .sidebar-nav {
   margin: 0 0 20px 0;
@@ -2139,7 +2150,8 @@ a.search-result {
 
 .cnzz_icon {
   position: absolute;
-  padding-left: 14%;
+  padding-left: 40%;
+  padding-top: 3px;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
@@ -2156,7 +2168,7 @@ a.search-result {
 
   .cnzz_icon {
     position: absolute;
-    padding-left: 30%;
+    padding-left: 28%;
   }
 }
 
@@ -2167,7 +2179,7 @@ a.search-result {
 @media (min-width: 400px) and (max-width: 767px) {
 .cnzz_icon {
     position: absolute;
-    padding-left: 14%;
+    padding-left: 12%;
   }
 }
 
@@ -2185,7 +2197,7 @@ a.search-result {
 
   .cnzz_icon {
     position: absolute;
-    padding-left: 20%;
+    padding-left: 18%;
   }
 }
 
@@ -2714,19 +2726,6 @@ body {
 .site-author:after {
   clear: both;
 }
-.sidebar a {
-  color: #555;
-}
-.sidebar a:hover {
-  color: #222;
-}
-.links-of-author-item a:before {
-  display: none;
-}
-.links-of-author-item a {
-  border-bottom: none;
-  text-decoration: underline;
-}
 .feed-link {
   border-top: 1px dotted #ccc;
   border-bottom: 1px dotted #ccc;
@@ -2758,6 +2757,9 @@ body {
   width: 50%;
   text-align: center;
 }
+.links-of-author-item a:before {
+  display: none;
+}
 .links-of-author-item a {
   box-sizing: border-box;
   display: inline-block;
@@ -2766,10 +2768,8 @@ body {
   padding: 0 5px;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.links-of-author-item a {
-  display: block;
+  text-overflow: ellipsis;  
+  border-bottom: none;
   text-decoration: none;
 }
 .links-of-author-item a:hover {
@@ -2825,6 +2825,9 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   border-bottom: 1px solid #999;
+}
+.links-of-blogroll-inline .links-of-blogroll-item a:hover {
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .post-body {
