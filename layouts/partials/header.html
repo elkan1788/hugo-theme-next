@@ -7,11 +7,13 @@
   </div>
 </div>
 <div class="site-meta {{ if .Site.Params.Imglogo }} custom-logo {{ end }}">
+  {{ $langs := len .Site.Languages }}
+  {{ $pages := len .Page.AllTranslations }}
+  {{ if and (gt $langs 1) (gt $pages 1)  }}
   <div class="multi-lang-switch"> 
     <i class="fa fa-fw fa-language" style="margin-right: 5px;"></i>
     {{ $siteLanguages := .Site.Languages }}
     {{ $pageLang := .Page.Lang }}
-    {{ $langLen := len .Page.AllTranslations }}
     {{ range .Page.AllTranslations }}
         {{ $translation := .}}
         {{ range $index, $lang := $siteLanguages }}
@@ -21,13 +23,14 @@
               {{ else }}
                 <a class="lang-link" id="{{ $translation.Language }}" href="{{ $translation.Permalink }}">{{ $lang.LanguageName }}</a>
               {{ end }}
-              {{ if and (ne (add $index 1) $langLen) (ne $index $langLen)}} 
+              {{ if and (ne (add $index 1) $pages) (ne $index $pages)}} 
               <span class="lang-line"> / </span> 
               {{ end }}
             {{ end }}
         {{ end }}
     {{ end }}
   </div>
+  {{ end }}
   <div class="custom-logo-site-title">
     <a href="{{ "/" | relLangURL }}"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
@@ -65,4 +68,3 @@
       {{ partial "widgets/search.html" .}}
     </div>
 </nav>
-
