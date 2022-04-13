@@ -979,7 +979,8 @@ pre .javascript .function {
 }
 .post-body a {
   color: #0c0c0c;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom:3px double #0c0c0c;
   word-wrap: break-word;
 }
 .post-body a:hover {
@@ -1168,7 +1169,13 @@ pre .javascript .function {
   transition-property: background;
 }
 .posts-collapse .post-header:hover {
+  color: #0c0c0c;
+  font-weight: bold;
   border-bottom-color: #666;
+}
+.posts-collapse .post-title-link:hover {
+  color: #0c0c0c;
+  font-weight: bold;
 }
 .posts-collapse .post-header:hover::before {
   background: #222;
