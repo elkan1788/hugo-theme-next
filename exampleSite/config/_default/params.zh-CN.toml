@@ -11,10 +11,10 @@ MonthFormat = "01-02"
 ArticleDecContent = "本博客文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/' target='_blank' style='text-decoration: underline;'>CC BY-NC-SA 3.0</a>许可协议，转载请注明出处！"
 
 [Footer]
-  StorageLink = "https://www.ucloud.cn/"
-  StorageName = "UCloud云存储"
+  StorageLink = "https://gitee.com/"
+  StorageName = "Gitee 仓库"
   ICPLink = "http://beian.miit.gov.cn"
-  ICPNo = "粤ICP备18047355号"
+  ICPNo = "粤 ICP 备 18047355 号"
 
 [[Socials]]
   Name = "GitHub"
