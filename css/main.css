@@ -1531,6 +1531,10 @@ pre .javascript .function {
   font-size: 13px;
   color: #999;
 }
+.site-state-item a:hover .site-state-item-name {
+  font-weight: bold;
+  color: #0c0c0c;
+}
 .feed-link {
   margin-top: 20px;
 }
