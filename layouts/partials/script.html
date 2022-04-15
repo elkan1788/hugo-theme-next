@@ -212,18 +212,24 @@ $(function() {
 {{ if and (.Site.Params.Comment.Enable) (eq .Site.Params.Comment.Module "Waline") }}
 <!-- Waline -->
 <script type="text/javascript">
+  const locale = {
+    placeholder: '{{ i18n "CommentPh" | safeHTML }}'
+  };
   $(function(){
     if (detectIE()>0) {
       $.getScript(document.location.protocol+'//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', function(){
          new Waline({
           el: '#wcomments', 
-          visitor: true, 
-          avatar:'wavatar', 
-          avatarCDN:'https://sdn.geekzu.org/avatar/', 
-          avatarForce:!1, 
+          visitor: true,
+          emoji: [
+            'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+            'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+            'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili'
+          ], 
           wordLimit: '200', 
-          placeholder: ' {{ i18n "CommentPh" }} ', 
-          requiredFields: ['nick', 'mail'], 
+          uploadImage: false,
+          locale, 
+          requiredMeta: ['nick', 'mail'], 
           serverURL: "{{ .Site.Params.Comment.WalineSerURL }}", 
           lang: "{{ .Page.Lang }}"
         });
