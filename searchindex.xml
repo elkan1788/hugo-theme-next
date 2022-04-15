@@ -10,26 +10,23 @@ H1 H2 H3 H4 H5 H6 段落 生活是什么？生活是柴米油盐的平淡；是�
 表格 表不是Markdown核心规范的一部分，但是Hugo支持开箱即用。
 Name Age Bob 27 Alice 23 表格内使用Markdown语法 Italics Bold Code italics bold code 图像 ![图像描述](图像地址) 示例 常规用法 SVG图像 Google Chrome
 Firefox Browser
-小图标
-点击图像可以打开图像浏览器，快试试吧。
+小图标 点击图像可以打开图像浏览器，快试试吧。
 代码块 带有引号的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 用四个空格缩进的代码块 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 代码块引用Hugo的内部高亮短代码 &lt;!doctype html> &lt;html lang="en"> &lt;head> &lt;meta charset="utf-8"> &lt;title>Example HTML5 Document&lt;/title> &lt;/head> &lt;body> &lt;p>Test&lt;/p> &lt;/body> &lt;/html> 列表类型 有序列表 First item Second item Third item 无序列表 List item Another item And another item 嵌套列表 Fruit Apple Orange Banana Dairy Milk Cheese 其他元素 — abbr, sub, sup, kbd, mark GIF 是位图图像格式。
 H2O
 Xn + Yn = Zn
 按 CTRL+ALT+Delete 组合键结束会话。
 大多数蝾螈在夜间活动，捕食昆虫、蠕虫和其他小动物。
-以上引文摘自Rob Pike在2015年11月18日 Gopherfest 上的演讲。 &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>http://next.lisenhui.cn/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo 上有几个内置短码，用于丰富内容，以及隐私配置还有一组简单的短代码，支持各种社交媒体嵌入的静态和非 JS 版本。
+以上引文摘自Rob Pike在2015年11月18日 Gopherfest 上的演讲 。 &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>http://next.lisenhui.cn/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo 上有几个内置短码 ，用于丰富内容，以及隐私配置 还有一组简单的短代码，支持各种社交媒体嵌入的静态和非 JS 版本。
 YouTube 增强隐私短码 {{/&lt; youtube ZJthWmvUzzc >/}}
 Twitter 短码 {{/&lt; twitter_simple 1085870671291310081 >/}}
 Vimeo 短码 {{/&lt; vimeo_simple 48912912 >/}}
 哔哩哔哩短码</content></entry><entry><title>图像占位符显示</title><url>http://next.lisenhui.cn/post/placeholder-text/</url><categories/><tags><tag>markdown</tag><tag>text</tag></tags><content type="html"> 范德格拉夫原理（Van de Graaf Canon）重构了曾经用于书籍设计中将页面划分为舒适比例的方法。这一原理也被称为“秘密原理”，用于许多中世纪的手稿和古板书中。在范德格拉夫原理中，文本区域和页面的长款具有相同的比例，并且文本区域的高度等于页面宽度，通过划分页面得到九分之一的订口边距和九分之二的切口边距，以及与页面长宽相同的比例的文本区域。
 Vagus 示例
-The Van de Graaf Canon
-总结 当然设计中的黄金比例是为人所熟知的，黄金分割的公式为a:b=b:(a+b)。这是指较小的两个矩形与较大的两个矩形以相同的组合方式相关联。黄金分割比例为1:1.618。</content></entry><entry><title>数据公式设置显示</title><url>http://next.lisenhui.cn/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。
-在这个例子中，我们将使用 MathJax
-创建一个文件 /content/en[zh-CN]/math.md
+The Van de Graaf Canon 总结 当然设计中的黄金比例是为人所熟知的，黄金分割的公式为a:b=b:(a+b)。这是指较小的两个矩形与较大的两个矩形以相同的组合方式相关联。黄金分割比例为1:1.618。</content></entry><entry><title>数据公式设置显示</title><url>http://next.lisenhui.cn/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。
+在这个例子中，我们将使用 MathJax 创建一个文件 /content/en[zh-CN]/math.md
 可以全局启用MathJax，请在项目配置中将参数math设置为true
 或是在每页基础上启用MathJax，在内容文件中包括参数math: true
-注意： 使用支持的TeX功能的联机参考资料
+注意： 使用支持的TeX功能 的联机参考资料
 例子 重复的分数 $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$
 总和记号 $$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$
 几何级数之和 我把接下来的两个例子分成了几行，这样它在手机上表现得更好。这就是为什么它们包含 \displaystyle。
@@ -72,12 +69,12 @@ $$ \frac{n!}{k!(n-k)!} = {^n}C_k {n \choose k} $$
 现在用标点符号:
 $$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$</content></entry><entry><title>支持Emoji表情符号</title><url>http://next.lisenhui.cn/post/emoji-support/</url><categories/><tags><tag>emoji</tag></tags><content type="html"> Emoji 表情符号可以通过多种方式在 Hugo 项目中启用。
 使用 Emoji 表情符号可以在模板中可以直接调用 emojify 函数或是通过 内联短代码 来实现。
-如果要全局启用 Emoji 表情符号，请在网站配置文件中将 enableEmoji 参数值设置为 true，然后可以直接在内容文件中输入表情符号简写代码，参考如下：
-猴子表情 🙈 :see_no_evil: 🙉 :hear_no_evil: 🙊 :speak_no_evil: 数字符号 1️⃣ :one: 2️⃣ :two: 3️⃣ :three: 建筑物 🏡 :house_with_garden: 🏣 :post_office: 🏥 :hospital: 更多的 Emoji 表情符号代码可参考Emoji 配对目录。
+如果要全局启用 Emoji 表情符号，请在网站配置 文件中将 enableEmoji 参数值设置为 true，然后可以直接在内容文件中输入表情符号简写代码，参考如下：
+猴子表情 🙈 :see_no_evil: 🙉 :hear_no_evil: 🙊 :speak_no_evil: 数字符号 1️⃣ :one: 2️⃣ :two: 3️⃣ :three: 建筑物 🏡 :house_with_garden: 🏣 :post_office: 🏥 :hospital: 更多的 Emoji 表情符号代码可参考Emoji 配对目录 。
 注意: 以上步骤在 Hugo 中启用 Unicode 标准表情符号和序列，但是这些符号的呈现取决于浏览器和平台，要设置表情符号的样式，您可以使用第三方表情符号字体或字体。例如：
-.emoji { font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols; }</content></entry><entry><title>关于我</title><url>http://next.lisenhui.cn/about.html</url><categories/><tags/><content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
+.emoji { font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols; }</content></entry><entry><title>关于我</title><url>http://next.lisenhui.cn/about.html</url><categories/><tags/><content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0 下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
 Hugo使用了多种开源项目，包括:
 https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper Hugo是博客、企业网站、创意作品集、在线杂志、单页应用程序甚至是数千页的网站的理想选择。
 Hugo适合那些想要手工编写自己的网站代码，而不用担心设置复杂的运行时、依赖关系和数据库的人。
 使用Hugo建立的网站非常快速、安全，可以部署在任何地方，包括AWS、GitHub Pages、Heroku、Netlify和任何其他托管提供商。
-更多信息请访问GitHub.</content></entry></search>
+更多信息请访问GitHub .</content></entry></search>

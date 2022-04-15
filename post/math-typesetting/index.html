@@ -18,7 +18,8 @@
 <span id=/post/math-typesetting/ class=leancloud_visitors data-flag-title=数据公式设置显示>|
 <i class="fa fa-binoculars fa-fw"></i>
 <span class=post-meta-item-text>阅读次数：</span>
-<span class=leancloud-visitors-count></span></span></div></header><div class=post-body itemprop=articleBody><p>Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。</p><p>在这个例子中，我们将使用 <a href=https://www.mathjax.org/>MathJax</a></p><ul><li><p>创建一个文件 <code>/content/en[zh-CN]/math.md</code></p></li><li><p>可以全局启用MathJax，请在项目配置中将参数<code>math</code>设置为<code>true</code></p></li><li><p>或是在每页基础上启用<code>MathJax</code>，在内容文件中包括参数<code>math: true</code></p></li></ul><p><strong>注意：</strong> 使用<a href=https://docs.mathjax.org/en/latest/input/tex/index.html>支持的TeX功能</a>的联机参考资料</p><h3 id=例子>例子</h3><h2 id=重复的分数>重复的分数</h2><p>$$
+<span class=leancloud-visitors-count></span></span></div></header><div class=post-body itemprop=articleBody><p>Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。</p><p>在这个例子中，我们将使用 <a href=https://www.mathjax.org/ target=_blank rel=noopener>MathJax</a></p><ul><li><p>创建一个文件 <code>/content/en[zh-CN]/math.md</code></p></li><li><p>可以全局启用MathJax，请在项目配置中将参数<code>math</code>设置为<code>true</code></p></li><li><p>或是在每页基础上启用<code>MathJax</code>，在内容文件中包括参数<code>math: true</code></p></li></ul><p><strong>注意：</strong> 使用<a href=https://docs.mathjax.org/en/latest/input/tex/index.html target=_blank rel=noopener>支持的TeX功能</a>
+的联机参考资料</p><h3 id=例子>例子</h3><h2 id=重复的分数>重复的分数</h2><p>$$
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
 $$</p><h2 id=总和记号>总和记号</h2><p>$$
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
