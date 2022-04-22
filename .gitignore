@@ -1,5 +1,5 @@
 public/
-exampleSite/config/development/params.toml
+exampleSite/config/dev/
 .hugo_build.lock
 *.exe
 .DS_Store
