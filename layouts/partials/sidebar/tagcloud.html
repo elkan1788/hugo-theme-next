@@ -7,7 +7,9 @@
     <ul class="tagcloud-of-blogroll-list">
         {{ range (first ($.Site.Params.TagsCloud.Limit) $.Site.Taxonomies.tags.ByCount) }}
         <li  class="tagcloud-of-blogroll-item">
-            <a href="{{ "/tags/" | relLangURL }}{{ .Name | urlize }}">{{ .Name | humanize }}</a>
+            <a href="{{ "/tags/" | relLangURL }}{{ .Name | urlize }}">{{ .Name | humanize }}
+            <sup>{{ .Count }}</sup>
+            </a>
         </li>
         {{ end }}
     </ul>
