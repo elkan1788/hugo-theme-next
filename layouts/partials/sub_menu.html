@@ -1,0 +1,30 @@
+<ul class="sub-menu menu">
+{{ $curPage := . }}
+{{ range .Site.Menus.docs }}
+{{ $active := or ($curPage.IsMenuCurrent "docs" .) ($curPage.HasMenuCurrent "docs" .) }}
+{{ $active = or $active (eq .Name $curPage.Title) }}
+{{ $active = or $active (in (lower $curPage.RelPermalink) (lower .URL)) }}
+  <li class="menu-item">
+    <a href="{{ .URL }}" rel="section" class="{{ if $active }}menu-item-active{{ end }}">
+      <i class="fa fa-{{ .Pre }} fa-fw"></i>
+      {{ .Name }}
+    </a>
+  </li>
+{{ end }}
+</ul>
+<ul class="sub-menu menu">
+{{ $curPage := . }}
+{{ range .Site.Menus.docs }}
+  {{ range .Children }}
+    {{ if eq .Parent $curPage.Params.parent }}
+    {{ $active := in (lower $curPage.RelPermalink) (lower .Identifier) }}
+    <li class="menu-item">
+      <a href="{{ .URL }}" rel="section" class="{{ if $active }}menu-item-active{{ end }}">
+        <i class="fa fa-{{ .Pre }} fa-fw"></i>
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+  {{ end }}
+{{ end }}
+</ul>

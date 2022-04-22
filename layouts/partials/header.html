@@ -50,16 +50,19 @@
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
-      {{ $curPage := . }}
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($curPage.IsMenuCurrent "main" .) ($curPage.HasMenuCurrent "main" .) }}
-      {{ $active = or $active (eq .Name $curPage.Title) }}
-        <li class="menu-item {{ if $active }}menu-item-active{{ end }}">
-          <a href="{{ .URL | relLangURL }}" rel="section" {{ if eq .URL "/404.html" }}target="_blank"{{ end }}>
-              <i class="menu-item-icon fa fa-fw fa-{{ .Pre }}"></i> <br />{{ .Name }}
-          </a>
-        </li>
-      {{ end }}
+    {{ $curPage := . }}
+    {{ range .Site.Menus.main }}    
+    {{ $active := eq .Name $curPage.Title }}
+    {{ $active = or $active (eq (lower $curPage.RelPermalink) (lower .URL)) }}
+    {{ $active = or $active (and (ne .URL "/") (in (lower $curPage.RelPermalink) (lower .URL))) }}
+    <div style="display: none">{{$curPage.Permalink}}, {{$curPage.RelPermalink}}, {{.URL}}</div>
+      <li class="menu-item {{ if $active }}menu-item-active{{ end }}">
+        <a href="{{ .URL | relLangURL }}" rel="section" {{ if eq .URL "/404.html" }}target="_blank"{{ end }}>
+            <i class="menu-item-icon fa fa-fw fa-{{ .Pre }}"></i> <br />{{ .Name }}
+        </a>
+        <div style="display: none;">{{ $curPage.Params.parent }}</div>
+      </li>
+    {{ end }}
       <li class="menu-item menu-item-search">
         <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> {{ i18n "Search" }}</a>
       </li>
