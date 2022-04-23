@@ -1264,6 +1264,13 @@ pre .javascript .function {
   font-size: 12px;
   text-align: center;
 }
+.posts-expand .post-meta .post-pushdate,
+.posts-expand .post-meta .post-category,
+.posts-expand .post-meta .post-readtime,
+.posts-expand .post-meta .post-visitor,
+.posts-expand .post-meta .post-wordcount {
+  margin: 0 3px;
+}
 .posts-expand .post-meta .post-category-list {
   display: inline-block;
   margin: 0;
@@ -1386,9 +1393,6 @@ pre .javascript .function {
   height: 1px;
   background: #ccc;
   text-align: center;
-}
-.post:last-child .post-eof.post-eof.post-eof {
-  display: none;
 }
 .post-gallery {
   display: table;

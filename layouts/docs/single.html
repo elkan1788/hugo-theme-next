@@ -4,7 +4,6 @@
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
    <header class="post-header">
       <div class="post-meta">
-      {{ partial "post/date.html" .}} 
       {{ partial "post/wordcount.html" .}}
       {{ partial "post/readtime.html" .}}
       {{ partial "post/visitors.html" .}}
@@ -14,11 +13,10 @@
     {{ .Content }}
     </div>
     
-    <footer class="post-footer">     
-    {{ partial "widgets/share.html" .}}
-    {{ partial "widgets/copyright.html" .}}
-    {{ partial "widgets/reward.html" .}}
-    {{ partial "widgets/comment.html" .}}
+    <footer class="post-footer">  
+      <div class="post-eof" style="width:100%;margin:30px 0"></div>  
+      {{ partial "widgets/share.html" .}}
+      {{ partial "widgets/comment.html" .}}
     </footer>
   </article>
 </section>
