@@ -55,7 +55,6 @@
     {{ $active := eq .Name $curPage.Title }}
     {{ $active = or $active (eq (lower $curPage.RelPermalink) (lower .URL)) }}
     {{ $active = or $active (and (ne .URL "/") (in (lower $curPage.RelPermalink) (lower .URL))) }}
-    <div style="display: none">{{$curPage.Permalink}}, {{$curPage.RelPermalink}}, {{.URL}}</div>
       <li class="menu-item {{ if $active }}menu-item-active{{ end }}">
         <a href="{{ .URL | relLangURL }}" rel="section" {{ if eq .URL "/404.html" }}target="_blank"{{ end }}>
             <i class="menu-item-icon fa fa-fw fa-{{ .Pre }}"></i> <br />{{ .Name }}
