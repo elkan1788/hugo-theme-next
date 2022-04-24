@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Markdown语法手册</title><url>http://next.lisenhui.cn/post/markdown-syntax/</url><categories><category>themes</category><category>syntax</category></categories><tags><tag>markdown</tag><tag>css</tag><tag>html</tag></tags><content type="html"> 本文提供了一个可以在 Hugo 内容文件中使用的基本Markdown语法示例，还展示了基本 HTML 元素在 Hugo 主题中是否使用 CSS 装饰。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Markdown语法手册</title><url>/post/markdown-syntax/</url><categories><category>themes</category><category>syntax</category></categories><tags><tag>markdown</tag><tag>css</tag><tag>html</tag></tags><content type="html"> 本文提供了一个可以在 Hugo 内容文件中使用的基本Markdown语法示例，还展示了基本 HTML 元素在 Hugo 主题中是否使用 CSS 装饰。
 标题 下面的 HTML 代码&lt;h1>—&lt;h6> 元素表示六个级别的节标题。 &lt;h1>是最高的节级别，&lt;h6>是最低的节级别。
 H1 H2 H3 H4 H5 H6 段落 生活是什么？生活是柴米油盐的平淡；是行色匆匆早出晚归的奔波；生活是错的时间遇到对的人的遗憾；是爱的付出与回报；生活是看不同的风景，遇到不同的人；是行至水穷尽，坐看云起时的峰回路转；生活是灵魂经历伤痛后的微笑怒放；是挫折坎坷被晾晒后的坚强；生活是酸甜苦辣被岁月沉淀后的馨香；是经历风霜雪雨洗礼后的懂得；生活是走遍千山万水后，回眸一笑的洒脱。
 有些事，猝不及防，不管你在不在乎；有些人，并非所想，不管你明不明白；有些路，必须得走，不管你愿不愿意。不怕事，不惹事，不避事，做好自己，用真心面对一切；少埋怨，少指责，少发火，学会沉静，用微笑考量一切；多体察，多包容，多思索，尽心尽力，虽缺憾但无悔。像蒲公英一样美丽，虽轻盈，但并不卑微，它有自己的生命，也有自己的世界！
@@ -16,13 +16,13 @@ H2O
 Xn + Yn = Zn
 按 CTRL+ALT+Delete 组合键结束会话。
 大多数蝾螈在夜间活动，捕食昆虫、蠕虫和其他小动物。
-以上引文摘自Rob Pike在2015年11月18日 Gopherfest 上的演讲 。 &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>http://next.lisenhui.cn/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo 上有几个内置短码 ，用于丰富内容，以及隐私配置 还有一组简单的短代码，支持各种社交媒体嵌入的静态和非 JS 版本。
+以上引文摘自Rob Pike在2015年11月18日 Gopherfest 上的演讲 。 &#8617;&#xfe0e;</content></entry><entry><title>富文本内容测试</title><url>/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo 上有几个内置短码 ，用于丰富内容，以及隐私配置 还有一组简单的短代码，支持各种社交媒体嵌入的静态和非 JS 版本。
 YouTube 增强隐私短码 {{/&lt; youtube ZJthWmvUzzc >/}}
 Twitter 短码 {{/&lt; twitter_simple 1085870671291310081 >/}}
 Vimeo 短码 {{/&lt; vimeo_simple 48912912 >/}}
-哔哩哔哩短码</content></entry><entry><title>图像占位符显示</title><url>http://next.lisenhui.cn/post/placeholder-text/</url><categories/><tags><tag>markdown</tag><tag>text</tag></tags><content type="html"> 范德格拉夫原理（Van de Graaf Canon）重构了曾经用于书籍设计中将页面划分为舒适比例的方法。这一原理也被称为“秘密原理”，用于许多中世纪的手稿和古板书中。在范德格拉夫原理中，文本区域和页面的长款具有相同的比例，并且文本区域的高度等于页面宽度，通过划分页面得到九分之一的订口边距和九分之二的切口边距，以及与页面长宽相同的比例的文本区域。
+哔哩哔哩短码</content></entry><entry><title>图像占位符显示</title><url>/post/placeholder-text/</url><categories/><tags><tag>markdown</tag><tag>text</tag></tags><content type="html"> 范德格拉夫原理（Van de Graaf Canon）重构了曾经用于书籍设计中将页面划分为舒适比例的方法。这一原理也被称为“秘密原理”，用于许多中世纪的手稿和古板书中。在范德格拉夫原理中，文本区域和页面的长款具有相同的比例，并且文本区域的高度等于页面宽度，通过划分页面得到九分之一的订口边距和九分之二的切口边距，以及与页面长宽相同的比例的文本区域。
 Vagus 示例
-The Van de Graaf Canon 总结 当然设计中的黄金比例是为人所熟知的，黄金分割的公式为a:b=b:(a+b)。这是指较小的两个矩形与较大的两个矩形以相同的组合方式相关联。黄金分割比例为1:1.618。</content></entry><entry><title>数据公式设置显示</title><url>http://next.lisenhui.cn/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。
+The Van de Graaf Canon 总结 当然设计中的黄金比例是为人所熟知的，黄金分割的公式为a:b=b:(a+b)。这是指较小的两个矩形与较大的两个矩形以相同的组合方式相关联。黄金分割比例为1:1.618。</content></entry><entry><title>数据公式设置显示</title><url>/post/math-typesetting/</url><categories/><tags/><content type="html"> Hugo 项目中的数学表示法可以通过使用第三方 JavaScript 库来实现。
 在这个例子中，我们将使用 MathJax 创建一个文件 /content/en[zh-CN]/math.md
 可以全局启用MathJax，请在项目配置中将参数math设置为true
 或是在每页基础上启用MathJax，在内容文件中包括参数math: true
@@ -67,12 +67,12 @@ $$ \frac{n!}{k!(n-k)!} = {^n}C_k {n \choose k} $$
 矩阵 $$ \begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\ a_{21} &amp; a_{22} &amp; a_{23}\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix} \begin{bmatrix} 0 &amp; \cdots &amp; 0 \ \vdots &amp; \ddots &amp; \vdots \ 0 &amp; \cdots &amp; 0 \end{bmatrix} $$
 标点符号 $$ f(x) = \sqrt{1+x} \quad (x \ge -1) f(x) \sim x^2 \quad (x\to\infty) $$
 现在用标点符号:
-$$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$</content></entry><entry><title>支持Emoji表情符号</title><url>http://next.lisenhui.cn/post/emoji-support/</url><categories/><tags><tag>emoji</tag></tags><content type="html"> Emoji 表情符号可以通过多种方式在 Hugo 项目中启用。
+$$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$</content></entry><entry><title>支持Emoji表情符号</title><url>/post/emoji-support/</url><categories/><tags><tag>emoji</tag></tags><content type="html"> Emoji 表情符号可以通过多种方式在 Hugo 项目中启用。
 使用 Emoji 表情符号可以在模板中可以直接调用 emojify 函数或是通过 内联短代码 来实现。
 如果要全局启用 Emoji 表情符号，请在网站配置 文件中将 enableEmoji 参数值设置为 true，然后可以直接在内容文件中输入表情符号简写代码，参考如下：
 猴子表情 🙈 :see_no_evil: 🙉 :hear_no_evil: 🙊 :speak_no_evil: 数字符号 1️⃣ :one: 2️⃣ :two: 3️⃣ :three: 建筑物 🏡 :house_with_garden: 🏣 :post_office: 🏥 :hospital: 更多的 Emoji 表情符号代码可参考Emoji 配对目录 。
 注意: 以上步骤在 Hugo 中启用 Unicode 标准表情符号和序列，但是这些符号的呈现取决于浏览器和平台，要设置表情符号的样式，您可以使用第三方表情符号字体或字体。例如：
-.emoji { font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols; }</content></entry><entry><title>关于我</title><url>http://next.lisenhui.cn/about.html</url><categories/><tags/><content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0 下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
+.emoji { font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols; }</content></entry><entry><title>关于我</title><url>/about.html</url><categories/><tags/><content type="html"> Hugo是用Go编写的一个开放源代码静态站点生成器，可在Apache许可证2.0 下使用。 Hugo支持TOML, YAML和JSON数据文件类型，Markdown和HTML内容文件，并使用短代码添加丰富的内容。其他值得注意的功能包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS缩小和对Sass SCSS工作流的支持。
 Hugo使用了多种开源项目，包括:
 https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper Hugo是博客、企业网站、创意作品集、在线杂志、单页应用程序甚至是数千页的网站的理想选择。
 Hugo适合那些想要手工编写自己的网站代码，而不用担心设置复杂的运行时、依赖关系和数据库的人。
