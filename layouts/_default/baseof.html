@@ -8,13 +8,13 @@
     </header>
 
     <main id="main" class="main">
-      {{ partial "sidebar.html" . }}
       <div class="main-inner">
         <div class="content-wrap">
           <div id="content" class="content">
             {{ block "main_content" . }}{{end}}
           </div>
         </div>
+        {{ partial "sidebar.html" . }}
       </div>
     </main>
    
