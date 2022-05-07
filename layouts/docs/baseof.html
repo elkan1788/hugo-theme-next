@@ -9,8 +9,8 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        {{ partial "sub_menu.html" .}}
-        <div class="content-wrap" style="margin-top: 10px">
+        <div class="content-wrap">
+          {{ partial "sub_menu.html" .}}
           <div id="content" class="content">
             {{ block "main_content" . }}{{end}}
           </div>
