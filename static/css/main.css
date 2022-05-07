@@ -2717,7 +2717,12 @@ body {
 .use-motion .sidebar .motion-element {
   opacity: 1;
 }
-
+.sidebar {
+  display: none;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: none;
+}
 .sidebar-inner {
   box-sizing: border-box;
   width: 260px;
