@@ -8,7 +8,6 @@
     </header>
 
     <main id="main" class="main">
-      {{ partial "sidebar.html" . }}
       <div class="main-inner">
         {{ partial "sub_menu.html" .}}
         <div class="content-wrap" style="margin-top: 10px">
@@ -16,6 +15,7 @@
             {{ block "main_content" . }}{{end}}
           </div>
         </div>
+        {{ partial "sidebar.html" . }}
       </div>
     </main>
    
