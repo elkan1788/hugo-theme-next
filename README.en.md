@@ -79,7 +79,7 @@ The default for this theme is to place Chinese articles in the `post` folder und
 title: "Hello World"
 url: 2020/09/11/hexo-hello-world.html
 date: "2020-09-11"
-tags: 
+tags:
   - testing
   - learn
 categories:
@@ -112,6 +112,7 @@ That was my personal hobby to improve and perfect the theme of Hugo's `NexT`,  b
 
 The list of donors (in date order):
 
-| Donation time | Donors | Donation mode | Donation content |
-| ------- | ------ | ------ | ---- |
-| 2021.12.21 | z*y | wechat pay | RMB18.88 |
+| Donation time | Donors | Donation mode | Donation content | Message |
+| ------- | ------ | ------ | ---- | ---- |
+| 2021.12.21 | z*y | wechat pay | RMB 18.88 | |
+| 2022.05.08 | *泉 | wechat pay | RMB 6.60 | Good luck with next develop. |
