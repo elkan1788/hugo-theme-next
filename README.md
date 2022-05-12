@@ -10,6 +10,10 @@
 
 [中文](#) | [English](https://github.com/elkan1788/hugo-theme-next/blob/main/README.en.md)
 
+# 快速模板
+
+建议使用 [hugo-theme-next-starter](https://github.com/hugo-next/hugo-theme-next-starter) 此模板快速搭建站点，使用更简单！
+
 # Hugo版本的NexT主题
 
 本主题是在[xtfly](https://github.com/xtfly/hugo-theme-next)移植基础上，再次进行深度的优化和改造，维持了`NexT`原本简单朴素的基调，同时增添不少与博客生态相关的服务组件，让主题更加的完善和好用。主要的特性如下：
