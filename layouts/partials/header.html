@@ -59,7 +59,6 @@
         <a href="{{ .URL | relLangURL }}" rel="section" {{ if eq .URL "/404.html" }}target="_blank"{{ end }}>
             <i class="menu-item-icon fa fa-fw fa-{{ .Pre }}"></i> <br />{{ .Name }}
         </a>
-        <div style="display: none;">{{ $curPage.Params.parent }}</div>
       </li>
     {{ end }}
       <li class="menu-item menu-item-search">
