@@ -10,6 +10,10 @@
 
 [中文](https://github.com/elkan1788/hugo-theme-next/blob/main/README.md) | [English](#)
 
+# Quick Starter
+
+Recommended to use [hugo-theme-next-starter](https://github.com/hugo-next/hugo-theme-next-starter) build your site, it's easily!
+
 # NexT for Hugo
 
 This theme is base on [xtfly](https://github.com/xtfly/hugo-theme-next) who port it from `Hexo` engine, then I had do more depth optimization and renovation. With the origin `NexT` theme's is simple and animated, I had add many blogs ecological related servcie components, make it more perfect and easy to use. The main features as folows:
