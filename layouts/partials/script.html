@@ -1,4 +1,4 @@
-<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="//unpkg.com/jquery@2.1.4/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/search.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/affix.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/scrollspy.js"></script> 
@@ -184,7 +184,7 @@ $(function() {
 <!-- Is Page -->
 
 <!-- Image Viewer -->
-<script src="//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.js"></script>
+<script src="//unpkg.com/imageviewer@1.1.0/dist/viewer.min.js"></script>
 <script type="text/javascript">
 $(function() {
   $('.post-body').viewer(); 
@@ -217,7 +217,7 @@ $(function() {
   };
   $(function(){
     if (detectIE()>0) {
-      $.getScript(document.location.protocol+'//cdnjs.cloudflare.com/ajax/libs/waline/1.6.0/Waline.min.js', function(){
+      $.getScript(document.location.protocol+'//unpkg.com/@waline/client@1.6.0/dist/Waline.min.js', function(){
          new Waline({
           el: '#wcomments', 
           visitor: true,
