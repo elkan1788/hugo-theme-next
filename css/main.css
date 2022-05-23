@@ -436,7 +436,7 @@ body {
   width: 860px;
 }
 .main {
-  padding-bottom: 150px;
+  padding-bottom: 20px;
 }
 .main-inner {
   margin: 0 auto;
@@ -2210,10 +2210,6 @@ a.search-result {
     display: none;
   }
 
-  .footer {
-    margin: -100px 0 0 0;
-  }
-
   .cnzz_icon {
     position: absolute;
     padding-left: 18%;
@@ -2441,12 +2437,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
   .main {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 }
 .container .main-inner {
