@@ -1,7 +1,7 @@
 <script type="text/javascript" src="//unpkg.com/jquery@2.1.4/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/search.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/affix.js"></script>
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/scrollspy.js"></script> 
+<!-- <script type="text/javascript" src="{{ .Site.BaseURL }}js/scrollspy.js"></script> -->
 
 <script type="text/javascript">
 
@@ -84,20 +84,20 @@
 
   function initAffix () {
     var headerHeight = $('.header-inner').height();
-    var footerOffset = parseInt($('.main').css('padding-bottom'), 10);
+    var footerOffset = parseInt($('.footer').outerHeight(true), 10);
     var sidebarTop = headerHeight + 10;
 
     $('.sidebar-inner').affix({
       offset: {
         top: sidebarTop,
-        bottom: footerOffset
+        bottom: footerOffset 
       }
     });
 
-    $(document)
+    /*$(document)
       .on('affixed.bs.affix', function () {
         updateTOCHeight(document.body.clientHeight - 100);
-      });
+      });*/
   }
 
   function initTOCDimension () {
@@ -159,7 +159,8 @@ $(function() {
   });
 
   registerBackTop();
-  initScrollSpy();
+  // TODO Not effect!!!
+  /*initScrollSpy();*/
   initAffix();
   initTOCDimension();
 
