@@ -27,6 +27,7 @@
 #  CNNZSiteId = "Your CNNZSiteId"
 #  BaiduSiteId = "Your BaiduSiteId"
 #  GoogleSiteId = "Your GoogleSiteId"
+#  LaSiteId = "Your LaSiteId"
 
 [OnlineIM]
   Enable = false

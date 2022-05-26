@@ -57,4 +57,11 @@
   </script>
   <!-- Google Analytics -->
   {{ end }}
+  {{ if isset .Site.Params.Statis "lasiteid" }}
+  <!-- 51LaSiteId Analytics -->
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id: "{{ .Site.Params.Statis.LaSiteId }}",ck: "{{ .Site.Params.Statis.LaSiteId }}",autoTrack:true})</script>
+    </script>
+  <!-- 51LaSiteId Analytics -->
+  {{ end }}
 </head>

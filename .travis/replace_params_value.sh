@@ -9,6 +9,7 @@ s/Your BaiduSiteId/'$BaiduSiteId'/g
 s/Your CNNZSiteId/'$CNNZSiteId'/g
 s/Your DaoVoiceId/'$DaoVoiceId'/g
 s/Your GoogleSiteId/'$GoogleSiteId'/g
+s/Your LaSiteId/'$LaSiteId'/g
 s/Your LCAppId/'$LCAppId'/g
 s/Your LCAppKey/'$LCAppKey'/g
 s|Your LCServer|'$LCServer'|g
