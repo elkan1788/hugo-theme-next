@@ -7,6 +7,18 @@
 [![Release Version](https://img.shields.io/github/v/release/elkan1788/hugo-theme-next?color=%230082C9&label=Release&logo=Next.js)](https://github.com/elkan1788/hugo-theme-next/releases/latest)
 ![GitHub](https://img.shields.io/github/license/elkan1788/hugo-theme-next?label=License&logo=WebAuthn)
 
+# 请大家移架关注 Hugo NexT
+
+`hugo-theme-next` 主题自打 2020 年 8 月时鄙人迁移博客至 Hugo 引擎起，也快要有 2 年的时间啦，期间也是对该主题做过些改动和修复，但发现与 `Hexo NexT` 的效果差距还是有些大的。 为了让各位 `NexT` 粉丝们更好的使用，个人在上海此次疫情间，根据最新的 V8 版本进行全面移植重构，现已经完成主题的整体布局（支持 4 种风格展示），欢迎大家关注与参与。
+
+<img src="//lisenhui.gitee.io/imgs/hugo-next/logo/hugo-next-primary.png" width="300">
+
+新仓库地址： [Hugo NexT 组织](https://github.com/hugo-next/)
+效果预览： [Hugo NexT 开发版](https://hugo-next-dev.vercel.app/)
+
+## 今后本主题将不再更新！！！
+## 今后本主题将不再更新！！！
+## 今后本主题将不再更新！！！
 
 [中文](#) | [English](https://github.com/elkan1788/hugo-theme-next/blob/main/README.en.md)
 
