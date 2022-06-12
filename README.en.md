@@ -7,6 +7,19 @@
 [![Release Version](https://img.shields.io/github/v/release/elkan1788/hugo-theme-next?color=%230082C9&label=Release&logo=Next.js)](https://github.com/elkan1788/hugo-theme-next/releases/latest)
 ![GitHub](https://img.shields.io/github/license/elkan1788/hugo-theme-next?label=License&logo=WebAuthn)
 
+# Subscribe New Hugo NexT
+
+Since I used Hugo engine to migrated my blog, and the `hugo-theme-next` theme was nearly 2 year old. In those times I had repaired & added some features, but found that there still more different from `Hexo NexT`. In order to more better friendly using theme travel who loved the `NexT`, I begined rebuild the theme with latest Hexo NexT V8 version when COVID-19 happened in Shanghai. Now it finished whole display content & supoort 4 shceme as origin. Welcome to your attention & join in. Thanks.
+
+<img src="//lisenhui.gitee.io/imgs/hugo-next/logo/hugo-next-primary.png" width="300">
+
+New Repository： [Hugo NexT Origination](https://github.com/hugo-next/)
+Preview： [Hugo NexT Development](https://hugo-next-dev.vercel.app/)
+
+## This theme would never update next time!!!
+## This theme would never update next time!!!
+## This theme would never update next time!!!
+
 
 [中文](https://github.com/elkan1788/hugo-theme-next/blob/main/README.md) | [English](#)
 
