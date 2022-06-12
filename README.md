@@ -11,7 +11,7 @@
 
 `hugo-theme-next` 主题自打 2020 年 8 月时鄙人迁移博客至 Hugo 引擎起，也快要有 2 年的时间啦。在此期间也是对该主题做过些功能改动和修复，但发现与 `Hexo NexT` 的效果还是有较大的差距。 为让各位 `NexT` 粉丝们更好的使用主题，个人在上海此次疫情间，根据 `Hexo NexT` 最新的 V8 版本进行全面移植重构，现已经完成整体布局开发（支持 4 种不同风格展示），欢迎大家关注与参与。
 
-<img src="//lisenhui.gitee.io/imgs/hugo-next/logo/hugo-next-primary.png" width="300">
+<img src="https://lisenhui.gitee.io/imgs/hugo-next/logo/hugo-next-primary.png" width="300">
 
 新仓库地址： [Hugo NexT 组织](https://github.com/hugo-next/)
 
