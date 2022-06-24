@@ -15,7 +15,7 @@ Since I used Hugo engine to migrated my blog at Augst 2022, and the `hugo-theme-
 
 New Repository： [Hugo NexT Origination](https://github.com/hugo-next/)
 
-Preview： [Hugo NexT Development](https://hugo-next-dev.vercel.app/)
+Preview： [Hugo NexT Development](https://preview.hugo-next.eu.org/)
 
 ## This theme would never update next time!!!
 ## This theme would never update next time!!!
